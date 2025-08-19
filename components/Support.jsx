@@ -48,7 +48,7 @@ const Support = () => {
         </div>
 
         {/* Content below */}
-        <div className="flex flex-col sm:flex-row items-center gap-6 mt-10">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-10">
           <div className="">
             <Image
               src={assets.art_2}
