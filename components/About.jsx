@@ -11,7 +11,7 @@ const About = () => {
       {/* Background Image */}
       <Image
         src={assets.viking_ship}
-        alt="Viking Ship"
+        alt="Viking Ship background"
         fill
         priority
         className="object-cover object-center"

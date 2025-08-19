@@ -12,7 +12,7 @@ const Lore = () => {
       {/* Background Image */}
       <Image
         src={assets.night_cave}
-        alt="night time image inside a cave"
+        alt="inside inside a cave"
         fill
         priority
         className="object-cover object-center"
