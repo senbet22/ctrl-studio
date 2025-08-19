@@ -1,20 +1,31 @@
 import React from "react";
+import Image from "next/image";
 import { EmblaCarousel } from "./carousel/EmblaCarousel";
+import { assets } from "@/assets/assets.mjs";
 
 const Lore = () => {
   return (
     <div
       id="lore"
-      className="select-none scroll-mt-20 relative h-full w-full bg-[url('/night-cave.jpg')] bg-cover bg-center "
+      className="select-none scroll-mt-20 relative h-full w-full overflow-hidden"
     >
+      {/* Background Image */}
+      <Image
+        src={assets.night_cave}
+        alt="night time image inside a cave"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
       {/* Overlay */}
-      <div className="absolute  inset-0 bg-gradient-to-b from-background/30 via-background to-background/90" />
-      <div></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background to-background/90" />
+
       {/* Content Wrapper */}
-      <div className="relative max-w-6xl  mx-auto z-10 flex  flex-col items-start ">
+      <div className="relative max-w-6xl mx-auto z-10 flex flex-col items-start">
         <h2
-          className=" mt-15   px-6 text-2xl sm:text-3xl text-transparent bg-clip-text 
-          bg-gradient-to-r from-45% from-primary   to-secondary to-55%"
+          className="mt-15 px-6 text-2xl sm:text-3xl text-transparent bg-clip-text 
+          bg-gradient-to-r from-45% from-primary to-secondary to-55%"
         >
           Lore
         </h2>
