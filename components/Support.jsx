@@ -63,7 +63,7 @@ const Support = () => {
             {stayUpdatedData.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <Image
-                  src={item.bgImage}
+                  src={item.check_icon}
                   alt="Check icon"
                   width={24}
                   height={24}

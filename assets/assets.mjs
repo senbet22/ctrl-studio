@@ -16,6 +16,7 @@ import arrow_btn from "./arrow-btn.png";
 import avatar_one from "./gamecharacter.png";
 import avatar_two from "./gamecharacter-2.png";
 import avatar_three from "./gamecharacter-3.png";
+import check_icon from "./check-icon.png";
 // Portraits
 import magnus from "./portrait-magnus.png";
 import caroline from "./portrait-caroline.png";
@@ -42,10 +43,10 @@ export const assets = {
 };
 
 export const stayUpdatedData = [
-  { title: "Early access to game testing", bgImage: "/check-icon.png" },
-  { title: "The latest updates", bgImage: "/check-icon.png" },
-  { title: "Exclusive content and sneak peeks", bgImage: "/check-icon.png" },
-  { title: "Community events", bgImage: "/check-icon.png" },
+  { title: "Early access to game testing", check_icon },
+  { title: "The latest updates", check_icon },
+  { title: "Exclusive content and sneak peeks", check_icon },
+  { title: "Community events", check_icon },
 ];
 
 // Team Data
