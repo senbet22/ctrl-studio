@@ -10,8 +10,12 @@ export default function PlayButton({ onPlay }) {
       className="flex gap-2 px-6 py-3 bg-accent/40 cursor-pointer text-foreground text-lg 
       font-semibold rounded-lg hover:bg-secondary/70 hover:scale-105 transition-colors duration-200"
     >
-      <Image src={assets.arrow_btn} className="size-6 rotate-180" /> Play
-      Trailer
+      <Image
+        src={assets.arrow_btn}
+        alt="Play Trailer Button"
+        className="size-6 rotate-180"
+      />{" "}
+      Play Trailer
     </button>
   );
 }

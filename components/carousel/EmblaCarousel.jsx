@@ -28,10 +28,10 @@ export const EmblaCarousel = () => {
             >
               {/* Image Container - Constrained height */}
               <motion.div
-                initial={{ x: 200 }}
-                whileInView={{ x: 0 }}
+                initial={{ x: 100, y: -200 }}
+                whileInView={{ x: 0, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="flex-shrink-0 w-full md:w-1/3 max-h-[40svh] md:max-h-[70svh] flex items-center justify-center"
+                className="flex-shrink-0 w-full md:w-1/3 h-[40svh] md:h-[70svh] flex items-center justify-center"
               >
                 <Image
                   src={avatar}
@@ -41,7 +41,7 @@ export const EmblaCarousel = () => {
               </motion.div>
 
               {/* Content Container */}
-              <div className="flex-1 flex flex-col justify-center max-h-full overflow-y-auto">
+              <div className="flex-1 flex flex-col justify-start max-h-full overflow-y-auto">
                 {/* Navigation Buttons and Character Name */}
                 <div className="flex  justify-between">
                   {/* Character Name */}
