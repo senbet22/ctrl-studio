@@ -61,19 +61,3 @@ body {
   position: relative;
   flex: 0 0 100%;
 }
-
-/* Prevent iOS zoom on background images */
-body,
-html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  overflow-x: hidden;
-}
-
-/* Fix for background images causing zoom */
-* {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}

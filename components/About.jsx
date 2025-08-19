@@ -1,20 +1,30 @@
 import React from "react";
 import Image from "next/image";
+import { assets } from "@/assets/assets.mjs";
 
 const About = () => {
   return (
     <div
       id="about"
-      className=" scroll-mt-20 relative h-screen w-full bg-[url('/viking-ship.jpg')] bg-cover bg-center"
+      className="scroll-mt-20 relative h-screen w-full overflow-hidden"
     >
+      {/* Background Image */}
+      <Image
+        src={assets.viking_ship}
+        alt="Viking Ship"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/20" />
 
       {/* Content Wrapper */}
       <div className="relative py-10 z-10 h-full w-full flex items-center justify-center">
-        <div className="flex  flex-col  md:flex-row items-center justify-between max-w-6xl w-full px-6 gap-12">
+        <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl w-full px-6 gap-12">
           {/* Left Side*/}
-          <div className="w-full lg:w-1/2   ">
+          <div className="w-full lg:w-1/2">
             <h1 className="text-3xl text-primary mb-4">
               Welcome to The shadow from Ringholt
             </h1>
@@ -26,7 +36,7 @@ const About = () => {
               navigate treacherous wilderness and face creatures born from
               forgotten legends.
             </p>
-            <button className="text-primary cursor-pointer font-semibold ">
+            <button className="text-primary cursor-pointer font-semibold">
               Read More
             </button>
           </div>
