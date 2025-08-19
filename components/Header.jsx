@@ -13,21 +13,21 @@ const Header = () => {
   const closeTrailerModal = () => setIsTrailerModalOpen(false);
 
   return (
-    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div className="relative h-svh w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
         src={assets.bg_image}
-        alt="Background"
+        alt="In-game Background"
         fill
         priority
         className="object-cover object-center"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/70" />
+      <div className="absolute inset-0 bg-background/70 bg-scroll" />
 
       {/* Content */}
-      <div className="relative h-screen w-full flex justify-center">
+      <div className="relative h-svh w-full flex justify-center">
         <div className="max-w-6xl mt-30 w-full mx-2">
           <h1 className="text-4xl sm:text-6xl px-6 text-primary text-shadow-md text-shadow-background/70">
             The shadow from <br /> Ringholt

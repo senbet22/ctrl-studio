@@ -11,7 +11,7 @@ const Team = ({ theme }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       id="team"
-      className="w-full  min-h-screen max-w-6xl px-6 mx-auto  py-10 scroll-mt-20"
+      className="w-full  min-h-svh max-w-6xl px-6 mx-auto  py-10 scroll-mt-20"
     >
       <h2
         className=" mt-15    text-2xl sm:text-3xl text-transparent bg-clip-text 

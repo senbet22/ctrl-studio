@@ -31,7 +31,7 @@ export const EmblaCarousel = () => {
                 initial={{ y: 100 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="flex-shrink-0 w-full md:w-1/3 max-h-[40vh] md:max-h-[70vh] flex items-center justify-center"
+                className="flex-shrink-0 w-full md:w-1/3 max-h-[40svh] md:max-h-[70svh] flex items-center justify-center"
               >
                 <Image
                   src={avatar}

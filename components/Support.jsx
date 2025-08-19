@@ -8,7 +8,7 @@ const Support = () => {
   return (
     <div
       id="support"
-      className="scroll-mt-20 min-h-screen w-full bg-background bg-cover bg-center flex justify-center"
+      className="scroll-mt-20 min-h-svh w-full bg-background bg-cover bg-center flex justify-center"
     >
       <div className="mx-auto my-15">
         <div className="flex items-center  justify-between w-full max-w-6xl mx-auto text-foreground px-4">
