@@ -15,7 +15,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="bg-foreground/30 rounded-lg shadow-xl w-full sm:w-4/5 h-full sm:my-10 max-w-6xl overflow-hidden backdrop-blur-sm"
+            className="bg-transparent rounded-lg shadow-xl w-full  h-full sm:my-10 max-w-6xl overflow-hidden backdrop-blur-sm"
             onClick={(e) => e.stopPropagation()}
             onKeyDown={(e) => e.key === "Escape" && onClose()}
             tabIndex={-1}
