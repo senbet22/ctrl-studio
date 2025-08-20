@@ -24,13 +24,6 @@
   --font-ovo: var(--font-ovo);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 @layer utilities {
   .grid-cols-auto {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
