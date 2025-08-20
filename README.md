@@ -1,6 +1,6 @@
 # Ctrl - Studio - The Shadow from Ringholt
 
-### 🌐 <a href="https://ctrl-studio.netlify.app/" target="_blank">Visit the live demo project on Netlify</a>
+### 🌐 <a href="https://ctrl-studio.netlify.app/" target="_blank">Visit the live demo on Netlify</a>
 
 
 ## Getting Started
