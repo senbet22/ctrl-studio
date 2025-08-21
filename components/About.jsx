@@ -14,7 +14,7 @@ const About = () => {
         alt="Viking Ship background"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-center pointer-events-none"
       />
 
       {/* Overlay */}

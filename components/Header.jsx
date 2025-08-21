@@ -20,7 +20,7 @@ const Header = () => {
         alt="In-game Background"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-center pointer-events-none"
       />
 
       {/* Overlay */}
