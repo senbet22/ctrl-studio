@@ -34,7 +34,6 @@ I chose Embla Carousel because it's lightweight, fast, and easy to integrate.
 ## Things to add later:
 
 - CMS for The developers to Update info. Currently looking into Sanity.io and will implement this so the dev's can update the sections themselves.
-- Norwegian and Sámi version of the website: also let the devs update data with different langueges using sanity.io.
+- Norwegian and Sámi version of the website: also let the devs update data with different languages using sanity.io.
 - Research and identify the most cost-effective and scalable third-party application for Support/Subscribe section.
-- Policy Pricacy / Terms and conditions pages. (If i want the page to remain SPA then maybe a Modal window?)
-- Favourite game of each team member at the bottom of the TeamData Cards.
+- Policy Pricacy / Terms and conditions pages. (If i want the page to remain SPA then maybe a Modal window for these?)
