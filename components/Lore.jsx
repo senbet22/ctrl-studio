@@ -19,7 +19,7 @@ const Lore = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background to-background/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/30 from-10% via-background via-30% to-background/90 to-97%" />
 
       {/* Content Wrapper */}
       <div className="relative max-w-6xl mx-auto z-10 flex flex-col items-start">

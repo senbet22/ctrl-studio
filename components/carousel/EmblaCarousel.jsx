@@ -24,7 +24,7 @@ export const EmblaCarousel = () => {
           {LoreData.map(({ character, avatar, quote, story }, index) => (
             <div
               key={index}
-              className="embla__slide flex flex-col md:flex-row items-center justify-between max-w-6xl w-full min-h-[700px] px-6 gap-6 md:gap-12 py-8"
+              className="embla__slide flex flex-col md:flex-row items-start justify-between max-w-6xl w-full min-h-[700px] px-6 gap-6 md:gap-12 py-8"
             >
               {/* Image Container - Constrained height */}
               <motion.div
