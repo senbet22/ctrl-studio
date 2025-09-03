@@ -32,13 +32,13 @@ const About = () => {
               Join Tyri on an epic adventure to uncover what lies in the shadows
               of Ringholt, where ancient secrets whisper through frost-covered
               pines and ethereal lights dance across starlit skies. As a young
-              herder with a mysterious connection to the spirit world, she must
+              herder with a mysterious connection to the spirit world, he must
               navigate treacherous wilderness and face creatures born from
               forgotten legends.
             </p>
-            <button className="text-primary cursor-pointer font-semibold">
+            {/* <button className="text-primary  font-semibold">
               Read More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@
 
 ### 🌐 [Visit demo on Netlify](https://ctrl-studio.netlify.app/)
 
-## About
+## Project Overview
 
 The Shadow from Ringholt is a single-player, story-driven game developed by CTRL-Studio.
 
@@ -37,3 +37,25 @@ I chose Embla Carousel because it's lightweight, fast, and easy to integrate.
 - Norwegian and Sámi version of the website: also let the devs update data with different languages using sanity.io.
 - Research and identify the most cost-effective and scalable third-party application for Support/Subscribe section.
 - Policy Pricacy / Terms and conditions pages. (If i want the page to remain SPA then maybe a Modal window for these?)
+
+###
+
+<h3 align="left">Built with:</h3>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="nextjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="40" alt="tailwindcss logo"  />
+</div>
+
+###
+
+### 📞 Contact
+
+[My GitHub Profile](https://github.com/senbet22)
+
+###
+
+[Back to Top](#readme)
