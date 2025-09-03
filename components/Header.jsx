@@ -5,6 +5,7 @@ import PlayButton from "./buttons/PlayButton";
 import Modal from "./Modal";
 import Image from "next/image";
 import { assets } from "@/assets/assets.mjs";
+import { motion } from "motion/react";
 
 const Header = () => {
   const [isTrailerModalOpen, setIsTrailerModalOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
         alt="In-game Background"
         fill
         priority
-        className="object-cover object-center pointer-events-none"
+        className="object-cover object-center"
       />
 
       {/* Overlay */}
@@ -29,9 +30,22 @@ const Header = () => {
       {/* Content */}
       <div className="relative h-svh w-full flex justify-center">
         <div className="max-w-6xl mt-30 w-full mx-2">
-          <h1 className="text-4xl sm:text-6xl px-6 text-primary text-shadow-md text-shadow-background/70">
+          <motion.h1
+            initial={{ y: 100, opacity: 0, scale: 0.5 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              scale: [0.8, 1.1, 1], // grow past 100% then settle back
+            }}
+            transition={{
+              duration: 0.7,
+              ease: ["easeOut", "easeInOut"], // smooth overshoot
+            }}
+            className="text-4xl sm:text-6xl px-6 text-primary text-shadow-md text-shadow-background/70"
+          >
             The shadow from <br /> Ringholt
-          </h1>
+          </motion.h1>
+
           <div className="absolute px-6 bottom-20">
             <PlayButton onPlay={openTrailerModal} />
           </div>

@@ -82,22 +82,44 @@ export const LoreData = [
   {
     character: "Tyri",
     avatar: avatar_one,
-    from: "Ringholt",
+    quote: `“For nyskgjerrig til å holde seg unna farlige situasjoner, oppfinnsom nok til å komme seg ut av dem før alt går ned skrenta” - Brage Tornebukk`,
     story:
-      "Half-Sami, half-Viking, and fully confused about his future, Tyri inherited his mother's gift for talking to spirits and his father's love for whisky. When the Ringholt darkness started swallowing villages, he figured someone should probably do something about it—unfortunately, that someone turned out to be him.",
+      "Tyri er tenåring. Han har flammerødt hår og kan mye for alderen. Til tross for slitet for tilværelsen på Månetun som har gjort ham sterk og seig, har han en evig tørst for å oppdage alt som er nytt og annerledes. Tyri er lojal mot dem han er glad i, og beskytter sine nærmeste med en brennende ild i hjertet. Når han blir sint er det nesten som om flammene rundt ham blusser opp, og mor hans sier at han må ha seidens krefter flytende i årene.",
   },
   {
-    character: "Drifa",
+    character: "Draupne",
+    avatar: avatar_one,
+    quote: `“Gutten har en saivo med seg, det er ikke vanskelig å se” -Drifa Čearga`,
+    story:
+      "Det finnes ånder knyttet til hellige fjell fra seidens verden, og slike kalles for saivo. Da Tyri forvillet seg inn i en hule dypt inne i fjellet under Månetun og ikke kunne finne veien ut igjen, fant han en vakker opalstein fra oldtiden. Det var nok en av Magmes tårer han fant, for da han tok på den var krafta så sterk at han ble slått i svime. Da han senere våknet sto han ansikt til ansikt med en saivo som hadde vært innelåst i steinen. Tyri ble først redd, men følte seg av en eller annen grunn knyttet til skapningen. Ånden fortalte at den het Draupne, og tilbudte seg å hjelpe Tyri. Sammen fant de veien ut, og slik var det at Tyri fikk en saivo som følgesvenn.",
+  },
+  {
+    character: "Drifa Čearga",
     avatar: avatar_two,
-    from: "Ringholt",
+    quote: `“Vi ble angrepet uten varsel, i en tåke så tjukk som leire”`,
     story:
-      "The sole survivor of her clan's massacre, Drifa now travels the land as a skald with anger management issues and glowing scars that make sneaking around nearly impossible. She's sworn to preserve her people's stories and hunt down the shadow creatures, though she admits the revenge part is significantly more satisfying than the poetry.",
+      "Skrekken på Nidingfar, båtsvelteren, heksa fra Brimhall. Drifa Čearga har mange navn langs Askefjorden, hvor mange av ryktene som er fortjente, er usikkert. Det som er sikkert er at det er få ting jarlens menn frykter mer enn å se noaidekvinnen med det lange hvite håret komme glidende ut av tåka, stille som en snøugle. Nidingfar heter båten hennes, og den hornkledde hodeskallen til et fjelltroll pryder båtens baug. I årevis har vikingpiraten vært en torn i sida for Jarl Olav Beinlause, og tross hans overlegne militærmakt, forsvinner alltid piratene i en tåke som ingen mann kan orientere seg i. En våpenhvile har heldigvis funnet sted, og Brimhall som en gang var et samlested for kriminelle og utstøtte, har under Drifa blitt et veldisiplinert militærfort nord i Gastahav.",
   },
   {
-    character: "Asbjørg",
+    character: "Vikmark",
     avatar: avatar_three,
-    from: "Romsås",
+    quote: `“Du skal ikke ferdes langt inn i skogen fra Viksund før villmarka tar over. Folk, om man så kan kalle dem det, som bor der, er enten på flukt fra loven, eller er hardføre villmenn uten mannerer.” -V. Vinterstoge (Året herse Olaf fødtes), s 30, Trygge stier langs Askefjorden.`,
     story:
-      "This former völva saved her sister's life with forbidden blood magic, which seemed like a great idea until her hair went white, her eyes turned creepy, and her own people kicked her out for unsavory magical practices. Now she wanders the frozen wastes, trying to decide if redemption is worth the effort or if embracing her dark reputation might be more fun.",
+      "Vikmark er territoriet knyttet til Viksund, den andre største bosetningen langs Askefjorden etter Askahorn. Viksund ligger ved fjorden, og byens økonomi drives i hovedsak fremover av verftsvirksomhet og eksport av tømmer. Sistnevnte hentes fra det langstrekte skogsområdet som strekker seg vestover fra fjorden og inn i dalføret, til der fjellet starter. Skogene er gamle og dype, og mange mener at de drar unaturlig kraft fra vulkanene i tundralandskapet lenger vest. Det er tross alt kjent at ildkjempen Magme ligger begravd dypt i Jorda, og der hvor vulkanene bor, er Magmes energi sterkest.",
+  },
+  {
+    character: "Månetun",
+    avatar: avatar_three,
+    quote: `“Skogene er dype her, og fjellene stikker opp som rustne knokejern. Elva er dyp og nådeløs, og på kvelden, eller når det har regnet, ligger Kvalupaliken og lurer ved elvebunnen. Selv i en magnetittbåt er det vanskelig å holde seg over vannet. Men det er vakkert. En slags dyp og magisk skjønnhet som kun kan sees når du har vært borte fra folk over lengre tid.“ 
+            -Agnar Månetun`,
+    story:
+      "I det dype elvelandskapet som former Gastahavs nordre skoger, langt fra byen Viksunds travle hverdag, rett før skogen begynner å gi slipp for fjellet, ligger det en gård. Gårdshuset er slitent og værbitt der det står blant hvitveis og myrull, og selv om huset ligger i skyggen av store grantrær om dagen, bades det i månens sølvskinn om nettene. Derfor heter gården Månetun",
+  },
+  {
+    character: "Seid",
+    avatar: avatar_three,
+    quote: `“Og det var med sine trylleteiner at noaidene fra Stoggeselet løftet isfjellet opp fra vannet, der det ble bundet med store kjettinger, dersom Isengrim skulle trenge gjennom passet under isen.” S. Alfarrson (året Toke Hjelmholt arvet Nevgilde), s12, Ferdalok: Syv år i fred`,
+    story:
+      "Det finnes trolldom i Fjorgvin, og Viksunds dype skoger holder på gamle hemmeligheter. En gang i tiden, lenge før menneskenes tid, var det naturens guder som regjerte. Først var det steinkjempene Magme og Sedimus som kriget i tusen år, og senere Haefmar, forrådt av solgudinnen Beaivvi, som oversvømte jorda med blodet sitt. Historiene er mange, men én ting er sikkert, det eksisterer fortsatt krefter, magi som kan temmes av de som har gaven. Denne magien kalles seid, og er like farlig som den kan være nyttig. For selv om mange har prøvd gjennom tidene, er det vel ingen som egentlig kan kontrollere naturen.",
   },
 ];

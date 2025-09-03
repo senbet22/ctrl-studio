@@ -21,7 +21,7 @@ export const EmblaCarousel = () => {
     <div className="embla h-full w-full ">
       <div className="embla__viewport h-full" ref={emblaRef}>
         <div className="embla__container h-full">
-          {LoreData.map(({ character, avatar, from, story }, index) => (
+          {LoreData.map(({ character, avatar, quote, story }, index) => (
             <div
               key={index}
               className="embla__slide flex flex-col md:flex-row items-center justify-between max-w-6xl w-full min-h-[700px] px-6 gap-6 md:gap-12 py-8"
@@ -71,7 +71,7 @@ export const EmblaCarousel = () => {
                     </button>
                   </div>
                 </div>
-                <p className="text-foreground/70 mb-4">{from}</p>
+                <p className="text-foreground/70 my-4">{quote}</p>
                 <p className="mb-6 text-sm md:text-base leading-relaxed">
                   {story}
                 </p>

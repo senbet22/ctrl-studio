@@ -15,7 +15,7 @@ const Lore = () => {
         alt="inside inside a cave"
         fill
         priority
-        className="object-cover object-center pointer-events-none"
+        className="object-cover object-center"
       />
 
       {/* Overlay */}
