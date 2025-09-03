@@ -1,10 +1,10 @@
-<table>
-  <tr>
-    <td><img src="assets/logo.png" alt="CTRL-Studio Logo" width="120"/></td>
-    <td><h1>Ctrl - Studio - The Shadow from Ringholt</h1></td>
-    
-  </tr>
-</table>
+<div style="display: flex; align-items: center; gap: 15px;">
+
+  <img src="assets/logo.png" alt="CTRL-Studio Logo" width="120"/>
+
+  <h1 style="margin: 0;">Ctrl - Studio - The Shadow from Ringholt</h1>
+
+</div>
 
 ### 🌐 [Visit demo on Netlify](https://ctrl-studio.netlify.app/)
 
