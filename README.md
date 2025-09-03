@@ -49,3 +49,6 @@ I chose Embla Carousel because it's lightweight, fast, and easy to integrate.
 ###
 
 [Back to Top](#readme)
+
+© 2025 CTRL-Studio. All rights reserved.  
+This repository and its contents may not be copied, modified, or distributed without permission.
