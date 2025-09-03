@@ -21,7 +21,7 @@ export default function SubscribeInput() {
       />
       <button
         onClick={handleSubmit}
-        className="  px-2 sm:px-10 py-2 bg-secondary/80 text-foreground rounded-md hover:bg-primary 
+        className=" px-2 sm:px-10 py-2 text-foreground rounded-md bg-secondary/80  hover:bg-primary/70 
         text-lg cursor-pointer   duration-200"
       >
         Subscribe
