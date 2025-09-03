@@ -1,11 +1,12 @@
 <table>
   <tr>
-    <td><h1>Ctrl - Studio - The Shadow from Ringholt</h1></td>
     <td><img src="assets/logo.png" alt="CTRL-Studio Logo" width="120"/></td>
+    <td><h1>Ctrl - Studio - The Shadow from Ringholt</h1></td>
+    
   </tr>
 </table>
 
-### 🌐 <a href="https://ctrl-studio.netlify.app/" target="_blank">Visit demo on Netlify</a>
+### 🌐 [Visit demo on Netlify](https://ctrl-studio.netlify.app/)
 
 ## About
 
@@ -24,22 +25,6 @@ This website serves as a platform to:
 _Note: Some assets are currently placeholders and will be updated as more become available._
 
 ![Image](/public/web-preview.png)
-
-## Getting Started
-
-To install dependencies:
-
-```bash
-npm install
-
-```
-
-To run the project:
-
-```bash
-npm run dev
-
-```
 
 ## Carousel
 
