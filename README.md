@@ -23,7 +23,7 @@ This website serves as a platform to:
 
 _Note: Some assets are currently placeholders and will be updated as more become available._
 
-![Auction House Preview](//assets/background.jpg)
+![Image](/public/web-preview.png)
 
 ## Getting Started
 
@@ -43,7 +43,7 @@ npm run dev
 
 ## Carousel
 
-For my carousel i have chosen to use Embla Carousel: (https://www.embla-carousel.com/)
+For my carousel in Lore section i have chosen to use Embla Carousel: (https://www.embla-carousel.com/)
 I chose Embla Carousel because it's lightweight, fast, and easy to integrate.
 
 ## Things to add later:
