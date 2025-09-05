@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-The Shadow from Ringholt is a single-player, story-driven game developed by CTRL-Studio.
+The Shadow from Ringholt is a story-driven game developed by CTRL-Studio.
 
 This website serves as a platform to:
 
