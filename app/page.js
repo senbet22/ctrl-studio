@@ -1,9 +1,8 @@
-"use client";
 import Header from "@/components/Header";
 import About from "@/components/About";
 import Navbar from "@/components/Navbar";
 import Lore from "@/components/Lore";
-import Team from "@/components/Team";
+import TeamSection from "@/components/TeamSection";
 import Support from "@/components/Support";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -15,7 +14,7 @@ export default function Home() {
       <Header />
       <About />
       <Lore />
-      <Team />
+      <TeamSection />
       <Support />
       <Contact />
       <Footer />

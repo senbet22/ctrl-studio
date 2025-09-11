@@ -1,3 +1,5 @@
+"use client";
+
 import { assets, stayUpdatedData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";

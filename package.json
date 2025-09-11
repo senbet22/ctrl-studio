@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^7.11.1",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.8.1",
     "embla-carousel-fade": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "motion": "^12.23.12",
     "next": "15.4.6",
+    "next-sanity": "^10.1.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "sanity": "^4.8.1",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
