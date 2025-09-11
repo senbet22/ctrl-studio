@@ -20,7 +20,7 @@
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local
+.env.prod.local
 
 # log files
 npm-debug.log*
