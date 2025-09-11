@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # These are public environment variables (NEXT_PUBLIC_*) so they're safe to ignore
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SANITY_DATASET,NEXT_PUBLIC_SANITY_PROJECT_ID"
