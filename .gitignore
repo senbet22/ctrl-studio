@@ -1,3 +1,6 @@
+
+
+
 # dependencies
 /node_modules
 
@@ -13,6 +16,7 @@
 *.pem
 
 # env files (sensitive)
+.env
 .env.local
 .env.development.local
 .env.test.local
