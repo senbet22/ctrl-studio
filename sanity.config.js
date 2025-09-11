@@ -5,9 +5,9 @@ import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
 
 // Correct paths
-import { apiVersion, dataset, projectId } from "./env.js";
-import { schema } from "./schemaTypes.js";
-import { structure } from "./structure.js";
+import { apiVersion, dataset, projectId } from "./sanity/env";
+import { schema } from "./sanity/schemaTypes/index.js";
+import { structure } from "./sanity/structure.js";
 
 export default defineConfig({
   basePath: "/cms",
