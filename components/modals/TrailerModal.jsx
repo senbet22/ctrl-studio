@@ -2,7 +2,7 @@ import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 
-const Modal = ({ isOpen, onClose, title, children }) => {
+const TrailerModal = ({ isOpen, onClose, title, children }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -43,7 +43,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
               </button>
             </div>
 
-            <div className="p-6 overflow-y-auto h-full">{children}</div>
+            <div className="p-2 overflow-y-auto h-full">{children}</div>
           </motion.div>
         </motion.div>
       )}
@@ -51,4 +51,4 @@ const Modal = ({ isOpen, onClose, title, children }) => {
   );
 };
 
-export default Modal;
+export default TrailerModal;

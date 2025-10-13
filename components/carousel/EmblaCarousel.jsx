@@ -50,7 +50,7 @@ export const EmblaCarousel = () => {
                   </h1>
                   <div className="flex gap-x-4 md:gap-x-6 justify-end">
                     <button
-                      className="embla__prev bg-[#411D1C] py-2 px-4 cursor-pointer hover:bg-foreground/70 transition-colors rounded"
+                      className="embla__prev bg-[#411D1C] py-2 px-4 cursor-pointer hover:bg-secondary/5 transition-colors rounded"
                       onClick={scrollPrev}
                     >
                       <Image
@@ -60,7 +60,7 @@ export const EmblaCarousel = () => {
                       />
                     </button>
                     <button
-                      className="embla__next bg-[#411D1C] py-2 px-4 cursor-pointer hover:bg-foreground/70 transition-colors rounded"
+                      className="embla__next bg-[#411D1C] py-2 px-4 cursor-pointer hover:bg-secondary/5 transition-colors rounded"
                       onClick={scrollNext}
                     >
                       <Image

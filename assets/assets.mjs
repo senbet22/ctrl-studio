@@ -17,10 +17,15 @@ import avatar_one from "./gamecharacter.png";
 import avatar_two from "./gamecharacter-2.png";
 import avatar_three from "./gamecharacter-3.png";
 import check_icon from "./check-icon.png";
+import arrow_up_icon from "./arrow-up-icon.svg";
+import tyri from "./tyri.png";
+
 // Portraits
 import magnus from "./portrait-magnus.png";
 import caroline from "./portrait-caroline.png";
 import david from "./portrait-david.png";
+// Team image
+import team_image from "./team-image.png";
 
 export const assets = {
   bg_image,
@@ -40,8 +45,12 @@ export const assets = {
   avatar_one,
   avatar_two,
   avatar_three,
+  team_image,
+  arrow_up_icon,
+  tyri,
 };
 
+// Subscribe section
 export const stayUpdatedData = [
   { title: "Early access to game testing", check_icon },
   { title: "The latest updates", check_icon },

@@ -7,6 +7,7 @@ import Team from "@/components/Team";
 import Support from "@/components/Support";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Vision from "@/components/Vision";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <About />
       <Lore />
+      <Vision />
       <Team />
       <Support />
       <Contact />

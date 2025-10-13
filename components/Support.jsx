@@ -59,7 +59,7 @@ const Support = () => {
 
           {/* List from stayUpdatedData */}
           <div className="mt-auto mx-auto  flex w-full flex-col gap-4 text-lg">
-            <h2 className="mb-5 ">Join our mailing list and get:</h2>
+            <h2 className="mb-5 ">Join our Discord Channel!</h2>
             {stayUpdatedData.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <Image
@@ -75,7 +75,7 @@ const Support = () => {
             ))}
             {/* Social Icons */}
             <div className="flex   gap-8 mt-5">
-              <div className="cursor-pointer hover:bg-accent-dark p-2 rounded-full">
+              <div className="cursor-pointer hover:bg-secondary/10 p-2 rounded-full">
                 <Image
                   src={assets.discord_icon}
                   alt="Social Icon"
@@ -83,7 +83,7 @@ const Support = () => {
                   height={30}
                 />
               </div>
-              <div className="cursor-pointer hover:bg-accent-dark p-2 rounded-full">
+              <div className="cursor-pointer hover:bg-secondary/10  p-2 rounded-full">
                 <Image
                   src={assets.insta_icon}
                   alt="Social Icon"
@@ -91,7 +91,7 @@ const Support = () => {
                   height={30}
                 />
               </div>
-              <div className="cursor-pointer hover:bg-accent-dark p-2 rounded-full">
+              <div className="cursor-pointer hover:bg-secondary/10 p-2 rounded-full">
                 <Image
                   src={assets.youtube_icon}
                   alt="Social Icon"

@@ -60,6 +60,9 @@ const Navbar = () => {
             <a href="#lore">Lore</a>
           </li>
           <li className="hover:text-primary duration-100">
+            <a href="#vision">Vision</a>
+          </li>
+          <li className="hover:text-primary duration-100">
             <a href="#team">Team</a>
           </li>
 
@@ -108,6 +111,11 @@ const Navbar = () => {
           <li>
             <a onClick={closeMenu} href="#lore">
               Lore
+            </a>
+          </li>
+          <li>
+            <a onClick={closeMenu} href="#vision">
+              Vision
             </a>
           </li>
           <li>

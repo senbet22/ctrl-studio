@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import PlayButton from "./buttons/PlayButton";
-import Modal from "./Modal";
+import TrailerModal from "./modals/TrailerModal";
 import Image from "next/image";
 import { assets } from "@/assets/assets.mjs";
 import { motion } from "motion/react";
@@ -35,11 +35,11 @@ const Header = () => {
             animate={{
               y: 0,
               opacity: 1,
-              scale: [0.8, 1.1, 1], // grow past 100% then settle back
+              scale: [0.8, 1.1, 1],
             }}
             transition={{
               duration: 0.7,
-              ease: ["easeOut", "easeInOut"], // smooth overshoot
+              ease: ["easeOut", "easeInOut"],
             }}
             className="text-4xl sm:text-6xl px-6 text-primary text-shadow-md text-shadow-background/70"
           >
@@ -53,7 +53,7 @@ const Header = () => {
       </div>
 
       {/* Trailer Modal */}
-      <Modal
+      <TrailerModal
         isOpen={isTrailerModalOpen}
         onClose={closeTrailerModal}
         title="The Shadow from Ringholt - Trailer"
@@ -70,7 +70,7 @@ const Header = () => {
             ></iframe>
           </div>
         </div>
-      </Modal>
+      </TrailerModal>
     </div>
   );
 };
