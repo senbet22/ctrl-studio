@@ -1,15 +1,24 @@
+"use client";
 import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
+import { useEffect } from "react";
 
 const AboutModal = ({ isOpen, onClose, title, children }) => {
-  if (isOpen) {
-    // Prevent body scroll when modal is open
-    document.body.style.overflow = "hidden";
-  } else {
-    // Restore body scroll when modal is closed
-    document.body.style.overflow = "unset";
-  }
+  useEffect(() => {
+    if (isOpen) {
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = "hidden";
+    } else {
+      // Restore body scroll when modal is closed
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup function to restore scroll when component unmounts
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   return (
     <AnimatePresence>

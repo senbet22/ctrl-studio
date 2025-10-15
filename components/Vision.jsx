@@ -1,29 +1,71 @@
+"use client";
+
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import React, { useState } from "react";
 import { motion } from "motion/react";
-import { teamData } from "@/assets/assets.mjs";
-import TeamMemberModal from "./modals/TeamMemberModal";
 
-const Vision = ({ theme }) => {
+const Vision = ({ dict }) => {
   return (
     <div
       className="w-full  min-h-svh max-w-6xl px-6 mx-auto  py-15 scroll-mt-20"
       id="vision"
     >
-      {" "}
-      <div className="flex flex-col justify-start items-start gap-6 my-10">
-        <p className="">
-          Ctrl-Studio, founded in 2024. A small team, driven by big goals.
-        </p>
+      <h2
+        className="mt-15 px-6 text-2xl sm:text-3xl text-transparent bg-clip-text 
+          bg-gradient-to-r from-45% from-primary to-secondary to-55%"
+      >
+        {dict.vision.title}
+      </h2>
+      {/* Mobile & Tablet: Image on top, description below */}
+      <div className="flex flex-col lg:hidden gap-6 my-10">
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className=""
+          className="w-full"
         >
           <Image
-            className="w-full max-w-md sm:max-w-lg md:max-w-2xl object-cover rounded-lg  transition-all duration-500 ease-in-out"
+            className="w-fit h-96 object-cover rounded-lg shadow-xl transition-all duration-500 ease-in-out"
+            src={assets.team_image}
+            alt="Team"
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="bg-gradient-to-br from-background to-secondary p-6 sm:p-8 rounded-br-2xl rounded-tl-2xl shadow-2xl"
+          style={{ marginTop: "-3%" }}
+        >
+          <p className="text-white text-base sm:text-lg leading-relaxed">
+            {dict.vision.description}
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Desktop: Overlapping layout */}
+      <div className="hidden lg:flex relative items-center justify-center my-10">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 bg-gradient-to-br from-background to-secondary p-10 rounded-br-2xl rounded-tl-2xl shadow-2xl w-full max-w-md md:h-[500px] flex items-center"
+          style={{ marginRight: "-3%" }}
+        >
+          <p className="text-foreground text-lg leading-relaxed">
+            {dict.vision.description}
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative z-0 flex-shrink-0"
+        >
+          <Image
+            className="w-full max-w-2xl md:h-[500px] object-cover rounded-lg shadow-xl transition-all duration-500 ease-in-out"
             src={assets.team_image}
             alt="Team"
           />

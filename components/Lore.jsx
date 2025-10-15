@@ -3,7 +3,7 @@ import Image from "next/image";
 import { EmblaCarousel } from "./carousel/EmblaCarousel";
 import { assets } from "@/assets/assets.mjs";
 
-const Lore = () => {
+const Lore = ({ dict }) => {
   return (
     <div
       id="lore"
@@ -27,9 +27,9 @@ const Lore = () => {
           className="mt-15 px-6 text-2xl sm:text-3xl text-transparent bg-clip-text 
           bg-gradient-to-r from-45% from-primary to-secondary to-55%"
         >
-          Lore
+          {dict.lore.title}
         </h2>
-        <EmblaCarousel />
+        <EmblaCarousel dict={dict} />
       </div>
     </div>
   );

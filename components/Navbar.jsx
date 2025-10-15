@@ -1,9 +1,12 @@
+"use client";
+import LanguageDropdown from "./buttons/LanguageDropdown";
+
 import { assets } from "@/assets/assets";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import SupportButton from "./buttons/SupportButton";
 
-const Navbar = () => {
+const Navbar = ({ dict }) => {
   const [isScroll, setIsScroll] = useState(false);
 
   const sideMenuRef = useRef();
@@ -46,34 +49,32 @@ const Navbar = () => {
         </a>
         <ul
           className={`hidden font-skranji text-lg md:flex items-center gap-6 lg:gap-8 
-        rounded-xl px-12 py-3 duration-500  shadow-black/40 ${
-          isScroll ? "" : "bg-gray-600/80"
-        }`}
+  rounded-xl px-12 py-3 duration-500  shadow-black/40 ${isScroll ? "" : "bg-gray-600/80"}`}
         >
           <li className="hover:text-primary duration-100">
-            <a href="#top">Home</a>
+            <a href="#top">{dict.nav.home}</a>
           </li>
           <li className="hover:text-primary duration-100">
-            <a href="#about">About</a>
+            <a href="#about">{dict.nav.about}</a>
           </li>
           <li className="hover:text-primary duration-100">
-            <a href="#lore">Lore</a>
+            <a href="#lore">{dict.nav.lore}</a>
           </li>
           <li className="hover:text-primary duration-100">
-            <a href="#vision">Vision</a>
+            <a href="#vision">{dict.nav.vision}</a>
           </li>
           <li className="hover:text-primary duration-100">
-            <a href="#team">Team</a>
+            <a href="#team">{dict.nav.team}</a>
           </li>
-
           <li className="hover:text-primary duration-100">
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">{dict.nav.contact}</a>
           </li>
+          <LanguageDropdown />
         </ul>
 
         <div className="hidden lg:flex items-center gap-3  ml-4 ">
           <a href="#support">
-            <SupportButton />
+            <SupportButton dict={dict} />
           </a>
         </div>
 
@@ -100,37 +101,37 @@ const Navbar = () => {
           </div>
           <li>
             <a onClick={closeMenu} href="#top">
-              Home
+              {dict.nav.home}
             </a>
           </li>
           <li>
             <a onClick={closeMenu} href="#about">
-              About
+              {dict.nav.about}
             </a>
           </li>
           <li>
             <a onClick={closeMenu} href="#lore">
-              Lore
+              {dict.nav.lore}
             </a>
           </li>
           <li>
             <a onClick={closeMenu} href="#vision">
-              Vision
+              {dict.nav.vision}
             </a>
           </li>
           <li>
             <a onClick={closeMenu} href="#team">
-              Team
+              {dict.nav.team}
             </a>
           </li>
           <li>
             <a onClick={closeMenu} href="#support">
-              Support Us
+              {dict.nav.support}
             </a>
           </li>
           <li>
             <a onClick={closeMenu} href="#contact">
-              Contact Us
+              {dict.nav.contact}
             </a>
           </li>
         </ul>

@@ -1,19 +1,17 @@
+"use client";
 import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect } from "react";
 
-const TeamMemberModal = ({ isOpen, onClose, member }) => {
+const TeamMemberModal = ({ isOpen, onClose, member, dict }) => {
   useEffect(() => {
     if (isOpen) {
-      // Prevent body scroll when modal is open
       document.body.style.overflow = "hidden";
     } else {
-      // Restore body scroll when modal is closed
       document.body.style.overflow = "unset";
     }
 
-    // Cleanup function
     return () => {
       document.body.style.overflow = "unset";
     };
@@ -61,7 +59,7 @@ const TeamMemberModal = ({ isOpen, onClose, member }) => {
               </button>
             </div>
 
-            <div className="p-6 overflow-y-auto h-full">
+            <div className="p-6 overflow-y-auto h-full pb-24">
               <div className="max-w-4xl mx-auto">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="w-full md:w-1/3">
@@ -73,11 +71,33 @@ const TeamMemberModal = ({ isOpen, onClose, member }) => {
                       className="w-full max-w-xs mx-auto md:max-w-full h-auto rounded-lg object-cover"
                     />
                   </div>
-                  <div className="md:w-2/3">
-                    <h2 className="text-xl text-primary mb-4">{member.role}</h2>
-                    <p className="text-foreground leading-relaxed">
-                      {member.background}
-                    </p>
+                  <div className="md:w-2/3 space-y-6">
+                    <div>
+                      <h2 className="text-xl text-primary mb-2">
+                        {member.role}
+                      </h2>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {member.background}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg text-primary mb-2">
+                        {dict.team.aboutHeading}
+                      </h3>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {member.detailedBio}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg text-primary mb-2">
+                        {dict.team.responsibilitiesHeading}
+                      </h3>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {member.responsibilities}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@
 import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";
 
-export default function PlayButton({ onPlay }) {
+export default function PlayButton({ onPlay, dict }) {
   return (
     <button
       onClick={onPlay}
@@ -15,7 +15,7 @@ export default function PlayButton({ onPlay }) {
         alt="Play Trailer Button"
         className="size-6 rotate-180"
       />{" "}
-      Play Trailer
+      {dict.header.play}
     </button>
   );
 }
