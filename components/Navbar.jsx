@@ -91,6 +91,10 @@ const Navbar = ({ dict }) => {
           className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64
         top-0 bottom-0 w-64 z-50 h-svh bg-secondary transition duration-500"
         >
+          {/* Language Dropdown (Top Left Corner) */}
+          <div className="absolute left-6 top-6">
+            <LanguageDropdown />
+          </div>
           {/* Close Mobile Menu Button */}
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image
