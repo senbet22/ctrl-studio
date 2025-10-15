@@ -1,4 +1,3 @@
-import { ovo, skranji } from "@/utils/fonts";
 import "./globals.css";
 
 export const metadata = {
@@ -7,13 +6,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body
-        className={`${skranji.variable} ${ovo.variable} font-skranji antialiased leading-8 overflow-x-hidden bg-background`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }

@@ -1,14 +1,16 @@
+"use client";
+
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
 
-const Contact = () => {
+const Contact = ({ dict }) => {
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult(dict.contact.form.sending);
     const formData = new FormData(event.target);
 
     formData.append("access_key", "739dbe93-6c2d-42ac-9bfd-21ead8d393bf");
@@ -21,7 +23,7 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Your Message Has Been Sent!");
+      setResult(dict.contact.form.success);
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -46,17 +48,16 @@ const Contact = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center text-4xl sm:text-5xl text-primary"
       >
-        Get in touch
+        {dict.contact.title}
       </motion.h2>
 
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 "
+        className="text-center max-w-2xl mx-auto mt-5 mb-12"
       >
-        If you have any questions, comments, or feedback, feel free to use the
-        form below.
+        {dict.contact.description}
       </motion.p>
 
       <motion.form
@@ -72,7 +73,7 @@ const Contact = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.1 }}
             type="text"
-            placeholder="Enter your name"
+            placeholder={dict.contact.form.namePlaceholder}
             required
             name="name"
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400
@@ -83,7 +84,7 @@ const Contact = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.1 }}
             type="email"
-            placeholder="Enter your email"
+            placeholder={dict.contact.form.emailPlaceholder}
             required
             name="email"
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400
@@ -95,9 +96,9 @@ const Contact = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.6 }}
           className="w-full p-4 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-background/70  mb-4"
+            rounded-md bg-background/70 mb-4"
           rows="6"
-          placeholder="Enter your message"
+          placeholder={dict.contact.form.messagePlaceholder}
           required
           name="message"
         ></motion.textarea>
@@ -110,13 +111,13 @@ const Contact = () => {
           type="submit"
           className="py-3 px-8 text-lg flex items-center justify-between font-skranji
           gap-2 bg-secondary/80 hover:bg-primary/70 shadow-sm shadow-gray-700 text-foreground 
-          rounded-full mx-auto cursor-pointer "
+          rounded-full mx-auto cursor-pointer"
         >
-          Send Message
+          {dict.contact.form.submitButton}
           <Image src={assets.right_arrow} alt="Right arrow" className="w-4" />
         </motion.button>
 
-        <p className="">{result}</p>
+        <p className="text-center mt-4">{result}</p>
       </motion.form>
     </motion.div>
   );

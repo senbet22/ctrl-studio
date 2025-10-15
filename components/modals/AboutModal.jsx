@@ -1,13 +1,30 @@
+"use client";
 import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
+import { useEffect } from "react";
 
-const Modal = ({ isOpen, onClose, title, children }) => {
+const AboutModal = ({ isOpen, onClose, title, children }) => {
+  useEffect(() => {
+    if (isOpen) {
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = "hidden";
+    } else {
+      // Restore body scroll when modal is closed
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup function to restore scroll when component unmounts
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   return (
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/40 bg-opacity-50"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-background/60"
           onClick={onClose}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -15,7 +32,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="bg-transparent rounded-lg shadow-xl w-full  h-full sm:my-10 max-w-6xl overflow-hidden backdrop-blur-sm"
+            className="bg-background/90 rounded-lg shadow-xl w-full  h-full sm:my-10 max-w-3xl overflow-hidden backdrop-blur-sm "
             onClick={(e) => e.stopPropagation()}
             onKeyDown={(e) => e.key === "Escape" && onClose()}
             tabIndex={-1}
@@ -43,7 +60,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
               </button>
             </div>
 
-            <div className="p-6 overflow-y-auto h-full">{children}</div>
+            <div className="p-2 overflow-y-auto h-full">{children}</div>
           </motion.div>
         </motion.div>
       )}
@@ -51,4 +68,4 @@ const Modal = ({ isOpen, onClose, title, children }) => {
   );
 };
 
-export default Modal;
+export default AboutModal;

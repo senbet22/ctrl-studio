@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "about": "Om Oss",
+    "lore": "Myter",
+    "vision": "Visjon",
+    "team": "Team",
+    "support": "Støtte",
+    "contact": "Kontakt"
+  },
+  "header": {
+    "title": "Skyggen fra",
+    "play": "Spill Trailer",
+    "trailerTitle": "Skyggen fra Ringholt - Trailer"
+  },
+  "about": {
+    "title": "Velkommen til skyggen fra Ringholt",
+    "intro": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender.",
+    "readMore": "Les Mer",
+    "modal": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender.",
+    "modal2": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender.",
+    "modal3": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender. Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender."
+  },
+  "lore": {
+    "title": "Myter",
+    "characters": [
+      {
+        "name": "Tyri",
+        "quote": "For nysgjerrig til å holde seg unna farlige situasjoner, oppfinnsom nok til å komme seg ut av dem før alt går ned skrenta - Brage Tornebukk",
+        "story": "Tyri er tenåring. Han har flammerødt hår og kan mye for alderen. Til tross for slitet for tilværelsen på Månetun som har gjort ham sterk og seig, har han en evig tørst for å oppdage alt som er nytt og annerledes. Tyri er lojal mot dem han er glad i, og beskytter sine nærmeste med en brennende ild i hjertet. Når han blir sint er det nesten som om flammene rundt ham blusser opp, og mor hans sier at han må ha seidens krefter flytende i årene."
+      },
+      {
+        "name": "Draupne",
+        "quote": "Gutten har en saivo med seg, det er ikke vanskelig å se -Drifa Čearga",
+        "story": "Det finnes ånder knyttet til hellige fjell fra seidens verden, og slike kalles for saivo. Da Tyri forvillet seg inn i en hule dypt inne i fjellet under Månetun og ikke kunne finne veien ut igjen, fant han en vakker opalstein fra oldtiden. Det var nok en av Magmes tårer han fant, for da han tok på den var krafta så sterk at han ble slått i svime. Da han senere våknet sto han ansikt til ansikt med en saivo som hadde vært innelåst i steinen. Tyri ble først redd, men følte seg av en eller annen grunn knyttet til skapningen. Ånden fortalte at den het Draupne, og tilbudte seg å hjelpe Tyri. Sammen fant de veien ut, og slik var det at Tyri fikk en saivo som følgesvenn."
+      },
+      {
+        "name": "Drifa Čearga",
+        "quote": "Vi ble angrepet uten varsel, i en tåke så tjukk som leire",
+        "story": "Skrekken på Nidingfar, båtsvelteren, heksa fra Brimhall. Drifa Čearga har mange navn langs Askefjorden, hvor mange av ryktene som er fortjente, er usikkert. Det som er sikkert er at det er få ting jarlens menn frykter mer enn å se noaidekvinnen med det lange hvite håret komme glidende ut av tåka, stille som en snøugle. Nidingfar heter båten hennes, og den hornkledde hodeskallen til et fjelltroll pryder båtens baug. I årevis har vikingpiraten vært en torn i sida for Jarl Olav Beinlause, og tross hans overlegne militærmakt, forsvinner alltid piratene i en tåke som ingen mann kan orientere seg i. En våpenhvile har heldigvis funnet sted, og Brimhall som en gang var et samlested for kriminelle og utstøtte, har under Drifa blitt et veldisiplinert militærfort nord i Gastahav."
+      },
+      {
+        "name": "Vikmark",
+        "quote": "Du skal ikke ferdes langt inn i skogen fra Viksund før villmarka tar over. Folk, om man så kan kalle dem det, som bor der, er enten på flukt fra loven, eller er hardføre villmenn uten mannerer. -V. Vinterstoge (Året herse Olaf fødtes), s 30, Trygge stier langs Askefjorden",
+        "story": "Vikmark er territoriet knyttet til Viksund, den andre største bosetningen langs Askefjorden etter Askahorn. Viksund ligger ved fjorden, og byens økonomi drives i hovedsak fremover av verftsvirksomhet og eksport av tømmer. Sistnevnte hentes fra det langstrekte skogsområdet som strekker seg vestover fra fjorden og inn i dalføret, til der fjellet starter. Skogene er gamle og dype, og mange mener at de drar unaturlig kraft fra vulkanene i tundralandskapet lenger vest. Det er tross alt kjent at ildkjempen Magme ligger begravd dypt i Jorda, og der hvor vulkanene bor, er Magmes energi sterkest."
+      },
+      {
+        "name": "Månetun",
+        "quote": "Skogene er dype her, og fjellene stikker opp som rustne knokejern. Elva er dyp og nådeløs, og på kvelden, eller når det har regnet, ligger Kvalupaliken og lurer ved elvebunnen. Selv i en magnetittbåt er det vanskelig å holde seg over vannet. Men det er vakkert. En slags dyp og magisk skjønnhet som kun kan sees når du har vært borte fra folk over lengre tid. -Agnar Månetun",
+        "story": "I det dype elvelandskapet som former Gastahavs nordre skoger, langt fra byen Viksunds travle hverdag, rett før skogen begynner å gi slipp for fjellet, ligger det en gård. Gårdshuset er slitent og værbitt der det står blant hvitveis og myrull, og selv om huset ligger i skyggen av store grantrær om dagen, bades det i månens sølvskinn om nettene. Derfor heter gården Månetun"
+      },
+      {
+        "name": "Seid",
+        "quote": "Og det var med sine trylleteiner at noaidene fra Stoggeselet løftet isfjellet opp fra vannet, der det ble bundet med store kjettinger, dersom Isengrim skulle trenge gjennom passet under isen. S. Alfarrson (året Toke Hjelmholt arvet Nevgilde), s12, Ferdalok: Syv år i fred",
+        "story": "Det finnes trolldom i Fjorgvin, og Viksunds dype skoger holder på gamle hemmeligheter. En gang i tiden, lenge før menneskenes tid, var det naturens guder som regjerte. Først var det steinkjempene Magme og Sedimus som kriget i tusen år, og senere Haefmar, forrådt av solgudinnen Beaivvi, som oversvømte jorda med blodet sitt. Historiene er mange, men én ting er sikkert, det eksisterer fortsatt krefter, magi som kan temmes av de som har gaven. Denne magien kalles seid, og er like farlig som den kan være nyttig. For selv om mange har prøvd gjennom tidene, er det vel ingen som egentlig kan kontrollere naturen."
+      }
+    ]
+  },
+  "vision": {
+    "title": "Visjon",
+    "description": "Vi tror de beste historiene har allerede blitt fortalt, de trenger bare å oppleves på en ny måte. Som et lite norsk studio jobber vi med Shadows from Ringholt, et spill som bringer gamle myter og folkeeventyr til live. Visjonen vår er enkel: ære historiene som formet oss, og skape en opplevelse der legender blir spillbare. Vi er her for å fortelle en historie verdt å huske."
+  },
+  "team": {
+    "title": "Teamet",
+    "aboutHeading": "Om",
+    "responsibilitiesHeading": "Ansvarsområder",
+    "members": [
+      {
+        "role": "Forfatter / Produksjonsdesigner",
+        "alt": "Teammedlem Portrett",
+        "background": "Kombinerer bakgrunn innen musikk, historiefortelling og design med en grad i 3D-animasjon og spilldesign.",
+        "readMore": "Les Mer",
+        "detailedBio": "Magnus bringer en unik blanding av kreative disipliner til teamet. Med mange års erfaring innen musikkkomposisjon og historiefortelling, skaper han narrativer som resonnerer dypt med spillere. Hans ekspertise innen produksjonsdesign sikrer at hvert visuelt element tjener historien, mens hans tekniske ferdigheter i 3D-animasjon og spilldesign hjelper til med å bygge bro mellom kunstnerisk visjon og teknisk utførelse.",
+        "responsibilities": "Ansvarlig for narrativ design, verdenbygging og visuell estetikk i Shadows from Ringholt."
+      },
+      {
+        "role": "Designsjef",
+        "alt": "Teammedlem Portrett",
+        "background": "Har erfaring med tegning, 3D-animasjon og UX-design, med en grad i 3D-animasjon og spilldesign.",
+        "readMore": "Les Mer",
+        "detailedBio": "Carolines kunstneriske reise spenner fra tradisjonell tegning til banebrytende 3D-animasjon. Hennes skarpe øye for brukeropplevelse sikrer at hver interaksjon i spillet føles intuitiv og engasjerende. Hun leder designteamet med fokus på å skape visuelt fantastiske miljøer som er både vakre og funksjonelle.",
+        "responsibilities": "Har oversikt over alle designaspekter, fra karakterdesign til miljøkunst og brukergrensesnitt."
+      },
+      {
+        "role": "Utviklingssjef",
+        "alt": "Teammedlem Portrett",
+        "background": "Erfaren utvikler og tidligere lead på et spill med over 4 millioner solgte eksemplarer, underviser nå i 3D-animasjon og spilldesign.",
+        "readMore": "Les Mer",
+        "detailedBio": "Davids imponerende merittliste inkluderer å lede utviklingen av et kommersielt vellykket spill med over 4 millioner solgte eksemplarer. Hans tekniske ekspertise og ledererfaring gjør ham uvurderlig for teamet. Utover sitt arbeid i studioet deler han sin kunnskap ved å undervise neste generasjon spillutviklere.",
+        "responsibilities": "Leder teknisk utvikling, motoroptimalisering og sikrer at spillet kjører jevnt på alle plattformer."
+      }
+    ]
+  },
+  "support": {
+    "title": "Hold Deg Oppdatert",
+    "benefits": [
+      "Tidlig tilgang til spilltesting",
+      "De nyeste oppdateringene",
+      "Eksklusivt innhold og sniktitter",
+      "Samfunnsarrangementer"
+    ],
+    "discord": "Bli med på Discord-serveren vår:"
+  },
+  "contact": {
+    "title": "Ta kontakt",
+    "description": "Hvis du har spørsmål, kommentarer eller tilbakemeldinger, er du velkommen til å bruke skjemaet nedenfor.",
+    "form": {
+      "namePlaceholder": "Skriv inn ditt navn",
+      "emailPlaceholder": "Skriv inn din e-post",
+      "messagePlaceholder": "Skriv inn din melding",
+      "submitButton": "Send Melding",
+      "sending": "Sender....",
+      "success": "Meldingen din har blitt sendt!"
+    }
+  },
+  "footer": {
+    "description": "Ctrl Studio er en vennegjeng fra Norge på oppdrag for å skape vårt drømmespill og dele det med verden.",
+    "explore": "UTFORSK",
+    "home": "Hjem",
+    "about": "Om Oss",
+    "team": "Teamet",
+    "contact": "Kontakt Oss",
+    "support": "Støtt Oss",
+    "getintouch": "KONTAKT OSS",
+    "email": "ctrlstudio.as@gmail.com",
+    "copyright": "Opphavsrett 2025 © Ctrl Studio - Alle rettigheter reservert.",
+    "by": "laget av Senbet.G"
+  }
+}
