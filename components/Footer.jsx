@@ -73,7 +73,7 @@ const Footer = ({ dict }) => {
             {dict.footer.copyright}
           </p>
 
-          <div className="flex justify-center text-sm py-4 items-center">
+          <div className="flex justify-center text-xs py-4 items-center">
             {dict.footer.by}
             <svg
               xmlns="http://www.w3.org/2000/svg"
