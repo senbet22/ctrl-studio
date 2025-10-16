@@ -49,12 +49,17 @@ const Support = ({ dict }) => {
         </div>
 
         {/* Content below */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-10">
-          <div className="">
+        <div className="flex flex-col sm:flex-row items-center gap-6 mt-10">
+          <div className="relative group">
+            <div
+              className="absolute inset-0 bg-gradient-to-br from-secondary via-pink-400 to-yellow-300 
+                  opacity-50 blur-2xl rounded-3xl group-hover:opacity-80 transition-all duration-500"
+            ></div>
             <Image
               src={assets.art_2}
               alt="Game Artwork"
-              className="max-w-[200px] md:max-w-[260px]"
+              className="relative max-w-[200px] md:max-w-[260px] rounded-2xl shadow-lg 
+               group-hover:scale-105 transition-all duration-500"
             />
           </div>
 
@@ -77,7 +82,7 @@ const Support = ({ dict }) => {
         </div>
 
         <div className="mt-15">
-          <p className="text-primary flex gap-6 font-ovo text-lg my-2 mx-auto">
+          <p className="text-primary flex gap-6 font-ovo text-lg sm:text-xl my-2 px-2 mx-auto">
             {dict.support.discord}
             <Image
               src={assets.discord_icon}

@@ -9,6 +9,7 @@ import Support from "@/components/Support";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Vision from "@/components/Vision";
+import BackToTopButton from "@/components/routing/BackToTopButton";
 
 export default async function Home({ params }) {
   const { lang } = await params;
@@ -16,6 +17,7 @@ export default async function Home({ params }) {
 
   return (
     <>
+      <BackToTopButton />
       <Navbar dict={dict} lang={lang} />
       <Header dict={dict} lang={lang} />
       <About dict={dict} lang={lang} />
