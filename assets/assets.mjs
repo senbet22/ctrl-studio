@@ -13,12 +13,9 @@ import insta_icon from "./insta-icon.png";
 import youtube_icon from "./youtube-icon.png";
 import right_arrow from "./right-arrow.png";
 import arrow_btn from "./arrow-btn.png";
-import avatar_one from "./gamecharacter.png";
-import avatar_two from "./gamecharacter-2.png";
-import avatar_three from "./gamecharacter-3.png";
 import check_icon from "./check-icon.png";
 import arrow_up_icon from "./arrow-up-icon.svg";
-import tyri from "./tyri.png";
+import månetun from "./månetun.webp";
 
 // Portraits
 import magnus from "./portrait-magnus.png";
@@ -42,12 +39,9 @@ export const assets = {
   youtube_icon,
   right_arrow,
   arrow_btn,
-  avatar_one,
-  avatar_two,
-  avatar_three,
   team_image,
   arrow_up_icon,
-  tyri,
+  månetun,
   check_icon,
 };
 
@@ -69,10 +63,10 @@ export const teamMembers = [
 
 // Lore section Avatars
 export const avatars = {
-  Tyri: assets.avatar_one,
-  Draupne: assets.avatar_one,
-  "Drifa Čearga": assets.avatar_two,
-  Vikmark: assets.avatar_three,
-  Månetun: assets.avatar_three,
-  Seid: assets.avatar_three,
+  Tyri: assets.månetun,
+  Draupne: assets.månetun,
+  "Drifa Čearga": assets.månetun,
+  Vikmark: assets.månetun,
+  Månetun: assets.månetun,
+  Seid: assets.månetun,
 };

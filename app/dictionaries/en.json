@@ -46,8 +46,8 @@
       },
       {
         "name": "Månetun",
-        "quote": "The forests are deep here, and the mountains rise like rusty knuckles. The river is deep and relentless, and in the evening or after it has rained, the Kvalupalik lurks by the riverbed. Even in a magnetite boat it is hard to stay afloat. But it is beautiful. A kind of deep and magical beauty that can only be seen when you have been away from people for a long time - Agnar Månetun",
-        "story": "In the deep river landscape shaping Gastahav's northern forests, far from Viksund's busy town life, just before the forest gives way to the mountains, there is a farm. The farmhouse is worn and weathered, standing among wood anemones and cotton grass, and although it lies in the shade of tall spruces during the day, it bathes in the moon's silver light at night. Hence the farm is called Månetun."
+        "quote": "The forests are deep here, and the mountains rise like rusty knuckles. The river is deep and relentless, and in the evening, or when it has rained, the Kvalupalik lurks by the riverbed. Even in a magnetite boat it is hard to stay afloat. But it is beautiful. A kind of deep and magical beauty that can only be seen when you have been away from people for a long time. -Agnar Månetun",
+        "story": "In the deep river landscape shaping Gastahav's northern forests, far from the busy everyday life of the town of Viksund, just before the forest begins to give way to the mountains and snow, there lies a farm. The farmhouse is worn and weathered where it stands among wood anemones and cotton grass, and although the house lies in the shadow of mountains and tall spruces during the day, it bathes in sunset and the moon's silver light. Therefore the farm is called Månetun."
       },
       {
         "name": "Seid",
@@ -99,7 +99,7 @@
       "Exclusive content and sneak peeks",
       "Community events"
     ],
-    "discord": "Join Our Discord Server:"
+    "discord": "Join Our Discord Server!"
   },
   "contact": {
     "title": "Get in touch",
