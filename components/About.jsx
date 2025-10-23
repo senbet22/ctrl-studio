@@ -55,7 +55,7 @@ const About = ({ dict }) => {
           <div>
             <Image
               className="max-w-[300px] object-contain w-fit rounded-full"
-              src={assets.tyri}
+              src={assets.månetun}
               alt="Tyri character"
             />
           </div>

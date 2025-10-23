@@ -3,7 +3,6 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
-import SubscribeInput from "./SubscribeInput";
 import { motion } from "motion/react";
 
 const Support = ({ dict }) => {
@@ -27,7 +26,7 @@ const Support = ({ dict }) => {
           {/* Title */}
           <h1
             className="text-2xl md:text-3xl text-transparent bg-clip-text 
-            bg-gradient-to-r from-45% from-primary to-secondary to-55% text-center"
+            bg-gradient-to-r from-45% from-primary to-secondary to-55% text-center px-2"
           >
             {dict.support.title}
           </h1>
@@ -81,9 +80,17 @@ const Support = ({ dict }) => {
           </div>
         </div>
 
-        <div className="mt-15">
-          <p className="text-primary flex gap-6 font-ovo text-lg sm:text-xl my-2 px-2 mx-auto">
+        <div className="mt-15 flex flex-col gap-6 my-2 px-2 mx-auto">
+          <p className="text-primary font-ovo text-lg sm:text-xl ">
             {dict.support.discord}
+          </p>
+          <a
+            href="https://discord.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-2 hover:text-secondary transition-all ease-in-out"
+          >
+            _Discord-server-Name_
             <Image
               src={assets.discord_icon}
               className=""
@@ -91,7 +98,7 @@ const Support = ({ dict }) => {
               width={30}
               height={30}
             />
-          </p>
+          </a>
         </div>
       </div>
     </div>
