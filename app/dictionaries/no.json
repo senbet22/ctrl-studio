@@ -9,56 +9,64 @@
     "contact": "Kontakt"
   },
   "header": {
-    "title": "Skyggen fra",
+    "title": "Gastahav: Skyggen fra",
     "play": "Spill Trailer",
     "trailerTitle": "Skyggen fra Ringholt - Trailer"
   },
   "about": {
-    "title": "Velkommen til skyggen fra Ringholt",
-    "intro": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender.",
+    "title": "Velkommen til Gastahav: Skyggen fra Ringholt",
+    "introSections": [
+      "Gastahav: Skyggen fra Ringholt er et historiedrevet RPG satt i en verden smeltet sammen av folkehistorier. Klare toner fra samisk og norrøn mytologi viser seg, og resultatet er en levende, håndlaget nordisk historie. Gjennom ild, tåke og et mystisk elvelandskap, venter en verden formet av elementenes kraft og oldtidens guder.",
+      "Du spiller som Tyri Månetun - en gutt bundet til en magisk ånd, en Saivo ved navnet Draupne, som bare han kan se. Sammen må de gjennom harde prøvelser, der Tyri mister sin retning i livet. For å overleve blir han en del av en bande med utstøtte vikinger."
+    ],
     "readMore": "Les Mer",
-    "modal": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender.",
-    "modal2": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender.",
-    "modal3": "Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender. Bli med Tyri på et episk eventyr for å avdekke hva som skjuler seg i skyggene i Ringholt, der eldgamle hemmeligheter hvisker mellom frostdekte furutrær og eteriske lys danser over stjerneklar himmel. Som en ung gjeter med en mystisk forbindelse til åndeverdenen må han navigere gjennom farlig villmark og møte skapninger født av glemte legender."
+    "modal": "Tyris sti er vanskelig og krunglete, men Draupne hjelper ham, og sammen temmer de mytiske skapninger som hjelper dem på ferden. Men i Tyris blod strømmer oldtidens seid - gammel magi så kraftig at han kan få ilden til å lystre sin vilje, så lenge han ikke selv brenner opp i hetens kaos. Han trenger en veiviser, før de nyvunnede kreftene fortærer ham. Fortellingen om Tyri og Draupne er en om å bli kastet på svart is i en kamp for tilværelsen. Det er en historie om venner, traumer, tid og menneskets natur.",
+    "verdenTitle": "Verden",
+    "verden": "Langt mot nord i menneskets rike Fjorgvin, der havet møter himmelen, langt ute på havet bak skodda og fjerne skjær, reiser den kolossale isbreen Stor Klakkiir seg som en portvokter mellom verdener. Stor Klakkiir vokter inngangen til Gastahav, verdens største og rikeste fjord. Et land innhyllet i tåke, hjemmet til Askefolket - mennesker som taler med vinden og lever av havet. Vandrifolket, som gjeter sine hvite bison over fjellet Douttar. Gastahav, et land fylt med gamle løfter og glemte guder, med en historie så dyp og stormfull at selv isporten som omkranser landets grenser, nødig kunne holdt den fanget. Tvilsomme sagn og skrøner ryktes på tvers av Fjorgvin i de sene timene. I vertshus med brennende oljelamper beretter seilere og vandringsmenn sagaen om landet bak isen. Mange har lett etter det. Seilere som ikke kunne veien mellom harde rev og dype isfjell dekorerer nå havbunnen med sine leende hodeskaller og forliste skip. Her voktes både myter og folk av naturen selv, for gudene har ikke glemt Gastahav. Og Gastahav tar ingen fanger."
   },
   "lore": {
     "title": "Myter",
     "characters": [
       {
-        "name": "Tyri",
-        "quote": "For nysgjerrig til å holde seg unna farlige situasjoner, oppfinnsom nok til å komme seg ut av dem før alt går ned skrenta - Brage Tornebukk",
-        "story": "Tyri er tenåring. Han har flammerødt hår og kan mye for alderen. Til tross for slitet for tilværelsen på Månetun som har gjort ham sterk og seig, har han en evig tørst for å oppdage alt som er nytt og annerledes. Tyri er lojal mot dem han er glad i, og beskytter sine nærmeste med en brennende ild i hjertet. Når han blir sint er det nesten som om flammene rundt ham blusser opp, og mor hans sier at han må ha seidens krefter flytende i årene."
+        "name": "Tyri Månetun",
+        "quote": "“For nyskgjerrig til å holde seg unna farlige situasjoner, oppfinnsom nok til å komme seg ut av dem før alt går ned skrenta” - Brage Tornebukk",
+        "story": "Tyri er tenåring. Han har flammerødt hår og kan mye for alderen. Til tross for slitet for tilværelsen på Månetun som har gjort ham sterk og seig, har han en evig tørst for å oppdage alt som er nytt og annerledes. Tyri er lojal mot dem han er glad i, og beskytter sine nærmeste med en brennende ild i hjertet. Når han blir sint er det nesten som om flammene rundt ham blusser opp, og mora hans sier at han må ha seidens krefter flytende i årene."
       },
       {
         "name": "Draupne",
-        "quote": "Gutten har en saivo med seg, det er ikke vanskelig å se -Drifa Čearga",
-        "story": "Det finnes ånder knyttet til hellige fjell fra seidens verden, og slike kalles for saivo. Da Tyri forvillet seg inn i en hule dypt inne i fjellet under Månetun og ikke kunne finne veien ut igjen, fant han en vakker opalstein fra oldtiden. Det var nok en av Magmes tårer han fant, for da han tok på den var krafta så sterk at han ble slått i svime. Da han senere våknet sto han ansikt til ansikt med en saivo som hadde vært innelåst i steinen. Tyri ble først redd, men følte seg av en eller annen grunn knyttet til skapningen. Ånden fortalte at den het Draupne, og tilbudte seg å hjelpe Tyri. Sammen fant de veien ut, og slik var det at Tyri fikk en saivo som følgesvenn."
+        "quote": "“Gutten har en saivo med seg, det er ikke vanskelig å se” -Drifa Čearga",
+        "story": "Det finnes ånder knyttet til hellige fjell fra seidens verden, og slike kalles for saivo. Da Tyri forvillet seg inn i en hule dypt inne i fjellet under Månetun og ikke kunne finne veien ut igjen, fant han en vakker opalstein fra oldtiden. Det var nok en av Magmes tårer han fant, for da han tok på den var krafta så sterk at han ble slått i svime. Da han senere våknet sto han ansikt til ansikt med en saivo som hadde vært innelåst i steinen. Tyri ble først redd, men følte seg av en eller annen grunn knyttet til skapningen. Ånden husket ikke hvem den var, eller hvorfor den var der, men fortalte at den het Draupne, og tilbudte seg å hjelpe Tyri. Sammen fant de veien ut, og slik var det at Tyri fikk en saivo som følgesvenn."
       },
       {
         "name": "Drifa Čearga",
-        "quote": "Vi ble angrepet uten varsel, i en tåke så tjukk som leire",
+        "quote": "“Vi ble angrepet uten varsel, i en tåke så tjukk som leire” -Byrdingkaptein fra Viksund",
         "story": "Skrekken på Nidingfar, båtsvelteren, heksa fra Brimhall. Drifa Čearga har mange navn langs Askefjorden, hvor mange av ryktene som er fortjente, er usikkert. Det som er sikkert er at det er få ting jarlens menn frykter mer enn å se noaidekvinnen med det lange hvite håret komme glidende ut av tåka, stille som en snøugle. Nidingfar heter båten hennes, og den hornkledde hodeskallen til et fjelltroll pryder båtens baug. I årevis har vikingpiraten vært en torn i sida for Jarl Olav Beinlause, og tross hans overlegne militærmakt, forsvinner alltid piratene i en tåke som ingen mann kan orientere seg i. En våpenhvile har heldigvis funnet sted, og Brimhall som en gang var et samlested for kriminelle og utstøtte, har under Drifa blitt et veldisiplinert militærfort nord i Gastahav."
       },
       {
         "name": "Vikmark",
-        "quote": "Du skal ikke ferdes langt inn i skogen fra Viksund før villmarka tar over. Folk, om man så kan kalle dem det, som bor der, er enten på flukt fra loven, eller er hardføre villmenn uten mannerer. -V. Vinterstoge (Året herse Olaf fødtes), s 30, Trygge stier langs Askefjorden",
-        "story": "Vikmark er territoriet knyttet til Viksund, den andre største bosetningen langs Askefjorden etter Askahorn. Viksund ligger ved fjorden, og byens økonomi drives i hovedsak fremover av verftsvirksomhet og eksport av tømmer. Sistnevnte hentes fra det langstrekte skogsområdet som strekker seg vestover fra fjorden og inn i dalføret, til der fjellet starter. Skogene er gamle og dype, og mange mener at de drar unaturlig kraft fra vulkanene i tundralandskapet lenger vest. Det er tross alt kjent at ildkjempen Magme ligger begravd dypt i Jorda, og der hvor vulkanene bor, er Magmes energi sterkest."
+        "quote": "“Du skal ikke ferdes langt inn i skogen fra Viksund før villmarka tar over. Folk, om man så kan kalle dem det, som bor der, er enten på flukt fra loven, eller er hardføre villmenn uten mannerer.” -V. Vinterstoge (Året herse Olaf fødtes), s 30, Trygge stier langs Askefjorden.",
+        "story": "Vikmark er territoriet knyttet til Viksund, den andre største bosetningen langs Askefjorden etter Askahorn. Viksund ligger ved fjorden, og byens økonomi drives i hovedsak fremover av verftsvirksomhet og eksport av tømmer. Sistnevnte hentes fra det langstrekte skogsområdet som strekker seg vestover fra fjorden og inn i dalføret, til der fjellet starter. Ask, alm og millioner av nåletrær strekker seg innover. Skogene er gamle og dype, og mange mener at de drar unaturlig kraft fra vulkanene i tundralandskapet lenger vest. Det er tross alt kjent at ildkjempen Magme ligger begravd dypt i Jorda, og der hvor vulkanene bor, er Magmes energi sterkest."
       },
       {
         "name": "Månetun",
-        "quote": "Skogene er dype her, og fjellene stikker opp som rustne knokejern. Elva er dyp og nådeløs, og på kvelden, eller når det har regnet, ligger Kvalupaliken og lurer ved elvebunnen. Selv i en magnetittbåt er det vanskelig å holde seg over vannet. Men det er vakkert. En slags dyp og magisk skjønnhet som kun kan sees når du har vært borte fra folk over lengre tid. -Agnar Månetun",
+        "quote": "“Skogene er dype her, og fjellene stikker opp som rustne knokejern. Elva er dyp og nådeløs, og på kvelden, eller når det har regnet, ligger Kvalupaliken og lurer ved elvebunnen. Selv i en magnetittbåt er det vanskelig å holde seg over vannet. Men det er vakkert. En slags dyp og magisk skjønnhet som kun kan sees når du har vært borte fra folk over lengre tid.“ -Agnar Månetun",
         "story": "I det dype elvelandskapet som former Gastahavs nordre skoger, langt fra byen Viksunds travle hverdag, rett før skogen begynner å gi slipp for fjellet og snøen, ligger det en gård. Gårdshuset er slitent og værbitt der det står blant hvitveis og myrull, og selv om huset ligger i skyggen av fjell og store grantrær om dagen, bades det i solnedgang og månens sølvskinn. Derfor heter gården Månetun."
       },
       {
         "name": "Seid",
-        "quote": "Og det var med sine trylleteiner at noaidene fra Stoggeselet løftet isfjellet opp fra vannet, der det ble bundet med store kjettinger, dersom Isengrim skulle trenge gjennom passet under isen. S. Alfarrson (året Toke Hjelmholt arvet Nevgilde), s12, Ferdalok: Syv år i fred",
+        "quote": "“Og det var med sine trylleteiner at noaidene fra Stoggeselet løftet isfjellet opp fra vannet, der det ble bundet med store kjettinger, dersom Isengrim skulle trenge gjennom passet under isen.” -S. Alfarrson (året Toke Hjelmholt arvet Nevgilde), s12, Ferdalok: Syv år i fred",
         "story": "Det finnes trolldom i Fjorgvin, og Viksunds dype skoger holder på gamle hemmeligheter. En gang i tiden, lenge før menneskenes tid, var det naturens guder som regjerte. Først var det steinkjempene Magme og Sedimus som kriget i tusen år, og senere Haefmar, forrådt av solgudinnen Beaivvi, som oversvømte jorda med blodet sitt. Historiene er mange, men én ting er sikkert, det eksisterer fortsatt krefter, magi som kan temmes av de som har gaven. Denne magien kalles seid, og er like farlig som den kan være nyttig. For selv om mange har prøvd gjennom tidene, er det vel ingen som egentlig kan kontrollere naturen."
       }
     ]
   },
   "vision": {
-    "title": "Visjon",
-    "description": "Vi tror de beste historiene har allerede blitt fortalt, de trenger bare å oppleves på en ny måte. Som et lite norsk studio jobber vi med Shadows from Ringholt, et spill som bringer gamle myter og folkeeventyr til live. Visjonen vår er enkel: ære historiene som formet oss, og skape en opplevelse der legender blir spillbare. Vi er her for å fortelle en historie verdt å huske."
+    "title": "Vår Visjon",
+    "article": [
+      "I norrøn mytologi vokter fruktbarhetsgudinnen Iðunn de gyldne eplene som holder gudene unge - symbolet på fornyelse, livskraft og kulturens evne til å overleve. I den vestlige mytologien finnes et annet eple: Edens eple - frukten som førte til fallet, men også til bevissthet og ny begynnelse.",
+      "I Ctrl Studio ser vi verdien i begge. Der Edens eple står for nysgjerrighetens pris, står Iðunns eple for evnen til å fornye det gamle. Det er en sentral del av vår tankegang at vi ikke vil stå fast i å gjenfortelle gamle historier på nytt, men heller skape nye historier i krysningspunktet mellom godt kjente farvann og nye ideer. Her vil vi stå. I spennet mellom arv og oppfinnelse, mellom røtter og risiko.",
+      "Gastahav: Skyggen fra Ringholt er vårt første steg i å realisere drømmen om å gi den nordiske kulturarven nye former, nye stemmer og nytt liv. Et nordisk eventyr om mennesker, natur og forandring, gir en påminnelse om at kultur ikke er et museum, men et levende landskap, alltid i endring. Etter tre år med universbygging, dypdykking i litteratur og historie, falt Skyggen fra Ringholt ned i våre hender som et av Iðunns epler - noe kjent og kjært, med en ungdommelig flamme.",
+      "Med en slik mytologi på skuldrene blir følgelig nærhet til naturen et fokus for spillet vi produserer. Samtidig dukker noen spørsmål opp. Hva er egentlig menneskets natur, og kan vi endre oss om vi strever for det? Uansett hva svaret blir, finnes det et sted der gammelt og nytt møtes, der Iðunn og Eden deler hver sin halvdel av et forlokkende eple. Nå skjer det i Gastahav."
+    ]
   },
   "team": {
     "title": "Teamet",
@@ -66,28 +74,34 @@
     "responsibilitiesHeading": "Ansvarsområder",
     "members": [
       {
-        "role": "Forfatter / Produksjonsdesigner",
+        "role": "Kreativ leder og komponist",
         "alt": "Teammedlem Portrett",
         "background": "Kombinerer bakgrunn innen musikk, historiefortelling og design med en grad i 3D-animasjon og spilldesign.",
         "readMore": "Les Mer",
-        "detailedBio": "Magnus bringer en unik blanding av kreative disipliner til teamet. Med mange års erfaring innen musikkkomposisjon og historiefortelling, skaper han narrativer som resonnerer dypt med spillere. Hans ekspertise innen produksjonsdesign sikrer at hvert visuelt element tjener historien, mens hans tekniske ferdigheter i 3D-animasjon og spilldesign hjelper til med å bygge bro mellom kunstnerisk visjon og teknisk utførelse.",
-        "responsibilities": "Ansvarlig for narrativ design, verdenbygging og visuell estetikk i Shadows from Ringholt."
+        "detailedBio": [
+          "For meg har det alltid vært så vanskelig å lande på én ting, og hvorfor skal man det egentlig? Det er så mange interessante ting å gjøre i vår verden. Musikk å lytte til, kunst å iaktta. Det finnes bøker, filmer, spill, utrolige universer, hver av dem et voksende slott der utallige mennesker hver dag bidrar med sin egen byggestein. Jeg har prøvd å begrense meg, helt til jeg innså at jeg faktisk kan dykke inn i hva jeg vil, skrive hva jeg vil, tegne hva jeg vil! Og dersom jeg legger sjela mi i det,  kanskje det finnes andre som føler på akkurat det jeg prøver å få tak i. På tvers av mediene tror jeg det finnes én fellesnevner som gir alle åndsverk verdi: det er kvaliteten på historien som fortelles. Og det er dette som drar meg inn.",
+          "Jeg tror dataspill på mange måter er den ultimate medieplattformen for kreativ utfoldelse. Med det interaktive elementet spill byr på er det også en plattform hvor spillere kan få uttrykke seg, og det er der jeg finner gleden i å drive med det jeg gjør."
+        ]
       },
       {
-        "role": "Designsjef",
+        "role": "Prosjektleder og Designer",
         "alt": "Teammedlem Portrett",
         "background": "Har erfaring med tegning, 3D-animasjon og UX-design, med en grad i 3D-animasjon og spilldesign.",
         "readMore": "Les Mer",
-        "detailedBio": "Carolines kunstneriske reise spenner fra tradisjonell tegning til banebrytende 3D-animasjon. Hennes skarpe øye for brukeropplevelse sikrer at hver interaksjon i spillet føles intuitiv og engasjerende. Hun leder designteamet med fokus på å skape visuelt fantastiske miljøer som er både vakre og funksjonelle.",
-        "responsibilities": "Har oversikt over alle designaspekter, fra karakterdesign til miljøkunst og brukergrensesnitt."
+        "detailedBio": [
+          "Hvordan kan enkelte farger og lys påvirke humøret vårt? Hvorfor er få ting så lett å nyte som formen til en perfekt tekopp, med lukten av trekkende urter og krydder? Hva er det som fascinerer meg med ventilasjonsvifter, der de henger på husvegger og utrøttelig forsyner folk med ren luft? Det tok meg flere år å forstå at jeg ikke alltid måtte ha en forklaring på hvorfor noe gledet meg for å akseptere nettopp dette, og kanskje var det ikke før jeg pustet ut og virkelig tok innover meg tingenes design at jeg forsto det.",
+          "For designet er i alt rundt oss, formen på regndråpene som faller fra himmelen, prestekragene som svaier i vinden på en varm sommerdag, eller på den gamle cd-spilleren min der den står på en hylle for seg selv. Designet forteller en historie, og jeg tror at vi mennesker lærer best ved å fortelle hverandre historier. Derfor ligger det et enormt potensial i den kreative bransjen. Et dataspill er ikke bare et spill, det er en plattform av kunst og fortellinger. Magien, den oppstår når mennesker spiller på sin egen måte og gjør fortellingen til sin egen. Det er først da kulturen skapes, og kultur er viktigere enn noensinne, i et samfunn oversvømt av informasjon."
+        ]
       },
       {
-        "role": "Utviklingssjef",
+        "role": "Styreleder og Teknisk direktør",
         "alt": "Teammedlem Portrett",
         "background": "Erfaren utvikler og tidligere lead på et spill med over 4 millioner solgte eksemplarer, underviser nå i 3D-animasjon og spilldesign.",
         "readMore": "Les Mer",
-        "detailedBio": "Davids imponerende merittliste inkluderer å lede utviklingen av et kommersielt vellykket spill med over 4 millioner solgte eksemplarer. Hans tekniske ekspertise og ledererfaring gjør ham uvurderlig for teamet. Utover sitt arbeid i studioet deler han sin kunnskap ved å undervise neste generasjon spillutviklere.",
-        "responsibilities": "Leder teknisk utvikling, motoroptimalisering og sikrer at spillet kjører jevnt på alle plattformer."
+        "detailedBio": [
+          "Jeg er han fyren med skiftenøkkelen i hånda. Maskinisten som smører skinnene og lar prosjektet reise mot nye horisonter. Fokuset mitt er backendprogrammering: velfungerende, effektivt, null rot. Jeg har alltid vært hooka på de usynlige systemene bak tingene rundt oss, logikken som får en heis til å komme glidende etter et enkelt tastetrykk, eller magien som lar en hel verden leve inni en chip på størrelsen til en fingernegl. Jaget etter å forstå ulike mekanismer har blitt til en livslang søken etter å bygge dem. Jeg er ikke en casual gamer, jeg er en lojalist! Typen som plukker en verden og graver seg til bunnen av den. Spill som World of Warcraft eller Counter Strike har formet måten jeg tenker på: presisjon, repetisjon, mestring.",
+          "Det spennende er ikke bare å spille, men å se hvor bra noe eller noen kan bli når tida og fokuset blir pressa til kanten! Koden jeg lager reflekterer det samme tankesettet: effektive loops, ren arkitektur og sømløse sykluser. Der andre bergtas av fyrverkeriet som slippes løs på skjermen, finner jeg opp kruttet som brenner i glødende mønstre på nattehimmelen."
+        ]
       }
     ]
   },

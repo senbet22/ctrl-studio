@@ -85,18 +85,12 @@ const TeamMemberModal = ({ isOpen, onClose, member, dict }) => {
                       <h3 className="text-lg text-primary mb-2">
                         {dict.team.aboutHeading}
                       </h3>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {member.detailedBio}
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg text-primary mb-2">
-                        {dict.team.responsibilitiesHeading}
-                      </h3>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {member.responsibilities}
-                      </p>
+                      {member.detailedBio.map((para, i) => (
+                        <p className="text-foreground/80 leading-relaxed mb-4">
+                          {" "}
+                          {para}
+                        </p>
+                      ))}
                     </div>
                   </div>
                 </div>

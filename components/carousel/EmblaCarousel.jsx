@@ -75,7 +75,7 @@ export const EmblaCarousel = ({ dict }) => {
                     </div>
                   </div>
 
-                  <p className="text-foreground/70 my-4">{quote}</p>
+                  <p className="text-foreground/70 my-4 italic">{quote}</p>
                   <p className="mb-6 text-sm md:text-base leading-relaxed">
                     {story}
                   </p>

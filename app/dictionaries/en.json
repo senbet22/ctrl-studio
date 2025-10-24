@@ -9,56 +9,64 @@
     "contact": "Contact"
   },
   "header": {
-    "title": "The shadow from",
+    "title": "Gastahav: The Shadow from",
     "play": "Play Trailer",
     "trailerTitle": "The Shadow from Ringholt - Trailer"
   },
   "about": {
-    "title": "Welcome to The shadow from Ringholt",
-    "intro": "Join Tyri on an epic adventure to uncover what lies in the shadows of Ringholt, where ancient secrets whisper through frost-covered pines and ethereal lights dance across starlit skies. As a young herder with a mysterious connection to the spirit world, he must navigate treacherous wilderness and face creatures born from forgotten legends.",
+    "title": "Welcome to Gastahav: The Shadow from Ringholt",
+    "introSections": [
+      "Gastahav: The Shadow from Ringholt is a story-driven RPG set in a world woven together from folk tales. Clear echoes of Sámi and Norse mythology surface, creating a living, handcrafted Nordic narrative. Through fire, fog, and a mysterious river landscape, a world shaped by elemental forces and ancient gods awaits.",
+      "You play as Tyri Månetun – a boy bound to a magical spirit, a Saivo named Draupne, visible only to him. Together they must face harsh trials, as Tyri loses his direction in life. To survive, he becomes part of a band of outcast Vikings."
+    ],
     "readMore": "Read More",
-    "modal": "Join Tyri on an epic adventure to uncover what lies in the shadows of Ringholt, where ancient secrets whisper through frost-covered pines and ethereal lights dance across starlit skies. As a young herder with a mysterious connection to the spirit world, he must navigate treacherous wilderness and face creatures born from forgotten legends.",
-    "modal2": "Join Tyri on an epic adventure to uncover what lies in the shadows of Ringholt, where ancient secrets whisper through frost-covered pines and ethereal lights dance across starlit skies. As a young herder with a mysterious connection to the spirit world, he must navigate treacherous wilderness and face creatures born from forgotten legends.",
-    "modal3": "Join Tyri on an epic adventure to uncover what lies in the shadows of Ringholt, where ancient secrets whisper through frost-covered pines and ethereal lights dance across starlit skies. As a young herder with a mysterious connection to the spirit world, he must navigate treacherous wilderness and face creatures born from forgotten legends. Join Tyri on an epic adventure to uncover what lies in the shadows of Ringholt, where ancient secrets whisper through frost-covered pines and ethereal lights dance across starlit skies. As a young herder with a mysterious connection to the spirit world, he must navigate treacherous wilderness and face creatures born from forgotten legends."
+    "modal": "Tyri's path is difficult and twisted, but Draupne guides him, and together they tame mythical creatures that aid them on their journey. In Tyri's blood flows the ancient seid – magic so potent that he can command fire to obey his will, so long as he does not burn himself in its chaotic blaze. He needs a guide before his newfound powers consume him. The tale of Tyri and Draupne is one of being cast onto thin ice in a fight for survival. It is a story of friendship, trauma, time, and the nature of humanity.",
+    "verdenTitle": "The World",
+    "verden": "Far to the north in the human realm of Fjorgvin, where the sea meets the sky, far out at sea beyond the fog and distant skerries, rises the colossal glacier Stor Klakkiir, standing as a gatekeeper between worlds. Stor Klakkiir guards the entrance to Gastahav, the largest and richest fjord in the world. A land shrouded in mist, home to the Askefolk – people who speak with the wind and live off the sea. The Vandrifolk, who herd their white bison across the mountains of Douttar. Gastahav, a land full of ancient promises and forgotten gods, with a history so deep and stormy that even the ice gate surrounding its borders could scarcely contain it. Dubious legends and tales are whispered across Fjorgvin in the late hours. In taverns lit by burning oil lamps, sailors and wanderers recount the saga of the land beyond the ice. Many have sought it. Sailors who could not find the passage between harsh reefs and deep ice fjords now decorate the seabed with their laughing skulls and wrecked ships. Here, both myths and people are guarded by nature itself, for the gods have not forgotten Gastahav. And Gastahav takes no prisoners."
   },
   "lore": {
     "title": "Lore",
     "characters": [
       {
-        "name": "Tyri",
-        "quote": "Too curious to stay away from dangerous situations, inventive enough to get out of them before everything goes wrong - Brage Tornebukk",
-        "story": "Tyri is a teenager. He has flame red hair and knows a lot for his age. Despite the struggles of life at Månetun which made him strong and resilient, he has an endless thirst to discover everything that is new and different. Tyri is loyal to those he cares about and protects his loved ones with a burning fire in his heart. When he gets angry it is almost as if the flames around him flare up, and his mother says he must have seid powers flowing in his veins."
+        "name": "Tyri Månetun",
+        "quote": "“Too curious to stay away from dangerous situations, clever enough to get out of them before everything goes downhill” - Brage Tornebukk",
+        "story": "Tyri is a teenager. He has flame-red hair and knows a lot for his age. Despite the struggles of life at Månetun, which have made him strong and resilient, he has an eternal thirst to discover everything new and unusual. Tyri is loyal to those he cares about, protecting his loved ones with a burning fire in his heart. When he gets angry, it’s almost as if the flames around him flare up, and his mother says he must have seid powers flowing in his veins."
       },
       {
         "name": "Draupne",
-        "quote": "The boy has a saivo with him, it is not hard to see - Drifa Čearga",
-        "story": "There are spirits tied to sacred mountains from the world of seid, and such spirits are called saivo. When Tyri wandered into a cave deep inside the mountain under Månetun and could not find his way out, he found a beautiful opal from ancient times. It was likely one of Magme's tears, for when he touched it the power was so strong he fainted. Later, when he awoke, he came face to face with a saivo that had been trapped in the stone. Tyri was initially afraid but somehow felt connected to the creature. The spirit said its name was Draupne and offered to help Tyri. Together they found the way out, and thus Tyri gained a saivo as a companion."
+        "quote": "“The boy has a saivo with him, it’s not hard to see” - Drifa Čearga",
+        "story": "There are spirits tied to sacred mountains from the world of seid, and these are called saivo. When Tyri wandered into a cave deep inside the mountain under Månetun and couldn’t find his way out, he found a beautiful opal stone from ancient times. It was likely one of Magme’s tears, for when he touched it, the power was so strong that he was knocked unconscious. When he later woke up, he faced a saivo that had been trapped in the stone. At first, Tyri was scared, but for some reason, he felt a connection to the creature. The spirit did not remember who it was or why it had been there, but it told him its name was Draupne and offered to help Tyri. Together they found their way out, and thus Tyri gained a saivo as a companion."
       },
       {
         "name": "Drifa Čearga",
-        "quote": "We were attacked without warning, in a fog as thick as clay",
-        "story": "The terror of Nidingfar, the boat devourer, the witch from Brimhall. Drifa Čearga has many names along Askefjorden, and many of the rumors that are deserved remain uncertain. What is certain is that few things make the jarl's men more fearful than seeing the noaide woman with long white hair glide out of the fog, silent as a snowy owl. Nidingfar is the name of her boat, and the horned skull of a mountain troll decorates the prow. For years the Viking pirate has been a thorn in the side of Jarl Olav Beinlause, and despite his superior military power, the pirates always vanish in a fog where no man can navigate. A truce has fortunately taken place, and Brimhall, once a gathering place for criminals and outcasts, has under Drifa become a disciplined military fort in the north of Gastahav."
+        "quote": "“We were attacked without warning, in a fog as thick as clay” - Byrding Captain from Viksund",
+        "story": "The terror on Nidingfar, the boat-sweller, the witch from Brimhall. Drifa Čearga has many names along Askefjorden, and while many rumors are deserved, they are uncertain. What is certain is that few things make the jarl’s men more fearful than seeing the noaide woman with long white hair glide out of the fog, silent as a snowy owl. Nidingfar is her boat, with the horned skull of a mountain troll adorning its bow. For years, the Viking pirate has been a thorn in Jarl Olav Beinlause’s side, and despite his superior military power, the pirates always vanish into a fog in which no man can navigate. A truce has fortunately been established, and Brimhall, once a gathering place for criminals and outcasts, has under Drifa become a disciplined military fort in the north of Gastahav."
       },
       {
         "name": "Vikmark",
-        "quote": "Do not venture far into the forest from Viksund before the wilderness takes over. People, if you can call them that, who live there are either fleeing the law or are hardy wild men without manners - V Vinterstoge (the year Herse Olaf was born), p 30, Safe paths along Askefjorden",
-        "story": "Vikmark is the territory associated with Viksund, the second largest settlement along Askefjorden after Askahorn. Viksund is located by the fjord, and the town's economy is mainly driven by shipbuilding and timber export. The latter comes from the long forest stretching westward from the fjord into the valley, to where the mountains begin. The forests are old and deep, and many believe they draw unnatural power from the volcanoes in the tundra landscape further west. After all, it is known that the fire giant Magme is buried deep in the earth, and where the volcanoes live, Magme's energy is strongest."
+        "quote": "“You shouldn’t venture far into the forest from Viksund before the wilderness takes over. The people, if you can call them that, who live there, are either fleeing the law, or hardy savages without manners.” - V. Vinterstoge (The year Olaf Herse was born), p. 30, Safe Paths along Askefjorden.",
+        "story": "Vikmark is the territory associated with Viksund, the second largest settlement along Askefjorden after Askahorn. Viksund sits by the fjord, and the town’s economy is primarily driven by shipbuilding and timber export. The latter is harvested from the long-stretching forest area that extends west from the fjord into the valley, until the mountains begin. Ash, elm, and millions of conifers stretch inward. The forests are old and deep, and many believe they draw unnatural power from the volcanoes in the tundra landscape further west. After all, it is known that the fire giant Magme lies buried deep in the Earth, and where the volcanoes reside, Magme’s energy is strongest."
       },
       {
         "name": "Månetun",
-        "quote": "The forests are deep here, and the mountains rise like rusty knuckles. The river is deep and relentless, and in the evening, or when it has rained, the Kvalupalik lurks by the riverbed. Even in a magnetite boat it is hard to stay afloat. But it is beautiful. A kind of deep and magical beauty that can only be seen when you have been away from people for a long time. -Agnar Månetun",
-        "story": "In the deep river landscape shaping Gastahav's northern forests, far from the busy everyday life of the town of Viksund, just before the forest begins to give way to the mountains and snow, there lies a farm. The farmhouse is worn and weathered where it stands among wood anemones and cotton grass, and although the house lies in the shadow of mountains and tall spruces during the day, it bathes in sunset and the moon's silver light. Therefore the farm is called Månetun."
+        "quote": "“The forests are deep here, and the mountains rise like rusty knuckles. The river is deep and merciless, and in the evening, or after rain, Kvalupaliken lurks by the riverbed. Even in a magnetite boat it is hard to stay afloat. But it is beautiful. A kind of deep and magical beauty that can only be seen when you have been away from people for a long time.” - Agnar Månetun",
+        "story": "In the deep river landscape shaping the northern forests of Gastahav, far from the bustling life of Viksund, just before the forest gives way to mountains and snow, there lies a farm. The farmhouse is worn and weathered, standing among wood anemones and cotton grass, and even though it lies in the shadow of mountains and large spruce trees by day, it bathes in sunset and the silver light of the moon. Hence the farm is called Månetun."
       },
       {
         "name": "Seid",
-        "quote": "And it was with their magic staffs that the noaides from Stoggeselet lifted the ice mountain from the water, where it was bound with large chains, if Isengrim were to pass through under the ice - S Alfarrson (the year Toke Hjelmholt inherited Nevgilde), p12, Ferdalok: Seven years in peace",
-        "story": "There is magic in Fjorgvin, and Viksund's deep forests hold ancient secrets. Long ago, before humans, the gods of nature ruled. First came the stone giants Magme and Sedimus who fought for a thousand years, and later Haefmar, betrayed by the sun goddess Beaivvi, who flooded the earth with her blood. The stories are many, but one thing is certain: powers still exist, magic that can be tamed by those with the gift. This magic is called seid and is as dangerous as it is useful. Even though many have tried throughout history, no one can truly control nature."
+        "quote": "“And it was with their enchanted stones that the noaides from Stoggeselet lifted the iceberg from the water, where it was bound with large chains, should Isengrim try to force his way through the pass under the ice.” - S. Alfarrson (the year Toke Hjelmholt inherited Nevgilde), p. 12, Ferdalok: Seven Years in Peace",
+        "story": "There is magic in Fjorgvin, and the deep forests of Viksund hold old secrets. Long ago, before humans existed, nature’s gods ruled. First, there were the stone giants Magme and Sedimus, who fought for a thousand years, and later Haefmar, betrayed by the sun goddess Beaivvi, flooded the earth with her blood. The stories are many, but one thing is certain: powers still exist, magic that can be harnessed by those with the gift. This magic is called seid, and it is as dangerous as it is useful. For although many have tried through the ages, no one truly controls nature."
       }
     ]
   },
   "vision": {
     "title": "Vision",
-    "description": "We believe the greatest stories have already been told, they just need to be experienced differently. As a small Norwegian studio, we're working on Shadows from Ringholt, a game that brings ancient myths and folklore to life. Our vision is straightforward: honor the stories that shaped us, and create an experience where legends become playable. We're here to tell a story worth remembering."
+    "article": [
+      "In Norse mythology, the fertility goddess Iðunn guards the golden apples that keep the gods young—a symbol of renewal, vitality, and the culture’s ability to survive. In Western mythology, there is another apple: the Apple of Eden—the fruit that led to the fall, but also to awareness and a new beginning.",
+      "At Ctrl Studio, we see the value in both. While the Apple of Eden represents the price of curiosity, Iðunn’s apple represents the ability to renew the old. A central part of our mindset is that we do not want to be stuck retelling old stories, but rather creating new stories at the intersection of familiar waters and fresh ideas. This is where we choose to stand. In the tension between heritage and invention, between roots and risk.",
+      "Gastahav: The Shadow from Ringholt is our first step in realizing the dream of giving the Nordic cultural heritage new forms, new voices, and new life. A Nordic adventure about people, nature, and change, it serves as a reminder that culture is not a museum, but a living landscape, always in motion. After three years of world-building, deep dives into literature and history, The Shadow from Ringholt fell into our hands like one of Iðunn’s apples—something familiar and dear, with a youthful flame.",
+      "With such mythology on our shoulders, a closeness to nature naturally becomes a focus for the game we produce. At the same time, some questions arise. What truly is human nature, and can we change if we strive to? Whatever the answer, there exists a place where old and new meet, where Iðunn and Eden share each their half of an alluring apple. That place now exists in Gastahav."
+    ]
   },
   "team": {
     "title": "The Team",
@@ -66,28 +74,34 @@
     "responsibilitiesHeading": "Responsibilities",
     "members": [
       {
-        "role": "Writer / Production Designer",
-        "alt": "Team member Portrait",
+        "role": "Creative Director and Composer",
+        "alt": "Team Member Portrait",
         "background": "Combines a background in music, storytelling, and design with a degree in 3D animation and game design.",
         "readMore": "Read More",
-        "detailedBio": "Magnus brings a unique blend of creative disciplines to the team. With years of experience in music composition and storytelling, he crafts narratives that resonate deeply with players. His expertise in production design ensures every visual element serves the story, while his technical skills in 3D animation and game design help bridge the gap between artistic vision and technical execution.",
-        "responsibilities": "Responsible for narrative design, world-building, and visual aesthetics of Shadows from Ringholt."
+        "detailedBio": [
+          "For me, it has always been so difficult to settle on just one thing, and why should I anyway? There are so many interesting things to do in our world. Music to listen to, art to observe. There are books, films, games, incredible universes, each of them a growing castle where countless people contribute their own building blocks every day. I tried to limit myself, until I realized that I can actually dive into whatever I want, write whatever I want, draw whatever I want! And if I put my soul into it, maybe there are others who feel exactly what I am trying to capture. Across media, I believe there is one common denominator that gives all works of art value: it is the quality of the story being told. And that is what draws me in.",
+          "I believe video games are in many ways the ultimate media platform for creative expression. With the interactive element that games offer, they are also a platform where players can express themselves, and that is where I find the joy in doing what I do."
+        ]
       },
       {
-        "role": "Head of Design",
-        "alt": "Team member Portrait",
-        "background": "Brings experience in drawing, 3D animation, and UX design, with a degree in 3D animation and game design.",
+        "role": "Project Manager and Designer",
+        "alt": "Team Member Portrait",
+        "background": "Has experience in drawing, 3D animation, and UX design, with a degree in 3D animation and game design.",
         "readMore": "Read More",
-        "detailedBio": "Caroline's artistic journey spans traditional drawing to cutting-edge 3D animation. Her keen eye for user experience ensures that every interaction in the game feels intuitive and engaging. She leads the design team with a focus on creating visually stunning environments that are both beautiful and functional.",
-        "responsibilities": "Oversees all design aspects, from character design to environmental art and user interface."
+        "detailedBio": [
+          "How can certain colors and lights affect our mood? Why are so few things as easy to enjoy as the shape of a perfect teacup, with the scent of steeping herbs and spices? What fascinates me about ventilation fans, hanging on building walls tirelessly supplying people with clean air? It took me several years to understand that I didn’t always need an explanation for why something delighted me in order to accept it, and perhaps it wasn’t until I exhaled and really absorbed the design of things that I understood.",
+          "Because design is everywhere around us, the shape of raindrops falling from the sky, the daisies swaying in the wind on a warm summer day, or my old CD player standing alone on a shelf. Design tells a story, and I believe that humans learn best by telling each other stories. That is why there is enormous potential in the creative industry. A video game is not just a game; it is a platform of art and storytelling. The magic arises when people play in their own way and make the story their own. It is only then that culture is created, and culture is more important than ever in a society flooded with information."
+        ]
       },
       {
-        "role": "Head of Development",
-        "alt": "Team member Portrait",
+        "role": "Chairman and Technical Director",
+        "alt": "Team Member Portrait",
         "background": "Experienced developer and former lead on a game with over 4 million copies sold, now teaching 3D animation and game design.",
         "readMore": "Read More",
-        "detailedBio": "David's impressive track record includes leading development on a commercially successful game with over 4 million copies sold. His technical expertise and leadership experience make him invaluable to the team. Beyond his work at the studio, he shares his knowledge by teaching the next generation of game developers.",
-        "responsibilities": "Leads technical development, engine optimization, and ensures the game runs smoothly across all platforms."
+        "detailedBio": [
+          "I am the guy with the wrench in hand. The machinist who greases the tracks and lets the project travel toward new horizons. My focus is backend programming: well-functioning, efficient, zero clutter. I have always been hooked on the invisible systems behind the things around us, the logic that makes an elevator glide with a single keystroke, or the magic that lets an entire world live inside a chip the size of a fingernail. The pursuit of understanding different mechanisms has become a lifelong quest to build them. I am not a casual gamer; I am a loyalist! The type who picks a world and digs to its core. Games like World of Warcraft or Counter Strike have shaped the way I think: precision, repetition, mastery.",
+          "The exciting part is not just playing, but seeing how good something or someone can become when time and focus are pushed to the edge! The code I write reflects the same mindset: efficient loops, clean architecture, and seamless cycles. While others are captivated by the fireworks released on screen, I invent the gunpowder that burns in glowing patterns across the night sky."
+        ]
       }
     ]
   },
