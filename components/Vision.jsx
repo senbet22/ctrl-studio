@@ -91,7 +91,7 @@ const Vision = ({ dict }) => {
             <div className="flex gap-3 pointer-events-auto">
               <button
                 onClick={scrollNext}
-                className="bg-[#411D1C]/90 p-3 rounded-full cursor-pointer 
+                className="bg-[#411D1C]/90 p-3 rounded-full cursor-pointer -rotate-90 
                            hover:bg-secondary/20 hover:scale-110 transition-all duration-300"
               >
                 <svg

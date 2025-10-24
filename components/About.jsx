@@ -88,6 +88,13 @@ const About = ({ dict }) => {
             {dict.about.verdenTitle}
           </p>
           {dict.about.verden}
+          <div>
+            <Image
+              className="max-w-[300px] object-contain w-fit rounded-full"
+              src={assets.vikmark}
+              alt="Tyri character"
+            />
+          </div>
         </div>
       </AboutModal>
     </>
