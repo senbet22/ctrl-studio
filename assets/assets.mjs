@@ -16,18 +16,20 @@ import arrow_btn from "./arrow-btn.png";
 import check_icon from "./check-icon.png";
 import arrow_up_icon from "./arrow-up-icon.svg";
 
+// Lore section Avatars
 import månetun from "./månetun.webp";
 import tyri from "./tyri.webp";
 import vikmark from "./vikmark.webp";
 import seid from "./seid.webp";
 import drifa from "./drifa.webp";
+import draupne from "./draupne.webp";
 
 // Portraits
-import magnus from "./portrait-magnus.png";
-import caroline from "./portrait-caroline.jpg";
-import david from "./portrait-david.jpg";
+import magnus from "./portrait-magnus.webp";
+import caroline from "./portrait-caroline.webp";
+import david from "./portrait-david.webp";
 // Team image
-import team_image from "./team-image.png";
+import team_image from "./team-image.webp";
 
 export const assets = {
   bg_image,
@@ -52,6 +54,7 @@ export const assets = {
   seid,
   vikmark,
   drifa,
+  draupne,
 };
 
 // Team Members.
@@ -73,7 +76,7 @@ export const teamMembers = [
 // Lore section Avatars
 export const avatars = {
   "Tyri Månetun": assets.tyri,
-  Draupne: assets.månetun,
+  Draupne: assets.draupne,
   "Drifa Čearga": assets.drifa,
   Vikmark: assets.vikmark,
   Månetun: assets.månetun,
