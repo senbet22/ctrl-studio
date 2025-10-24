@@ -47,7 +47,7 @@ const AboutModal = ({ isOpen, onClose, title, children }) => {
             }}
           >
             <div className="flex justify-center bg-background p-6 border-b border-white/20">
-              <h1 className="text-2xl text-center mx-8 sm:text-3xl text-primary">
+              <h1 className="text-xl text-center mx-8 sm:text-2xl text-primary">
                 {title}
               </h1>
 

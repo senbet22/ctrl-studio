@@ -62,7 +62,7 @@ const Header = ({ dict }) => {
           <div className="w-full aspect-video rounded-lg flex items-center justify-center mb-6">
             <iframe
               className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/2_pTX5V4iYg?si=sVlIsuLz9Vt8_sun"
+              src="https://www.youtube.com/embed/NpuF7vbhuyI?si=gOwekWFc60coD4Jt"
               title="YouTube Trailer Player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"

@@ -2,78 +2,115 @@
 
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
+import { useState, useCallback } from "react";
 
 const Vision = ({ dict }) => {
+  const [currentPage, setCurrentPage] = useState(0);
+
+  // Each element in dict.vision.article is a separate page
+  const pages = dict.vision.article || [];
+
+  const scrollNext = useCallback(() => {
+    setCurrentPage((prev) => (prev + 1) % pages.length);
+  }, [pages.length]);
+
+  const scrollPrev = useCallback(() => {
+    setCurrentPage((prev) => (prev - 1 + pages.length) % pages.length);
+  }, [pages.length]);
+
   return (
     <div
-      className="relative group w-full  min-h-svh max-w-6xl px-6 mx-auto  py-15 scroll-mt-20"
       id="vision"
+      className="relative group w-full min-h-svh max-w-6xl px-6 mx-auto scroll-mt-30"
     >
-      <div
-        className="absolute inset-0 bg-gradient-to-br from-secondary via-pink-400 to-cyan-300
-                  opacity-10 blur-2xl rounded-3xl transition-all duration-500"
-      ></div>
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary via-pink-400 to-cyan-300 opacity-10 blur-2xl rounded-3xl transition-all duration-500" />
+
+      {/* Title */}
       <h2
         className="mt-15 px-6 text-2xl sm:text-3xl text-transparent bg-clip-text 
-          bg-gradient-to-r from-45% from-primary to-secondary to-55%"
+        bg-gradient-to-r from-45% from-primary to-secondary to-55%"
       >
         {dict.vision.title}
       </h2>
-      {/* Mobile & Tablet: Image on top, description below */}
-      <div className="flex flex-col justify-center items-center lg:hidden gap-6 my-10">
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full"
-        >
-          <Image
-            className="w-fit h-96 object-cover rounded-lg shadow-xl transition-all duration-500 ease-in-out"
-            src={assets.team_image}
-            alt="Team"
-          />
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-[600px] bg-gradient-to-br from-background to-secondary p-6 sm:p-8 rounded-br-2xl rounded-tl-2xl shadow-2xl"
-          style={{ marginTop: "-3%" }}
-        >
-          <p className="text-white text-base sm:text-lg leading-relaxed">
-            {dict.vision.description}
-          </p>
-        </motion.div>
-      </div>
-
-      {/* Desktop: Overlapping layout */}
-      <div className="hidden lg:flex relative items-center justify-center my-10">
+      {/* Layout */}
+      <div className="flex flex-col md:flex-row relative items-start justify-between my-10 gap-6 md:gap-6">
+        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 bg-gradient-to-br from-background to-secondary p-10 rounded-br-4xl rounded-tl-3xl shadow-2xl w-full max-w-md md:h-[500px] flex items-center"
-          style={{ marginRight: "-3%" }}
-        >
-          <p className="text-foreground text-lg leading-relaxed">
-            {dict.vision.description}
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative z-0 flex-shrink-0"
+          className="flex-shrink-0 w-full md:w-1/3 h-[40svh] md:h-[70svh] flex items-start justify-start sm:justify-center"
         >
           <Image
-            className="w-full max-w-2xl md:h-[500px] object-cover rounded-lg shadow-xl transition-all duration-500 ease-in-out"
+            className="max-h-full max-w-full w-auto h-auto object-contain rounded-lg shadow-xl"
             src={assets.team_image}
             alt="Team"
           />
         </motion.div>
+
+        {/* Text / Pagination */}
+        <div className="relative  flex flex-col justify-start h-[60svh]">
+          {/* Animated page switch */}
+          <div className="flex-1 overflow-y-auto pr-2 scroll-smooth">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentPage}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+              >
+                <p className="text-foreground text-base md:text-lg leading-relaxed">
+                  {pages[currentPage]}
+                </p>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+          {/* Navigation Controls */}
+          <div className="w-full flex flex-col items-center justify-center  pointer-events-none">
+            {/* Page Dots */}
+            <div className="flex gap-2 mb-2 pointer-events-auto">
+              {pages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentPage(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentPage
+                      ? "bg-secondary w-6"
+                      : "bg-foreground/30 hover:bg-foreground/50"
+                  }`}
+                  aria-label={`Go to page ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Next Button */}
+            <div className="flex gap-3 pointer-events-auto">
+              <button
+                onClick={scrollNext}
+                className="bg-[#411D1C]/90 p-3 rounded-full cursor-pointer 
+                           hover:bg-secondary/20 hover:scale-110 transition-all duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#609c2d"
+                    fillRule="evenodd"
+                    d="M4.293 7.793a1 1 0 0 1 1.414 0L12 14.086l6.293-6.293a1 1 0 1 1 1.414 1.414L13.414 15.5a2 2 0 0 1-2.828 0L4.293 9.207a1 1 0 0 1 0-1.414"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

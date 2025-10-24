@@ -24,20 +24,40 @@ const About = ({ dict }) => {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/20" />
+        <div className="absolute inset-0  bg-gradient-to-r from-background via-background/95 to-background/60" />
 
         {/* Content Wrapper */}
         <div className="relative py-10 z-10 h-full w-full flex items-center justify-center">
           <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl w-full px-6">
             {/* Left Side*/}
             <div className="w-full lg:w-1/2">
-              <h1 className="text-3xl text-primary mb-4">{dict.about.title}</h1>
-              <p className="mb-6">{dict.about.intro}</p>
+              <h1 className="text-2xl md:text-3xl text-primary mb-4">
+                {dict.about.title}
+              </h1>
+              {dict.about.introSections.map((section, index) => (
+                <p key={index} className="mb-6 text-base md:text-lg">
+                  {section}
+                </p>
+              ))}
+
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="text-primary font-semibold cursor-pointer hover:text-secondary"
+                className="flex text-primary hover:text-secondary font-semibold cursor-pointer transition-colors duration-300 group"
               >
                 {dict.about.readMore}
+                <svg
+                  className="mt-1 mx-1 transition-colors duration-300 fill-[#f4a0a0] group-hover:fill-[#609c2d]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 7.793a1 1 0 0 1 1.414 0L12 14.086l6.293-6.293a1 1 0 1 1 1.414 1.414L13.414 15.5a2 2 0 0 1-2.828 0L4.293 9.207a1 1 0 0 1 0-1.414"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -48,10 +68,14 @@ const About = ({ dict }) => {
       <AboutModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title="The Shadow from Ringholt"
+        title={dict.about.title}
       >
-        <div className="flex flex-col gap-6  max-w-none p-4 md:p-8 mb-25">
-          {dict.about.modal}
+        <div className="flex flex-col text-foreground/90 gap-8  max-w-none p-4 md:p-8 mb-25">
+          {dict.about.introSections.map((section, index) => (
+            <p key={index} className="">
+              {section}
+            </p>
+          ))}
           <div>
             <Image
               className="max-w-[300px] object-contain w-fit rounded-full"
@@ -59,9 +83,11 @@ const About = ({ dict }) => {
               alt="Tyri character"
             />
           </div>
-          <p>{dict.about.modal2}</p>
-
-          <p>{dict.about.modal3}</p>
+          {dict.about.modal}
+          <p className="text-xl text-secondary md:text-2xl text-center mt-6 mb-2">
+            {dict.about.verdenTitle}
+          </p>
+          {dict.about.verden}
         </div>
       </AboutModal>
     </>

@@ -52,3 +52,27 @@ body {
   flex: 0 0 100%;
   min-width: 0;
 }
+
+/* Global scrollbar for Chrome, Edge, Safari */
+html {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: theme("colors.secondary") transparent; /* Firefox */
+}
+
+/* Webkit scrollbars */
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply bg-secondary rounded-full;
+  border: 3px solid transparent; /* optional spacing effect */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary/80; /* slightly darker on hover */
+}
