@@ -15,6 +15,7 @@ import right_arrow from "./right-arrow.png";
 import arrow_btn from "./arrow-btn.png";
 import check_icon from "./check-icon.png";
 import arrow_up_icon from "./arrow-up-icon.svg";
+import language_icon from "./language-icon.png";
 
 // Lore section Avatars
 import månetun from "./månetun.webp";
@@ -55,6 +56,7 @@ export const assets = {
   vikmark,
   drifa,
   draupne,
+  language_icon,
 };
 
 // Team Members.

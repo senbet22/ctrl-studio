@@ -75,6 +75,7 @@ const Contact = ({ dict }) => {
             type="text"
             placeholder={dict.contact.form.namePlaceholder}
             required
+            aria-label="Name"
             name="name"
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400
             rounded-md bg-background/70"
@@ -86,6 +87,7 @@ const Contact = ({ dict }) => {
             type="email"
             placeholder={dict.contact.form.emailPlaceholder}
             required
+            aria-label="Email"
             name="email"
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400
             rounded-md bg-background/70"
@@ -100,6 +102,7 @@ const Contact = ({ dict }) => {
           rows="6"
           placeholder={dict.contact.form.messagePlaceholder}
           required
+          aria-label="Message"
           name="message"
         ></motion.textarea>
 

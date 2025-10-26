@@ -90,7 +90,7 @@ const Support = ({ dict }) => {
             rel="noopener noreferrer"
             className="flex gap-2 hover:text-secondary transition-all ease-in-out"
           >
-            _Discord-server-Name_
+            Gastahav: Server
             <Image
               src={assets.discord_icon}
               className=""

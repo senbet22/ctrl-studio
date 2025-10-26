@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { assets } from "@/assets/assets.mjs";
 
 export default function LanguageDropdown() {
   const [open, setOpen] = useState(false);
@@ -30,17 +31,17 @@ export default function LanguageDropdown() {
   return (
     <div ref={dropdownRef} className="relative">
       {/* Trigger Button */}
+
       <button
         onClick={toggleDropdown}
         className="flex items-center gap-2 bg-gray-700/80 hover:bg-gray-600/80 
         px-3 py-2 rounded-xl shadow-sm transition-all duration-300 cursor-pointer"
       >
         <Image
-          src={`/flags/${currentLang}.png`}
-          alt={`${currentLang === "en" ? "English" : "Norwegian"} flag`}
+          src={assets.language_icon}
+          alt="Language icon"
           width={20}
           height={20}
-          className="rounded-full"
         />
         <span className="text-sm font-skranji uppercase">{currentLang}</span>
         <svg
@@ -75,13 +76,6 @@ export default function LanguageDropdown() {
           className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 transition-colors duration-200"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src={`/flags/${otherLang}.png`}
-            alt={`${otherLang === "en" ? "English" : "Norwegian"} flag`}
-            width={20}
-            height={20}
-            className="rounded-full"
-          />
           <span className="text-sm font-skranji uppercase">{otherLang}</span>
         </Link>
       </div>
