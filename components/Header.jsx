@@ -43,7 +43,8 @@ const Header = ({ dict }) => {
             }}
             className="text-4xl sm:text-6xl px-6 text-primary text-shadow-md text-shadow-background/70"
           >
-            {dict.header.title} <br /> Ringholt
+            <span className="text-foreground">Gastahav:</span> <br />{" "}
+            {dict.header.title}
           </motion.h1>
 
           <div className="absolute px-6 bottom-20">
