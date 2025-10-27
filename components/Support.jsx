@@ -85,7 +85,7 @@ const Support = ({ dict }) => {
             {dict.support.discord}
           </p>
           <a
-            href="https://discord.com/"
+            href="https://discord.gg/XFfWyeuDez"
             target="_blank"
             rel="noopener noreferrer"
             className="flex gap-2 hover:text-secondary transition-all ease-in-out"
