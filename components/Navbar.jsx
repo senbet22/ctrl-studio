@@ -5,8 +5,22 @@ import { assets } from "@/assets/assets";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import SupportButton from "./buttons/SupportButton";
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = ({ dict }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleNavClick = (section) => {
+    if (pathname !== "/") {
+      // Navigate to homepage first, then scroll
+      router.push(`/#${section}`);
+    } else {
+      // Already on homepage, just scroll
+      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [isScroll, setIsScroll] = useState(false);
 
   const sideMenuRef = useRef();
@@ -51,29 +65,47 @@ const Navbar = ({ dict }) => {
           className={`hidden font-skranji text-lg md:flex items-center gap-6 lg:gap-8 
   rounded-xl px-12 py-3 duration-500  shadow-black/40 ${isScroll ? "" : "bg-gray-600/80"}`}
         >
-          <li className="hover:text-primary duration-100">
-            <a href="#top">{dict.nav.home}</a>
+          <li
+            onClick={() => handleNavClick("top")}
+            className="hover:text-primary duration-100"
+          >
+            <a className="cursor-pointer">{dict.nav.home}</a>
+          </li>
+          <li
+            onClick={() => handleNavClick("about")}
+            className="hover:text-primary duration-100"
+          >
+            <a className="cursor-pointer">{dict.nav.about}</a>
+          </li>
+          <li
+            onClick={() => handleNavClick("lore")}
+            className="hover:text-primary duration-100"
+          >
+            <a className="cursor-pointer">{dict.nav.lore}</a>
           </li>
           <li className="hover:text-primary duration-100">
-            <a href="#about">{dict.nav.about}</a>
+            <a href="/vision">{dict.nav.vision}</a>
           </li>
-          <li className="hover:text-primary duration-100">
-            <a href="#lore">{dict.nav.lore}</a>
+          <li
+            onClick={() => handleNavClick("team")}
+            className="hover:text-primary duration-100"
+          >
+            <a className="cursor-pointer">{dict.nav.team}</a>
           </li>
-          <li className="hover:text-primary duration-100">
-            <a href="#vision">{dict.nav.vision}</a>
-          </li>
-          <li className="hover:text-primary duration-100">
-            <a href="#team">{dict.nav.team}</a>
-          </li>
-          <li className="hover:text-primary duration-100">
-            <a href="#contact">{dict.nav.contact}</a>
+          <li
+            onClick={() => handleNavClick("contact")}
+            className="hover:text-primary duration-100"
+          >
+            <a className="cursor-pointer">{dict.nav.contact}</a>
           </li>
           <LanguageDropdown />
         </ul>
 
-        <div className="hidden lg:flex items-center gap-3  ml-4 ">
-          <a href="#support">
+        <div
+          className="hidden lg:flex items-center gap-3  ml-4 "
+          onClick={() => handleNavClick("support")}
+        >
+          <a>
             <SupportButton dict={dict} />
           </a>
         </div>
