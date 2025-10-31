@@ -29,19 +29,19 @@ export const EmblaCarousel = ({ dict }) => {
             return (
               <div
                 key={index}
-                className="embla__slide flex flex-col md:flex-row items-start justify-between max-w-6xl w-full min-h-[700px] px-6 gap-6 md:gap-12 py-8"
+                className="embla__slide flex flex-col md:flex-row items-start justify-between max-w-6xl w-full md:min-h-[600px] px-6 gap-6 md:gap-12 py-8"
               >
                 {/* Image Container */}
                 <motion.div
                   initial={{ x: 100, y: -200 }}
                   whileInView={{ x: 0, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="flex-shrink-0 w-full md:w-1/3 h-[40svh] md:h-[70svh] flex items-start justify-center"
+                  className="flex-shrink-0 w-full md:w-1/3 h-[40svh] md:h-fit flex items-start justify-center"
                 >
                   <Image
                     src={avatar}
                     alt={name}
-                    className="max-h-full max-w-full w-auto h-auto object-contain"
+                    className="max-h-full max-w-full object-contain"
                   />
                 </motion.div>
 

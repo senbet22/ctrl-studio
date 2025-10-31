@@ -22,7 +22,7 @@ const Lore = ({ dict }) => {
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 from-10% via-background via-30% to-background/90 to-97%" />
 
       {/* Content Wrapper */}
-      <div className="relative max-w-6xl mx-auto z-10 flex flex-col items-start ">
+      <div className="relative max-w-6xl mx-auto z-10 flex flex-col items-start justify-center ">
         <h2
           className="my-15 px-6 text-2xl sm:text-3xl text-transparent bg-clip-text 
           bg-gradient-to-r from-45% from-primary to-secondary to-55%"
