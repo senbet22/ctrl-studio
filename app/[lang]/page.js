@@ -18,7 +18,6 @@ export default async function Home({ params }) {
   return (
     <>
       <BackToTopButton />
-      <Navbar dict={dict} lang={lang} />
       <Header dict={dict} lang={lang} />
       <About dict={dict} lang={lang} />
       <Lore dict={dict} lang={lang} />
@@ -26,7 +25,6 @@ export default async function Home({ params }) {
       <Team dict={dict} lang={lang} />
       <Support dict={dict} lang={lang} />
       <Contact dict={dict} lang={lang} />
-      <Footer dict={dict} lang={lang} />
     </>
   );
 }

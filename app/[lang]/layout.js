@@ -1,5 +1,7 @@
-import { locales } from "../dictionaries";
+import { locales, getDictionary } from "../dictionaries";
 import { ovo, skranji } from "@/utils/fonts";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "../globals.css";
 
 export async function generateStaticParams() {
@@ -13,13 +15,16 @@ export const metadata = {
 
 export default async function LangLayout({ children, params }) {
   const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   return (
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
       <body
         className={`${skranji.variable} ${ovo.variable} font-skranji antialiased leading-8 overflow-x-hidden bg-background`}
       >
+        <Navbar dict={dict} lang={lang} />
         {children}
+        <Footer dict={dict} lang={lang} />
       </body>
     </html>
   );
