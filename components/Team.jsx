@@ -35,7 +35,7 @@ const Team = ({ dict }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       id="team"
-      className="w-full min-h-svh max-w-6xl px-6 mx-auto py-15 scroll-mt-20"
+      className="w-full max-w-6xl px-6 mx-auto py-15 scroll-mt-20"
     >
       <h2 className="text-2xl sm:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-45% from-primary to-secondary to-55%">
         {dict.team.title}
