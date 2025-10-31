@@ -7,7 +7,6 @@ export default async function VisionPage({ params }) {
 
   return (
     <div>
-      <h1>Vision Page</h1>
       <Vision dict={dict} />
     </div>
   );
