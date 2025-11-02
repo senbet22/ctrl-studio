@@ -20,7 +20,6 @@ export default async function Home({ params }) {
       <Lore dict={dict} lang={lang} />
       <Team dict={dict} lang={lang} />
       <Support dict={dict} lang={lang} />
-      <Contact dict={dict} lang={lang} />
     </>
   );
 }
