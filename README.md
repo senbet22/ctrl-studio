@@ -2,7 +2,7 @@
 
   <h1>Ctrl - Studio - Gastahav: The Shadow from Ringholt</h1>
 
-### 🌐 [Visit demo on Netlify](https://ctrl-studio.netlify.app/)
+### 🌐 [Visit Website](https://ctrlstudio.no/)
 
 ## Project Overview
 
@@ -25,7 +25,7 @@ This website serves as a platform to:
 ### Language Support
 
 - **Bilingual Interface**: Full support for English and Norwegian (Norsk Bomkål).
-- **Persistent Language Preference**: The browser remembers your language choice across sessions using localStorage
+- **Persistent Language Preference**: The browser remembers your language choice across sessions using Cookies
 
 ### Carousel
 
