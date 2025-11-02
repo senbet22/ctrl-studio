@@ -35,14 +35,17 @@ const About = ({ dict }) => {
                 {dict.about.title}
               </h1>
               {dict.about.introSections.map((section, index) => (
-                <p key={index} className="mb-6 text-base md:text-lg">
+                <p
+                  key={index}
+                  className="mb-6 text-base text-foreground/80 md:text-lg"
+                >
                   {section}
                 </p>
               ))}
 
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="flex text-primary hover:text-secondary font-semibold cursor-pointer transition-colors duration-300 group"
+                className="flex text-primary  border-2 px-2 border-primary/70 hover:border-primary hover:text-secondary font-semibold cursor-pointer transition-colors duration-300 group"
               >
                 {dict.about.readMore}
                 <svg

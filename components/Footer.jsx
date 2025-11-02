@@ -1,8 +1,23 @@
+"use client";
 import React from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 
 const Footer = ({ dict }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleNavClick = (section) => {
+    if (pathname !== "/") {
+      // Navigate to homepage first, then scroll
+      router.push(`/#${section}`);
+    } else {
+      // Already on homepage, just scroll
+      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="bg-gray-900">
       <div className="md:mx-10 mx-4 sm:mx-[10%]">
@@ -28,27 +43,33 @@ const Footer = ({ dict }) => {
             </p>
             <ul className="flex text-lg flex-col gap-2">
               <li>
-                <a href="#top" className="hover:text-secondary">
+                <a
+                  onClick={() => handleNavClick("top")}
+                  className="hover:text-secondary cursor-pointer"
+                >
                   {dict.footer.home}
                 </a>
               </li>
-              <li>
-                <a href="#about" className="hover:text-secondary">
+              <li onClick={() => handleNavClick("about")}>
+                <a className="hover:text-secondary cursor-pointer">
                   {dict.footer.about}
                 </a>
               </li>
-              <li>
-                <a href="#team" className="hover:text-secondary">
+              <li onClick={() => handleNavClick("team")}>
+                <a className="hover:text-secondary cursor-pointer">
                   {dict.footer.team}
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-secondary">
+                <a
+                  href="contact"
+                  className="hover:text-secondary cursor-pointer"
+                >
                   {dict.footer.contact}
                 </a>
               </li>
-              <li>
-                <a href="#support" className="hover:text-secondary">
+              <li onClick={() => handleNavClick("support")}>
+                <a className="hover:text-secondary cursor-pointer">
                   {dict.footer.support}
                 </a>
               </li>

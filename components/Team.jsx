@@ -64,12 +64,10 @@ const Team = ({ dict }) => {
               className="w-fit object-cover h-40 rounded-lg shadow-sm shadow-gray-700 hover:scale-105 transition-all duration-300 ease-in-out"
             />
             <h3 className="text-lg my-4 text-primary">{member.name}</h3>
-            <p className="text-sm text-foreground/60 mb-2 leading-5">
+            <p className="text-sm text-foreground/70 mb-2 leading-5">
               {member.role}
             </p>
-            <p className="text-sm font-ovo text-foreground leading-5">
-              {member.background}
-            </p>
+            <p className="text-sm font-ovo  leading-5">{member.background}</p>
             <p className="flex text-secondary/70 hover:text-secondary">
               {member.readMore}
               <svg

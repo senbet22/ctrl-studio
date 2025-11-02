@@ -1,6 +1,6 @@
 "use client";
 import LanguageDropdown from "./buttons/LanguageDropdown";
-
+import Link from "next/link";
 import { assets } from "@/assets/assets";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -44,17 +44,11 @@ const Navbar = ({ dict }) => {
   }, []);
   return (
     <>
-      <div
-        className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[400px] h-[50px] -z-10 
-    bg-gradient-to-br from-[#deda08] via-rose-300 to-secondary
-    opacity-80 blur-xl mix-blend-normal transition-all duration-700 rounded-full"
-      ></div>
-
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50
           ${isScroll ? "bg-background/50   backdrop-blur-lg shadow-sm " : ""}`}
       >
-        <a href="#top">
+        <a onClick={() => handleNavClick("top")}>
           <Image
             src={assets.logo}
             alt="Ctrl-Studio logo"
@@ -65,12 +59,6 @@ const Navbar = ({ dict }) => {
           className={`hidden font-skranji text-lg md:flex items-center gap-6 lg:gap-8 
   rounded-xl px-12 py-3 duration-500  shadow-black/40 ${isScroll ? "" : "bg-gray-600/80"}`}
         >
-          <li
-            onClick={() => handleNavClick("top")}
-            className="hover:text-primary duration-100"
-          >
-            <a className="cursor-pointer">{dict.nav.home}</a>
-          </li>
           <li
             onClick={() => handleNavClick("about")}
             className="hover:text-primary duration-100"
@@ -84,7 +72,7 @@ const Navbar = ({ dict }) => {
             <a className="cursor-pointer">{dict.nav.lore}</a>
           </li>
           <li className="hover:text-primary duration-100">
-            <a href="/vision">{dict.nav.vision}</a>
+            <Link href="/vision">{dict.nav.vision}</Link>
           </li>
           <li
             onClick={() => handleNavClick("team")}
@@ -92,12 +80,11 @@ const Navbar = ({ dict }) => {
           >
             <a className="cursor-pointer">{dict.nav.team}</a>
           </li>
-          <li
-            onClick={() => handleNavClick("contact")}
-            className="hover:text-primary duration-100"
-          >
-            <a className="cursor-pointer">{dict.nav.contact}</a>
+
+          <li className="hover:text-primary duration-100">
+            <Link href="/contact">{dict.nav.contact}</Link>
           </li>
+
           <LanguageDropdown />
         </ul>
 

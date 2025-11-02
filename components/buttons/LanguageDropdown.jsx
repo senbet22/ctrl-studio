@@ -1,5 +1,5 @@
 "use client";
-
+import { setLocaleCookie } from "@/utils/locale-cookie";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +14,11 @@ export default function LanguageDropdown() {
   const currentLang = pathname.split("/")[1];
   const otherLang = currentLang === "en" ? "no" : "en";
   const newPath = pathname.replace(`/${currentLang}`, `/${otherLang}`);
+
+  const handleLanguageChange = () => {
+    setLocaleCookie(otherLang); // Save preference to cookie
+    setOpen(false);
+  };
 
   const toggleDropdown = () => setOpen(!open);
 
@@ -74,7 +79,7 @@ export default function LanguageDropdown() {
           href={newPath}
           prefetch={false}
           className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 transition-colors duration-200"
-          onClick={() => setOpen(false)}
+          onClick={handleLanguageChange}
         >
           <span className="text-sm font-skranji uppercase">{otherLang}</span>
         </Link>
