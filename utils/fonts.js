@@ -4,7 +4,7 @@ export const skranji = Skranji({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-skranji",
-  display: "swap", // Add this for better loading performance
+  display: "swap", // For better loading performance
 });
 
 export const ovo = Ovo({
