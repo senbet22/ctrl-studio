@@ -1,4 +1,4 @@
-import Vision from "@/components/Vision";
+import Contact from "@/components/Contact";
 import { getDictionary } from "../../dictionaries";
 
 export default async function VisionPage({ params }) {
@@ -7,7 +7,7 @@ export default async function VisionPage({ params }) {
 
   return (
     <div>
-      <Vision dict={dict} />
+      <Contact dict={dict} />
     </div>
   );
 }

@@ -12,6 +12,12 @@ function getLocale(request) {
 
   if (pathnameLocale) return pathnameLocale;
 
+  // Check for saved cookie/language preference before language check**
+  const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
+  if (cookieLocale && locales.includes(cookieLocale)) {
+    return cookieLocale;
+  }
+
   // Check browser language
   const acceptLanguage = request.headers.get("accept-language");
   if (acceptLanguage) {
