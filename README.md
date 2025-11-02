@@ -1,12 +1,12 @@
   <img src="assets/logo.png" alt="CTRL-Studio Logo" width="120"/>
 
-  <h1>Ctrl - Studio - The Shadow from Ringholt</h1>
+  <h1>Ctrl - Studio - Gastahav: The Shadow from Ringholt</h1>
 
 ### 🌐 [Visit demo on Netlify](https://ctrl-studio.netlify.app/)
 
 ## Project Overview
 
-The Shadow from Ringholt is a story-driven game developed by CTRL-Studio.
+Gastahav: The Shadow from Ringholt is a story-driven game developed by CTRL Studio.
 
 This website serves as a platform to:
 
@@ -14,24 +14,30 @@ This website serves as a platform to:
 
 - Share updates and progress
 
-- Build a community through newsletter subscriptions
+- Build a community through newsletter subscriptions/ Dicord channel
 
 - Support CTRL-Studio in securing funding for development
 
-  ![Image](/public/web-preview.png)
+  ![Image](/public/web-preview.webp)
 
-## Carousel
+## Features
 
-For my carousel in Lore section i have chosen to use Embla Carousel: (https://www.embla-carousel.com/)
-I chose Embla Carousel because it's lightweight, fast, and easy to integrate.
+### Language Support
+
+- **Bilingual Interface**: Full support for English and Norwegian (Norsk Bomkål).
+- **Persistent Language Preference**: The browser remembers your language choice across sessions using localStorage
+
+### Carousel
+
+For the carousel in the Lore section, we use Embla Carousel: (https://www.embla-carousel.com/)
+Embla Carousel was chosen because it's lightweight, fast, and easy to integrate.
 
 ## Things to add later:
 
-- CMS, Currently looking into Sanity.io and will implement this so the dev's can update the sections themselves.
-- Sámi version of the website: also let the devs update data with different languages using sanity.io.
-- Research and identify the most cost-effective and scalable third-party application for Support/Subscribe section.
-- Policy Pricacy / Terms and conditions pages.
-- Transform the landing page into a MPA page.
+- **CMS Integration**: Future implementation of Sanity.io or similar CMS when the team needs to update content independently.
+- **Sámi Language Support**: Expand from current English and Norwegian to include Sámi as a third language option.
+- **Mailing List Integration**: Research and implement a cost-effective email service provider for newsletter subscriptions and community updates.
+- **Privacy Policy / Terms and Conditions pages**
 
 ###
 
