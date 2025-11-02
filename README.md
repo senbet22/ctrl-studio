@@ -1,6 +1,6 @@
   <img src="assets/logo.png" alt="CTRL-Studio Logo" width="120"/>
 
-  <h1>Ctrl - Studio - Gastahav: The Shadow from Ringholt</h1>
+  <h1>Ctrl Studio - Gastahav: The Shadow from Ringholt</h1>
 
 ### 🌐 [Visit Website](https://ctrlstudio.no/)
 
