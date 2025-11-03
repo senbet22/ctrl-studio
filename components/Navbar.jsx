@@ -108,7 +108,7 @@ const Navbar = ({ dict }) => {
         <ul
           ref={sideMenuRef}
           className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64
-        top-0 bottom-0 w-64 z-50 h-svh bg-secondary transition duration-500"
+          top-0 bottom-0 w-64 z-50 h-svh bg-secondary transition duration-500"
         >
           {/* Language Dropdown (Top Left Corner) */}
           <div className="absolute left-6 top-6">
@@ -119,43 +119,38 @@ const Navbar = ({ dict }) => {
             <Image
               src={assets.close}
               alt="Menu Close Button"
-              className="w-5  cursor-pointer"
+              className="w-5 cursor-pointer"
             />
           </div>
-          <li>
-            <a onClick={closeMenu} href="#top">
-              {dict.nav.home}
-            </a>
+          <li
+            onClick={() => {
+              closeMenu();
+              handleNavClick("about");
+            }}
+          >
+            <a className="cursor-pointer">{dict.nav.about}</a>
           </li>
-          <li>
-            <a onClick={closeMenu} href="#about">
-              {dict.nav.about}
-            </a>
+          <li
+            onClick={() => {
+              closeMenu();
+              handleNavClick("lore");
+            }}
+          >
+            <a className="cursor-pointer">{dict.nav.lore}</a>
           </li>
-          <li>
-            <a onClick={closeMenu} href="#lore">
-              {dict.nav.lore}
-            </a>
+          <li onClick={closeMenu}>
+            <Link href="/vision">{dict.nav.vision}</Link>
           </li>
-          <li>
-            <a onClick={closeMenu} href="#vision">
-              {dict.nav.vision}
-            </a>
+          <li
+            onClick={() => {
+              closeMenu();
+              handleNavClick("team");
+            }}
+          >
+            <a className="cursor-pointer">{dict.nav.team}</a>
           </li>
-          <li>
-            <a onClick={closeMenu} href="#team">
-              {dict.nav.team}
-            </a>
-          </li>
-          <li>
-            <a onClick={closeMenu} href="#support">
-              {dict.nav.support}
-            </a>
-          </li>
-          <li>
-            <a onClick={closeMenu} href="#contact">
-              {dict.nav.contact}
-            </a>
+          <li onClick={closeMenu}>
+            <Link href="/contact">{dict.nav.contact}</Link>
           </li>
         </ul>
       </nav>
