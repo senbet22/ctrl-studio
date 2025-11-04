@@ -52,7 +52,7 @@ const Navbar = ({ dict }) => {
           <Image
             src={assets.logo}
             alt="Ctrl-Studio logo"
-            className="w-28 cursor-pointer mr-14"
+            className="w-16 md:w-24 cursor-pointer mr-14"
           />
         </a>
         <ul
@@ -108,7 +108,7 @@ const Navbar = ({ dict }) => {
         <ul
           ref={sideMenuRef}
           className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64
-        top-0 bottom-0 w-64 z-50 h-svh bg-secondary transition duration-500"
+          top-0 bottom-0 w-64 z-50 h-svh bg-secondary transition duration-500"
         >
           {/* Language Dropdown (Top Left Corner) */}
           <div className="absolute left-6 top-6">
@@ -123,39 +123,69 @@ const Navbar = ({ dict }) => {
             />
           </div>
           <li>
-            <a onClick={closeMenu} href="#top">
+            <a
+              onClick={() => {
+                closeMenu();
+                handleNavClick("top");
+              }}
+              className="cursor-pointer"
+            >
               {dict.nav.home}
             </a>
           </li>
           <li>
-            <a onClick={closeMenu} href="#about">
+            <a
+              onClick={() => {
+                closeMenu();
+                handleNavClick("about");
+              }}
+              className="cursor-pointer"
+            >
               {dict.nav.about}
             </a>
           </li>
           <li>
-            <a onClick={closeMenu} href="#lore">
+            <a
+              onClick={() => {
+                closeMenu();
+                handleNavClick("lore");
+              }}
+              className="cursor-pointer"
+            >
               {dict.nav.lore}
             </a>
           </li>
-          <li>
-            <a onClick={closeMenu} href="#vision">
+          <li onClick={closeMenu}>
+            <Link className="cursor-pointer" href="/vision">
               {dict.nav.vision}
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={closeMenu} href="#team">
+            <a
+              onClick={() => {
+                closeMenu();
+                handleNavClick("team");
+              }}
+              className="cursor-pointer"
+            >
               {dict.nav.team}
             </a>
           </li>
           <li>
-            <a onClick={closeMenu} href="#support">
+            <a
+              onClick={() => {
+                closeMenu();
+                handleNavClick("support");
+              }}
+              className="cursor-pointer"
+            >
               {dict.nav.support}
             </a>
           </li>
-          <li>
-            <a onClick={closeMenu} href="#contact">
+          <li onClick={closeMenu}>
+            <Link className="cursor-pointer" href="/contact">
               {dict.nav.contact}
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
