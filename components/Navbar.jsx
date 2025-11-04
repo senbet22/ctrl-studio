@@ -152,6 +152,14 @@ const Navbar = ({ dict }) => {
           <li onClick={closeMenu}>
             <Link href="/contact">{dict.nav.contact}</Link>
           </li>
+          <li
+            onClick={() => {
+              closeMenu();
+              handleNavClick("support");
+            }}
+          >
+            <a className="cursor-pointer">{dict.nav.support}</a>
+          </li>
         </ul>
       </nav>
     </>
