@@ -52,7 +52,8 @@ const Support = ({ dict }) => {
           <div className="relative group">
             <div
               className="absolute inset-0 bg-gradient-to-br from-secondary via-pink-400 to-yellow-300 
-                  opacity-50 blur-2xl rounded-3xl group-hover:opacity-80 transition-all duration-500"
+                  opacity-50 blur-xl sm:blur-2xl rounded-3xl group-hover:opacity-80 transition-all duration-500
+                  transform-gpu will-change-transform"
             ></div>
             <Image
               src={assets.art_2}

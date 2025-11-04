@@ -119,73 +119,38 @@ const Navbar = ({ dict }) => {
             <Image
               src={assets.close}
               alt="Menu Close Button"
-              className="w-5  cursor-pointer"
+              className="w-5 cursor-pointer"
             />
           </div>
-          <li>
-            <a
-              onClick={() => {
-                closeMenu();
-                handleNavClick("top");
-              }}
-              className="cursor-pointer"
-            >
-              {dict.nav.home}
-            </a>
+          <li
+            onClick={() => {
+              closeMenu();
+              handleNavClick("about");
+            }}
+          >
+            <a className="cursor-pointer">{dict.nav.about}</a>
           </li>
-          <li>
-            <a
-              onClick={() => {
-                closeMenu();
-                handleNavClick("about");
-              }}
-              className="cursor-pointer"
-            >
-              {dict.nav.about}
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                closeMenu();
-                handleNavClick("lore");
-              }}
-              className="cursor-pointer"
-            >
-              {dict.nav.lore}
-            </a>
+          <li
+            onClick={() => {
+              closeMenu();
+              handleNavClick("lore");
+            }}
+          >
+            <a className="cursor-pointer">{dict.nav.lore}</a>
           </li>
           <li onClick={closeMenu}>
-            <Link className="cursor-pointer" href="/vision">
-              {dict.nav.vision}
-            </Link>
+            <Link href="/vision">{dict.nav.vision}</Link>
           </li>
-          <li>
-            <a
-              onClick={() => {
-                closeMenu();
-                handleNavClick("team");
-              }}
-              className="cursor-pointer"
-            >
-              {dict.nav.team}
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                closeMenu();
-                handleNavClick("support");
-              }}
-              className="cursor-pointer"
-            >
-              {dict.nav.support}
-            </a>
+          <li
+            onClick={() => {
+              closeMenu();
+              handleNavClick("team");
+            }}
+          >
+            <a className="cursor-pointer">{dict.nav.team}</a>
           </li>
           <li onClick={closeMenu}>
-            <Link className="cursor-pointer" href="/contact">
-              {dict.nav.contact}
-            </Link>
+            <Link href="/contact">{dict.nav.contact}</Link>
           </li>
         </ul>
       </nav>
