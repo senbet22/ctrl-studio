@@ -52,7 +52,7 @@ const Navbar = ({ dict }) => {
           <Image
             src={assets.logo}
             alt="Ctrl-Studio logo"
-            className="w-28 cursor-pointer mr-14"
+            className="w-16 md:w-24 cursor-pointer mr-14"
           />
         </a>
         <ul

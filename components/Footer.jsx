@@ -26,7 +26,7 @@ const Footer = ({ dict }) => {
           <div>
             <div>
               <Image
-                className="mb-20 w-38"
+                className="mb-20 w-24 md:w-30"
                 src={assets.logo}
                 alt="Ctrl-Studio logo"
               />
