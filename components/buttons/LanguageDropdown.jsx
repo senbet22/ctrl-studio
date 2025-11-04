@@ -1,9 +1,8 @@
 "use client";
-import { setLocaleCookie } from "@/utils/locale-cookie";
+import { setLocaleAction } from "@/app/actions/locale";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { assets } from "@/assets/assets.mjs";
 
 export default function LanguageDropdown() {
@@ -15,9 +14,15 @@ export default function LanguageDropdown() {
   const otherLang = currentLang === "en" ? "no" : "en";
   const newPath = pathname.replace(`/${currentLang}`, `/${otherLang}`);
 
-  const handleLanguageChange = () => {
-    setLocaleCookie(otherLang); // Save preference to cookie
+  const handleLanguageChange = async (e) => {
+    e.preventDefault();
     setOpen(false);
+
+    // Set cookie via server action
+    await setLocaleAction(otherLang);
+
+    // Force a full page reload - middleware will handle locale detection
+    window.location.href = newPath;
   };
 
   const toggleDropdown = () => setOpen(!open);
@@ -36,7 +41,6 @@ export default function LanguageDropdown() {
   return (
     <div ref={dropdownRef} className="relative">
       {/* Trigger Button */}
-
       <button
         onClick={toggleDropdown}
         className="flex items-center gap-2 bg-gray-700/80 hover:bg-gray-600/80 
@@ -75,14 +79,13 @@ export default function LanguageDropdown() {
             : "opacity-0 -translate-y-2 pointer-events-none"
         }`}
       >
-        <Link
+        <a
           href={newPath}
-          prefetch={false}
-          className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 transition-colors duration-200"
+          className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
           onClick={handleLanguageChange}
         >
           <span className="text-sm font-skranji uppercase">{otherLang}</span>
-        </Link>
+        </a>
       </div>
     </div>
   );

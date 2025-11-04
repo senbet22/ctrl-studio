@@ -57,7 +57,7 @@ const Navbar = ({ dict }) => {
         </a>
         <ul
           className={`hidden font-skranji text-lg md:flex items-center gap-6 lg:gap-8 
-  rounded-xl px-12 py-3 duration-500  shadow-black/40 ${isScroll ? "" : "bg-gray-600/80"}`}
+          rounded-xl px-12 py-3 duration-500  shadow-black/40 ${isScroll ? "" : "bg-gray-600/80"}`}
         >
           <li
             onClick={() => handleNavClick("about")}
