@@ -41,7 +41,7 @@ const Contact = ({ dict }) => {
         initial={{ x: 40, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-4xl sm:text-5xl text-white"
+        className="text-center text-4xl sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-35%  to-secondary to-60%"
       >
         {dict.contact.title}
       </motion.h2>

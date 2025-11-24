@@ -5,8 +5,6 @@ import About from "@/components/About";
 import Lore from "@/components/Lore";
 import Team from "@/components/Team";
 import Support from "@/components/Support";
-import Contact from "@/components/Contact";
-import BackToTopButton from "@/components/routing/BackToTopButton";
 
 export default async function Home({ params }) {
   const { lang } = await params;
@@ -14,7 +12,6 @@ export default async function Home({ params }) {
 
   return (
     <>
-      <BackToTopButton />
       <Header dict={dict} lang={lang} />
       <About dict={dict} lang={lang} />
       <Lore dict={dict} lang={lang} />

@@ -1,13 +1,12 @@
 // Assets
-import bg_image from "./background.jpg";
-import night_cave from "./night-cave.jpg";
-import viking_ship from "./viking-ship.jpg";
-import viking_ship_2 from "./viking-ship-2.png";
+import bg_image from "./background.webp";
+import night_cave from "./night-cave.webp";
+import viking_ship from "./viking-ship.webp";
 import logo from "./logo.png";
 import menu from "./menu-white.png";
 import close from "./close-white.png";
 import bird_icon from "./bird-icon.png";
-import art_2 from "./art-2.png";
+import art_2 from "./art-2.webp";
 import discord_icon from "./discord-icon.png";
 import insta_icon from "./insta-icon.png";
 import youtube_icon from "./youtube-icon.png";
@@ -36,7 +35,6 @@ export const assets = {
   bg_image,
   night_cave,
   viking_ship,
-  viking_ship_2,
   menu,
   close,
   logo,

@@ -3,6 +3,7 @@ import { ovo, skranji } from "@/utils/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "../globals.css";
+import BackToTopButton from "@/components/routing/BackToTopButton";
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -23,6 +24,7 @@ export default async function LangLayout({ children, params }) {
         className={`${skranji.variable} ${ovo.variable} font-skranji antialiased leading-8 overflow-x-hidden bg-background`}
       >
         <Navbar dict={dict} lang={lang} />
+        <BackToTopButton />
         {children}
         <Footer dict={dict} lang={lang} />
       </body>
