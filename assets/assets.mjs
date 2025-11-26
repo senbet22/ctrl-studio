@@ -60,15 +60,15 @@ export const assets = {
 // Team Members.
 export const teamMembers = [
   {
-    name: "Magnus Eckhoff",
+    id: 1,
     avatar: magnus,
   },
   {
-    name: "Caroline Silva",
+    id: 2,
     avatar: caroline,
   },
   {
-    name: "David Johnsen",
+    id: 3,
     avatar: david,
   },
 ];

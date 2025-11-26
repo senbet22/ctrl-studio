@@ -74,8 +74,10 @@
     "responsibilitiesHeading": "Responsibilities",
     "members": [
       {
+        "id": 1,
+        "name": "Magnus Eckhoff",
         "role": "Creative Director and Composer",
-        "alt": "Team Member Portrait",
+        "alt": "Portrait of Magnus Eckhoff",
         "background": "Combines a background in music, storytelling, and design with a degree in 3D animation and game design.",
         "readMore": "Read More",
         "detailedBio": [
@@ -84,8 +86,10 @@
         ]
       },
       {
+        "id": 2,
+        "name": "Caroline Silva",
         "role": "Project Manager and Designer",
-        "alt": "Team Member Portrait",
+        "alt": "Portrait of Caroline Silva",
         "background": "Has experience in drawing, 3D animation, and UX design, with a degree in 3D animation and game design.",
         "readMore": "Read More",
         "detailedBio": [
@@ -94,8 +98,10 @@
         ]
       },
       {
+        "id": 3,
+        "name": "David Johnsen",
         "role": "Chairman and Technical Director",
-        "alt": "Team Member Portrait",
+        "alt": "Portrait of David Johnsen",
         "background": "Experienced developer and former lead on a game with over 4 million copies sold, now teaching 3D animation and game design.",
         "readMore": "Read More",
         "detailedBio": [

@@ -33,14 +33,14 @@ export const EmblaCarousel = ({ dict }) => {
               >
                 {/* Image Container */}
                 <motion.div
-                  initial={{ x: 100, y: -200 }}
-                  whileInView={{ x: 0, y: 0 }}
+                  initial={{ x: -200 }}
+                  whileInView={{ x: 0 }}
                   transition={{ duration: 0.5 }}
                   className="flex-shrink-0 w-full md:w-1/3 h-[40svh] md:h-fit flex items-start justify-center"
                 >
                   <Image
                     src={avatar}
-                    alt={name}
+                    alt={name + " Avatar"}
                     className="max-h-full max-w-full object-contain"
                   />
                 </motion.div>

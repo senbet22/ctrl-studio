@@ -10,14 +10,15 @@ const Team = ({ dict }) => {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   // Merges team members with translations
-  const team = useMemo(
-    () =>
-      teamMembers.map((member, index) => ({
-        ...member,
-        ...dict.team.members[index],
-      })),
-    [dict]
-  );
+  const team = useMemo(() => {
+    const dictMembersById = new Map(
+      dict.team.members.map((member) => [member.id, member])
+    );
+    return teamMembers.map((member) => ({
+      ...member,
+      ...dictMembersById.get(member.id),
+    }));
+  }, [dict]);
 
   const handleReadMore = (index) => {
     setSelectedIndex(index);
