@@ -19,7 +19,7 @@ const Footer = ({ dict }) => {
   };
 
   return (
-    <div className="bg-gray-900">
+    <footer className="bg-gray-900">
       <div className="md:mx-10 mx-4 sm:mx-[10%]">
         <div className="flex flex-col md:grid grid-cols-[3fr_1fr_1fr] gap-14 py-10 text-base text-foreground font-ovo">
           {/* Left section */}
@@ -111,7 +111,7 @@ const Footer = ({ dict }) => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
