@@ -1,5 +1,5 @@
 "use client";
-import { assets, teamMembers } from "@/assets/assets";
+import { teamMembers } from "@/assets/assets";
 import Image from "next/image";
 import React, { useState, useMemo } from "react";
 import { motion } from "motion/react";
@@ -31,7 +31,7 @@ const Team = ({ dict }) => {
   };
 
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -96,7 +96,7 @@ const Team = ({ dict }) => {
         member={selectedIndex !== null ? team[selectedIndex] : null}
         dict={dict}
       />
-    </motion.div>
+    </motion.section>
   );
 };
 

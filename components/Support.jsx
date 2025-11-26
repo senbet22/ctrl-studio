@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 const Support = ({ dict }) => {
   return (
-    <div
+    <section
       id="support"
       className="scroll-mt-20 min-h-svh w-full bg-background bg-cover bg-center flex justify-center"
     >
@@ -102,7 +102,7 @@ const Support = ({ dict }) => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

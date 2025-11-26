@@ -30,21 +30,21 @@ const Contact = ({ dict }) => {
   };
 
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="contact"
       className="relative w-full px-6 py-30 scroll-mt-20 overflow-hidden bg-background"
     >
-      <motion.h2
+      <motion.h1
         initial={{ x: 40, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center text-4xl sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-35%  to-secondary to-60%"
       >
         {dict.contact.title}
-      </motion.h2>
+      </motion.h1>
 
       <motion.p
         initial={{ opacity: 0 }}
@@ -118,7 +118,7 @@ const Contact = ({ dict }) => {
 
         <p className="text-center mt-4 text-white">{result}</p>
       </motion.form>
-    </motion.div>
+    </motion.section>
   );
 };
 

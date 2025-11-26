@@ -10,7 +10,7 @@ const About = ({ dict }) => {
 
   return (
     <>
-      <div
+      <section
         id="about"
         className="scroll-mt-20 relative h-svh w-full overflow-hidden"
       >
@@ -65,7 +65,7 @@ const About = ({ dict }) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Modal */}
       <AboutModal
