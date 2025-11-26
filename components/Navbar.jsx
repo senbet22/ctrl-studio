@@ -10,20 +10,36 @@ import { useRouter, usePathname } from "next/navigation";
 const Navbar = ({ dict }) => {
   const router = useRouter();
   const pathname = usePathname();
+  const currentLang = pathname.split("/")[1] || "en";
+  const [activeHash, setActiveHash] = useState("");
+  const [isScroll, setIsScroll] = useState(false);
+  const sideMenuRef = useRef();
+
+  useEffect(() => {
+    setActiveHash(window.location.hash.substring(1));
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash.substring(1));
+    };
+    window.addEventListener("hashchange", handleHashChange);
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [pathname]);
 
   const handleNavClick = (section) => {
-    if (pathname !== "/") {
-      // Navigate to homepage first, then scroll
-      router.push(`/#${section}`);
+    const isHomePage =
+      pathname === `/${currentLang}` ||
+      pathname === "/" ||
+      (currentLang === "en" && pathname === "");
+
+    if (!isHomePage) {
+      router.push(`/${currentLang}/#${section}`);
     } else {
-      // Already on homepage, just scroll
+      window.history.pushState(null, "", `#${section}`);
+      setActiveHash(section);
       document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  const [isScroll, setIsScroll] = useState(false);
-
-  const sideMenuRef = useRef();
 
   const openMenu = () => {
     sideMenuRef.current.style.transform = "translateX(-16rem)";
@@ -34,21 +50,35 @@ const Navbar = ({ dict }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (scrollY > 50) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
-      }
-    });
+    const handleScroll = () => {
+      setIsScroll(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const isActive = (section, path = null) => {
+    const isHomePage =
+      pathname === `/${currentLang}` ||
+      pathname === "/" ||
+      (currentLang === "en" && pathname === "");
+
+    if (path) {
+      return pathname === `/${currentLang}${path}`;
+    }
+    return isHomePage && activeHash === section;
+  };
+
   return (
     <>
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50
-          ${isScroll ? "bg-background/50   backdrop-blur-lg shadow-sm " : ""}`}
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+          isScroll ? "bg-background/50 backdrop-blur-lg shadow-sm" : ""
+        }`}
       >
-        <a onClick={() => handleNavClick("top")}>
+        <a onClick={() => handleNavClick("top")} className="cursor-pointer">
           <Image
             src={assets.logo}
             alt="Ctrl-Studio logo"
@@ -57,42 +87,74 @@ const Navbar = ({ dict }) => {
         </a>
         <ul
           className={`hidden font-skranji text-lg md:flex items-center gap-6 lg:gap-8 
-          rounded-xl px-12 py-3 duration-500  shadow-black/40 ${isScroll ? "" : "bg-gray-600/80"}`}
+          rounded-xl px-12 py-3 duration-500 shadow-black/40 ${
+            isScroll ? "" : "bg-gray-600/80"
+          }`}
         >
           <li
             onClick={() => handleNavClick("about")}
-            className="hover:text-primary duration-100"
+            className={`hover:text-primary duration-100 cursor-pointer ${
+              isActive("about") ? "text-primary border-b-2 border-primary" : ""
+            }`}
           >
-            <a className="cursor-pointer">{dict.nav.about}</a>
+            {dict.nav.about}
           </li>
           <li
             onClick={() => handleNavClick("lore")}
-            className="hover:text-primary duration-100"
+            className={`hover:text-primary duration-100 cursor-pointer ${
+              isActive("lore") ? "text-primary border-b-2 border-primary" : ""
+            }`}
           >
-            <a className="cursor-pointer">{dict.nav.lore}</a>
+            {dict.nav.lore}
           </li>
           <li className="hover:text-primary duration-100">
-            <Link href="/vision">{dict.nav.vision}</Link>
+            <Link
+              href={`/${currentLang}/vision`}
+              className={
+                isActive(null, "/vision")
+                  ? "text-primary border-b-2 border-primary"
+                  : ""
+              }
+            >
+              {dict.nav.vision}
+            </Link>
           </li>
           <li
             onClick={() => handleNavClick("team")}
-            className="hover:text-primary duration-100"
+            className={`hover:text-primary duration-100 cursor-pointer ${
+              isActive("team") ? "text-primary border-b-2 border-primary" : ""
+            }`}
           >
-            <a className="cursor-pointer">{dict.nav.team}</a>
+            {dict.nav.team}
           </li>
 
           <li className="hover:text-primary duration-100">
-            <Link href="/contact">{dict.nav.contact}</Link>
+            <Link
+              href={`/${currentLang}/contact`}
+              className={
+                isActive(null, "/contact")
+                  ? "text-primary border-b-2 border-primary"
+                  : ""
+              }
+            >
+              {dict.nav.contact}
+            </Link>
           </li>
 
           <LanguageDropdown />
         </ul>
 
         <div
-          className="hidden lg:flex items-center gap-3  ml-4 "
+          className="hidden lg:flex items-center gap-3 ml-4"
           onClick={() => handleNavClick("support")}
         >
-          <a>
+          <a
+            className={`cursor-pointer ${
+              isActive("support")
+                ? "text-primary border-b-2 border-primary"
+                : ""
+            }`}
+          >
             <SupportButton dict={dict} />
           </a>
         </div>

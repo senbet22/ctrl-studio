@@ -5,7 +5,7 @@ import Image from "next/image";
 const Vision = ({ dict }) => {
   const articles = dict.vision.article || [];
   return (
-    <div className="relative w-full min-h-screen max-w-6xl px-6 mx-auto py-25">
+    <section className="relative w-full min-h-screen max-w-6xl px-6 mx-auto py-25">
       {/* Layout */}
       <div className="flex flex-col md:flex-row items-start gap-10 py-10">
         {/* Image */}
@@ -33,7 +33,7 @@ const Vision = ({ dict }) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Vision;

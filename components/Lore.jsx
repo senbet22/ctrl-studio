@@ -5,7 +5,7 @@ import { assets } from "@/assets/assets.mjs";
 
 const Lore = ({ dict }) => {
   return (
-    <div
+    <section
       id="lore"
       className="select-none scroll-mt-20 relative h-full w-full overflow-hidden"
     >
@@ -32,7 +32,7 @@ const Lore = ({ dict }) => {
 
         <EmblaCarousel dict={dict} />
       </div>
-    </div>
+    </section>
   );
 };
 

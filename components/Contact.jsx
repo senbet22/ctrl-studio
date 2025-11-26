@@ -30,7 +30,7 @@ const Contact = ({ dict }) => {
   };
 
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -118,7 +118,7 @@ const Contact = ({ dict }) => {
 
         <p className="text-center mt-4 text-white">{result}</p>
       </motion.form>
-    </motion.div>
+    </motion.section>
   );
 };
 
