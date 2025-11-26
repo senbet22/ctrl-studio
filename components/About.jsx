@@ -12,7 +12,7 @@ const About = ({ dict }) => {
     <>
       <section
         id="about"
-        className="scroll-mt-20 relative h-svh w-full overflow-hidden"
+        className="scroll-mt-18 md:scroll-mt-20 relative h-svh w-full overflow-hidden"
       >
         {/* Background Image */}
         <Image
