@@ -7,7 +7,7 @@ const Lore = ({ dict }) => {
   return (
     <section
       id="lore"
-      className="select-none scroll-mt-20 relative h-full w-full overflow-hidden"
+      className="select-none scroll-mt-18 md:scroll-mt-20 relative h-full w-full overflow-hidden"
     >
       {/* Background Image */}
       <Image

@@ -148,13 +148,7 @@ const Navbar = ({ dict }) => {
           className="hidden lg:flex items-center gap-3 ml-4"
           onClick={() => handleNavClick("support")}
         >
-          <a
-            className={`cursor-pointer ${
-              isActive("support")
-                ? "text-primary border-b-2 border-primary"
-                : ""
-            }`}
-          >
+          <a className={`cursor-pointer ${isActive("support")}`}>
             <SupportButton dict={dict} />
           </a>
         </div>

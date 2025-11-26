@@ -35,7 +35,7 @@ const Contact = ({ dict }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="contact"
-      className="relative w-full px-6 py-30 scroll-mt-20 overflow-hidden bg-background"
+      className="relative w-full px-6 py-30 overflow-hidden bg-background"
     >
       <motion.h1
         initial={{ x: 40, opacity: 0 }}
