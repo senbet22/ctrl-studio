@@ -14,7 +14,7 @@ const Header = ({ dict }) => {
   const closeTrailerModal = () => setIsTrailerModalOpen(false);
 
   return (
-    <section className="relative h-svh w-full flex items-center justify-center overflow-hidden">
+    <section id="top" className="relative h-svh w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
         src={assets.bg_image}

@@ -78,7 +78,10 @@ const Navbar = ({ dict }) => {
           isScroll ? "bg-background/50 backdrop-blur-lg shadow-sm" : ""
         }`}
       >
-        <a onClick={() => handleNavClick("top")} className="cursor-pointer">
+        <a
+          onClick={() => handleNavClick("top")}
+          className={`cursor-pointer`}
+        >
           <Image
             src={assets.logo}
             alt="Ctrl-Studio logo"
