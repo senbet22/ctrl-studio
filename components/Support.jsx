@@ -2,10 +2,12 @@
 
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "motion/react";
-
+import SubscribeModal from "./modals/SubscribeModal";
 const Support = ({ dict }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section
       id="support"
@@ -78,7 +80,16 @@ const Support = ({ dict }) => {
                 </p>
               </div>
             ))}
+            <button
+              onClick={() => setIsOpen(true)}
+              className="my-5 px-8 py-3 bg-secondary/80 cursor-pointer text-foreground text-lg ease-in 
+              rounded-lg hover:bg-primary/70 hover:scale-105 transition-colors duration-200"
+            >
+              Join Mailing List
+            </button>
           </div>
+
+          <SubscribeModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </div>
 
         <div className="mt-15 flex flex-col gap-6 my-2 px-2 mx-auto">
