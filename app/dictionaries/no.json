@@ -131,7 +131,15 @@
       "submitButton": "Send Melding",
       "sending": "Sender....",
       "success": "Meldingen din har blitt sendt!"
-    }
+    },
+    "exclusiveUpdatesConsentText": "Eksklusive oppdateringer: Jeg samtykker i å motta nyheter, oppdateringer og spesielle tilbud fra Ctrl Studio. Jeg forstår at jeg kan melde meg av når som helst.",
+    "exclusiveUpdatesConsentError": "Du må samtykke til å motta eksklusive oppdateringer for å fortsette."
+  },
+  "privacyPolicy": {
+    "title": "Personvernerklæring"
+  },
+  "termsAndConditions": {
+    "title": "Vilkår og betingelser"
   },
   "footer": {
     "description": "Ctrl Studio er en vennegjeng fra Norge på oppdrag for å skape vårt drømmespill og dele det med verden.",
@@ -144,6 +152,8 @@
     "getintouch": "KONTAKT OSS",
     "email": "ctrlstudio.as@gmail.com",
     "copyright": "Opphavsrett 2025 © Ctrl Studio - Alle rettigheter reservert.",
-    "by": "laget av Senbet.G"
+    "by": "laget av Senbet.G",
+    "privacyPolicy": "Personvernerklæring",
+    "termsAndConditions": "Vilkår og betingelser"
   }
 }

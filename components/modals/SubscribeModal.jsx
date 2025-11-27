@@ -4,9 +4,10 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { assets } from "@/assets/assets.mjs";
 
-const SubscribeModal = ({ isOpen, onClose }) => {
+const SubscribeModal = ({ isOpen, onClose, dict }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [marketingConsent, setMarketingConsent] = useState(false);
   const [status, setStatus] = useState(""); // 'loading', 'success', 'error'
 
   // Manage Body Scroll
@@ -23,6 +24,10 @@ const SubscribeModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!marketingConsent) {
+      setStatus("consent-required");
+      return;
+    }
     setStatus("loading");
 
     try {
@@ -75,7 +80,7 @@ const SubscribeModal = ({ isOpen, onClose }) => {
           >
             {/* Header */}
             <div className="flex justify-center items-center bg-transparent p-6 border-b border-white/20 relative">
-              <h1 className="text-xl sm:text-2xl text-center font-bold text-primary">
+              <h1 className="text-lg md:text-xl text-center font-bold text-primary">
                 Join Mailing List
               </h1>
               <button
@@ -127,6 +132,41 @@ const SubscribeModal = ({ isOpen, onClose }) => {
                   />
                 </div>
 
+                {/* Marketing Consent Checkbox */}
+                <div className="relative flex items-start gap-3">
+                  <div className="flex items-center h-5">
+                    <input
+                      id="marketing-consent"
+                      type="checkbox"
+                      checked={marketingConsent}
+                      onChange={(e) => setMarketingConsent(e.target.checked)}
+                      className="appearance-none peer h-5 w-5 bg-foreground border-2 border-secondary rounded-md checked:bg-secondary checked:border-secondary flex-shrink-0 cursor-pointer"
+                    />
+                    <svg
+                      className="absolute w-3 h-3 ml-1 hidden peer-checked:block pointer-events-none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      strokeWidth="4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-2 text-sm">
+                    <label
+                      htmlFor="marketing-consent"
+                      className="text-primary/60 cursor-pointer"
+                    >
+                      {dict.contact.exclusiveUpdatesConsentText}
+                    </label>
+                  </div>
+                </div>
+
                 {/* Submit Button */}
                 <button
                   type="submit"
@@ -155,13 +195,15 @@ const SubscribeModal = ({ isOpen, onClose }) => {
                       Welcome aboard! Check your inbox.
                     </motion.p>
                   )}
-                  {status === "error" && (
+                  {(status === "error" || status === "consent-required") && (
                     <motion.p
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       className="text-red-400 text-sm font-medium"
                     >
-                      Something went wrong. Please try again.
+                      {status === "error"
+                        ? "Something went wrong. Please try again."
+                        : dict.contact.exclusiveUpdatesConsentError}
                     </motion.p>
                   )}
                 </div>

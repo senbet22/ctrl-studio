@@ -89,7 +89,7 @@ const Support = ({ dict }) => {
             </button>
           </div>
 
-          <SubscribeModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+          <SubscribeModal isOpen={isOpen} onClose={() => setIsOpen(false)} dict={dict} />
         </div>
 
         <div className="mt-15 flex flex-col gap-6 my-2 px-2 mx-auto">
