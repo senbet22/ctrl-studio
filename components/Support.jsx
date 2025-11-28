@@ -82,7 +82,7 @@ const Support = ({ dict }) => {
             ))}
             <button
               onClick={() => setIsOpen(true)}
-              className="my-5 mx-auto px-8 py-3 bg-secondary/80 cursor-pointer text-foreground text-lg ease-in 
+              className="my-5 mx-2 px-8 py-3 bg-secondary/80 cursor-pointer text-foreground text-lg ease-in 
               rounded-lg hover:bg-primary/70 hover:scale-105 transition-colors duration-200"
             >
               Join Mailing List
