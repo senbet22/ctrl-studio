@@ -5,15 +5,16 @@ export default async function TermsAndConditions({ params: { lang } }) {
   const { termsAndConditions } = dictionary;
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center py-24">
       <div className="w-full max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-4xl text-primary font-bold mb-6 text-center">
+        <h1 className="text-xl md:text-3xl text-primary font-bold mb-10 text-start">
           {termsAndConditions.title}
         </h1>
 
-        <p className="text-center text-secondary mb-8">
-          Last updated: 28/11/2025
-        </p>
+        <div className="flex justify-start gap-4 mb-8">
+          <p className="text-foreground/70">Date created: 28/11/2025</p>
+          <p className="text-secondary">Last updated: 28/11/2025</p>
+        </div>
 
         <div className="space-y-6 text-lg leading-relaxed text-foreground/80">
           <p>

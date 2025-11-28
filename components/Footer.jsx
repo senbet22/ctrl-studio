@@ -3,6 +3,7 @@ import React from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Footer = ({ dict, lang }) => {
   const router = useRouter();
@@ -61,12 +62,12 @@ const Footer = ({ dict, lang }) => {
                 </a>
               </li>
               <li>
-                <a
-                  href="contact"
+                <Link
+                  href={`/${lang}/contact`}
                   className="hover:text-secondary cursor-pointer"
                 >
                   {dict.footer.contact}
-                </a>
+                </Link>
               </li>
               <li onClick={() => handleNavClick("support")}>
                 <a className="hover:text-secondary cursor-pointer">
@@ -97,20 +98,20 @@ const Footer = ({ dict, lang }) => {
           <div className="flex justify-start text-sm py-4 items-center">
             <ul className="flex gap-6">
               <li>
-                <a
-                  href="privacy-policy"
+                <Link
+                  href={`/${lang}/privacy-policy`}
                   className="hover:text-secondary cursor-pointer"
                 >
                   {dict.footer.privacyPolicy}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="terms-and-conditions"
+                <Link
+                  href={`/${lang}/terms-and-conditions`}
                   className="hover:text-secondary cursor-pointer"
                 >
                   {dict.footer.termsAndConditions}
-                </a>
+                </Link>
               </li>
               <li className="justify-self-end">{dict.footer.by}</li>
             </ul>
