@@ -3,15 +3,16 @@ import React from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
 
-const Footer = ({ dict }) => {
+const Footer = ({ dict, lang }) => {
   const router = useRouter();
   const pathname = usePathname();
 
   const handleNavClick = (section) => {
-    if (pathname !== "/") {
+    if (pathname !== `/${lang}`) {
       // Navigate to homepage first, then scroll
-      router.push(`/#${section}`);
+      router.push(`/${lang}/#${section}`);
     } else {
       // Already on homepage, just scroll
       document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
@@ -61,12 +62,12 @@ const Footer = ({ dict }) => {
                 </a>
               </li>
               <li>
-                <a
-                  href="contact"
+                <Link
+                  href={`/${lang}/contact`}
                   className="hover:text-secondary cursor-pointer"
                 >
                   {dict.footer.contact}
-                </a>
+                </Link>
               </li>
               <li onClick={() => handleNavClick("support")}>
                 <a className="hover:text-secondary cursor-pointer">
@@ -94,8 +95,27 @@ const Footer = ({ dict }) => {
             {dict.footer.copyright}
           </p>
 
-          <div className="flex justify-center text-xs py-4 items-center">
-            {dict.footer.by}
+          <div className="flex justify-start text-sm py-4 items-center">
+            <ul className="flex items-center gap-6">
+              <li>
+                <Link
+                  href={`/${lang}/privacy-policy`}
+                  className="hover:text-secondary cursor-pointer"
+                >
+                  {dict.footer.privacyPolicy}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/terms-and-conditions`}
+                  className="hover:text-secondary cursor-pointer"
+                >
+                  {dict.footer.termsAndConditions}
+                </Link>
+              </li>
+              <li className="justify-self-end">{dict.footer.by}</li>
+            </ul>
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={18}

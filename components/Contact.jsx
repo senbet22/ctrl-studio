@@ -73,7 +73,8 @@ const Contact = ({ dict }) => {
             aria-label="Name"
             name="name"
             className="flex-1 p-3 outline-none border border-white/40
-            rounded-md bg-primary/20 text-foreground placeholder-foreground/70"
+            rounded-md bg-primary/20 text-foreground placeholder-foreground/70
+            focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary"
           />
           <motion.input
             initial={{ x: 50, opacity: 0 }}
@@ -85,7 +86,8 @@ const Contact = ({ dict }) => {
             aria-label="Email"
             name="email"
             className="flex-1 p-3 outline-none border border-white/40
-            rounded-md bg-primary/20 text-foreground placeholder-foreground/70"
+            rounded-md bg-primary/20 text-foreground placeholder-foreground/70
+            focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary"
           />
         </div>
 
@@ -94,7 +96,8 @@ const Contact = ({ dict }) => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.6 }}
           className="w-full p-4 outline-none border border-white/40
-            rounded-md bg-primary/20 text-foreground placeholder-foreground/70 mb-4"
+            rounded-md bg-primary/20 text-foreground placeholder-foreground/70 mb-4
+            focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary"
           rows="6"
           placeholder={dict.contact.form.messagePlaceholder}
           required
