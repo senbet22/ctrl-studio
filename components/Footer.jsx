@@ -96,7 +96,7 @@ const Footer = ({ dict, lang }) => {
           </p>
 
           <div className="flex justify-start text-sm py-4 items-center">
-            <ul className="flex gap-6">
+            <ul className="flex items-center gap-6">
               <li>
                 <Link
                   href={`/${lang}/privacy-policy`}

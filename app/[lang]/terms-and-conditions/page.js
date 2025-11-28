@@ -16,7 +16,7 @@ export default async function TermsAndConditions({ params: { lang } }) {
           <p className="text-secondary">Last updated: 28/11/2025</p>
         </div>
 
-        <div className="space-y-6 text-lg leading-relaxed text-foreground/80">
+        <div className="space-y-6 text-base leading-relaxed text-foreground/80">
           <p>
             These Terms & Conditions govern your use of the website operated by{" "}
             <strong>Ctrl Studio AS</strong>. By accessing this site or signing

@@ -16,13 +16,12 @@ export default async function PrivacyPolicy({ params: { lang } }) {
           <p className="text-secondary">Last updated: 28/11/2025</p>
         </div>
 
-        <div className="space-y-6 text-lg leading-relaxed text-foreground/80">
+        <div className="space-y-6 text-base leading-relaxed text-foreground/80">
           <p>
             This privacy notice explains how <strong>Ctrl Studio</strong>{" "}
             collects and uses personal data when you sign up for our mailing
             list.
           </p>
-
           <h2 className="text-2xl font-semibold mt-8">
             1. What data we collect and why
           </h2>
