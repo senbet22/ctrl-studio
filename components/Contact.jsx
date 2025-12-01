@@ -40,7 +40,7 @@ const Contact = ({ dict }) => {
       <motion.h1
         initial={{ x: 40, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         className="text-center text-4xl sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-35%  to-secondary to-60%"
       >
         {dict.contact.title}
@@ -58,7 +58,7 @@ const Contact = ({ dict }) => {
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.9 }}
+        transition={{ duration: 0.5 }}
         onSubmit={onSubmit}
         className="max-w-2xl mx-auto font-ovo"
       >
@@ -66,7 +66,7 @@ const Contact = ({ dict }) => {
           <motion.input
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             type="text"
             placeholder={dict.contact.form.namePlaceholder}
             required
@@ -79,7 +79,7 @@ const Contact = ({ dict }) => {
           <motion.input
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             type="email"
             placeholder={dict.contact.form.emailPlaceholder}
             required
@@ -94,7 +94,7 @@ const Contact = ({ dict }) => {
         <motion.textarea
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1.3, duration: 0.6 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
           className="w-full p-4 outline-none border border-white/40
             rounded-md bg-primary/20 text-foreground placeholder-foreground/70 mb-4
             focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary"

@@ -6,6 +6,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { assets } from "@/assets/assets.mjs";
 
 export default function LanguageDropdown() {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
   const pathname = usePathname();
@@ -21,8 +22,8 @@ export default function LanguageDropdown() {
     // Set cookie via server action
     await setLocaleAction(otherLang);
 
-    // Force a full page reload - middleware will handle locale detection
-    window.location.href = newPath;
+    // Use client-side navigation for an instant load
+    router.replace(newPath);
   };
 
   const toggleDropdown = () => setOpen(!open);
