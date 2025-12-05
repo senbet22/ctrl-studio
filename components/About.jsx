@@ -45,7 +45,8 @@ const About = ({ dict }) => {
 
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="flex text-primary  border-2 px-2 border-primary/70 hover:border-primary hover:text-secondary font-semibold cursor-pointer transition-colors duration-300 group"
+                className="flex text-primary  border-2 px-2 border-primary/70 hover:border-primary hover:text-secondary
+                font-semibold cursor-pointer transition-colors duration-300 group shadow-md hover:shadow-gray-700"
               >
                 {dict.about.readMore}
                 <svg

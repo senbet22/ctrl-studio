@@ -8,7 +8,7 @@ export default function PlayButton({ onPlay, dict }) {
     <button
       onClick={onPlay}
       className="flex gap-2 px-6 py-3 bg-accent/40 cursor-pointer text-foreground text-lg 
-      font-semibold rounded-lg hover:bg-secondary/10 hover:scale-105 transition-colors duration-200"
+      font-semibold rounded-lg hover:bg-secondary/10 hover:scale-105 transition-colors duration-200 shadow-md shadow-gray-700"
     >
       <Image
         src={assets.arrow_btn}
