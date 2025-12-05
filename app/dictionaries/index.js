@@ -1,13 +1,13 @@
+import en from "./en.json";
+import no from "./no.json";
+
 const dictionaries = {
-  en: () => import("./en.json").then((module) => module.default),
-  no: () => import("./no.json").then((module) => module.default),
+  en,
+  no,
 };
 
-export const getDictionary = async (locale) => {
-  if (!dictionaries[locale]) {
-    return dictionaries["en"](); // Fallback to English
-  }
-  return dictionaries[locale]();
+export const getDictionary = (locale) => {
+  return dictionaries[locale] ?? dictionaries.en;
 };
 
 export const locales = ["en", "no"];

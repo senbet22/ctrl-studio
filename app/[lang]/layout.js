@@ -14,9 +14,9 @@ export const metadata = {
   description: "Ctrl Studio is an indie game studio from Norway",
 };
 
-export default async function LangLayout({ children, params }) {
-  const { lang } = await params;
-  const dict = await getDictionary(lang);
+export default function LangLayout({ children, params }) {
+  const { lang } = params;
+  const dict = getDictionary(lang);
 
   return (
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
