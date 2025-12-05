@@ -171,7 +171,7 @@ const SubscribeModal = ({ isOpen, onClose, dict }) => {
                 <button
                   type="submit"
                   disabled={status === "loading" || status === "success"}
-                  className={`w-full py-3 px-4 rounded-lg font-bold text-lg tracking-wide transition-all transform active:scale-95 cursor-pointer ${
+                  className={`w-full py-3 px-4 rounded-lg font-bold text-lg tracking-wide transition-all transform active:scale-95 cursor-pointer shadow-md shadow-gray-700 ${
                     status === "success"
                       ? "bg-secondary/80 text-foreground shadow-[0_0_15px_rgba(22,163,74,0.5)]"
                       : "bg-primary/70 text-foreground hover:bg-primary/80"
