@@ -66,7 +66,7 @@ const Support = ({ dict }) => {
           </div>
 
           {/* List from dict.support.benefits */}
-          <div className="mx-auto flex items-start justify-start w-full flex-col gap-4 text-lg">
+          <div className="mx-auto px-4 flex items-start justify-start w-full flex-col gap-4 text-lg">
             {dict.support.benefits.map((benefit, index) => (
               <div key={index} className="flex items-center gap-3">
                 <Image
@@ -82,7 +82,7 @@ const Support = ({ dict }) => {
             ))}
             <button
               onClick={() => setIsOpen(true)}
-              className="my-5 mx-auto px-8 py-3 bg-secondary/80 cursor-pointer text-foreground shadow-md shadow-gray-700 text-lg ease-in 
+              className="my-5 px-8 py-3 bg-secondary/80 cursor-pointer text-foreground shadow-md shadow-gray-700 text-lg ease-in 
               rounded-lg hover:bg-primary/70 hover:scale-105 transition-colors duration-200"
             >
               Join Mailing List
