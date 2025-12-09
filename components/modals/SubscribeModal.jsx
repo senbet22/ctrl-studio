@@ -9,6 +9,7 @@ const SubscribeModal = ({ isOpen, onClose, dict }) => {
   const [name, setName] = useState("");
   const [marketingConsent, setMarketingConsent] = useState(false);
   const [status, setStatus] = useState(""); // 'loading', 'success', 'error'
+  const [message, setMessage] = useState(""); // To hold dynamic messages from API
 
   // Manage Body Scroll
   useEffect(() => {
@@ -24,6 +25,7 @@ const SubscribeModal = ({ isOpen, onClose, dict }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setMessage(""); // Reset message on new submission
     if (!marketingConsent) {
       setStatus("consent-required");
       return;
@@ -37,18 +39,22 @@ const SubscribeModal = ({ isOpen, onClose, dict }) => {
         body: JSON.stringify({ email, name }),
       });
 
+      const data = await res.json(); // Parse JSON for both success and error cases
+
       if (res.ok) {
         setStatus("success");
+        setMessage(data.message || "Welcome aboard! Check your inbox.");
         setEmail("");
         setName("");
-        //  Close modal automatically after success?
-        setTimeout(onClose, 2000);
+        setTimeout(onClose, 2500); // Allow time to read the message
       } else {
         setStatus("error");
+        setMessage(data.message || "Something went wrong. Please try again.");
       }
     } catch (error) {
       console.error(error);
       setStatus("error");
+      setMessage("An unexpected network error occurred.");
     }
   };
 
@@ -180,7 +186,7 @@ const SubscribeModal = ({ isOpen, onClose, dict }) => {
                   {status === "loading"
                     ? "Processing..."
                     : status === "success"
-                    ? "Signed Up!"
+                    ? "Success!"
                     : "Sign Up"}
                 </button>
 
@@ -192,7 +198,7 @@ const SubscribeModal = ({ isOpen, onClose, dict }) => {
                       animate={{ opacity: 1, y: 0 }}
                       className="text-secondary text-sm font-medium"
                     >
-                      Welcome aboard! Check your inbox.
+                      {message}
                     </motion.p>
                   )}
                   {(status === "error" || status === "consent-required") && (
@@ -202,7 +208,7 @@ const SubscribeModal = ({ isOpen, onClose, dict }) => {
                       className="text-red-400 text-sm font-medium"
                     >
                       {status === "error"
-                        ? "Something went wrong. Please try again."
+                        ? message
                         : dict.contact.exclusiveUpdatesConsentError}
                     </motion.p>
                   )}
