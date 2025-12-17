@@ -1,3 +1,7 @@
+/**
+ * Renders the About section of the page, which provides a brief introduction and a button to open a modal with more detailed information.
+ * @param {object} dict - The dictionary object containing translations.
+ */
 "use client";
 
 import React, { useState } from "react";

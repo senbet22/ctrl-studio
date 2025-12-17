@@ -1,3 +1,10 @@
+/**
+ * The main home page component for a given language.
+ * It fetches the language dictionary and assembles all the major sections
+ * of the single-page application (Header, About, Lore, etc.).
+ *
+ * @param {object} params - The route parameters, containing the `lang`.
+ */
 import { getDictionary } from "../dictionaries";
 
 import Header from "@/components/Header";

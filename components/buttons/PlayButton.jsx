@@ -1,3 +1,8 @@
+/**
+ * Renders a play button that triggers a provided `onPlay` function when clicked.
+ * @param {function} onPlay - The function to call when the button is clicked.
+ * @param {object} dict - The dictionary object containing translations for the button text.
+ */
 "use client";
 
 import { assets } from "@/assets/assets.mjs";

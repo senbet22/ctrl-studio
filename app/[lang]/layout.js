@@ -1,3 +1,11 @@
+/**
+ * The primary layout for language-specific pages.
+ * It sets up the main HTML structure, applies global fonts, and wraps the content
+ * with the Navbar, Footer, and other global components.
+ *
+ * @param {object} children - The page content to render.
+ * @param {object} params - The route parameters, containing the `lang`.
+ */
 import { locales, getDictionary } from "../dictionaries";
 import { ovo, skranji } from "@/utils/fonts";
 import Navbar from "@/components/Navbar";

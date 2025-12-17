@@ -1,3 +1,9 @@
+/**
+ * Renders the Terms and Conditions page.
+ * This page fetches and displays the terms and conditions content based on the active language.
+ *
+ * @param {object} params - The route parameters, containing the `lang`.
+ */
 import { getDictionary } from "../../dictionaries";
 
 export default async function TermsAndConditions({ params: { lang } }) {

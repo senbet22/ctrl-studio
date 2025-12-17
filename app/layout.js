@@ -1,3 +1,8 @@
+/**
+ * The root layout for the application.
+ * Note: The primary HTML structure is in the [lang]/layout.js file.
+ * This layout simply passes its children through.
+ */
 import "./globals.css";
 
 export const metadata = {

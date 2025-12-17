@@ -1,3 +1,10 @@
+/**
+ * Renders the Team section of the application.
+ * This component displays a grid of team members, showing their avatars, names, roles, and a brief background.
+ * Clicking on a team member opens a `TeamMemberModal` to display more detailed information about them.
+ *
+ * @param {object} dict - The dictionary object containing translations for team section content.
+ */
 "use client";
 import { teamMembers } from "@/assets/assets";
 import Image from "next/image";

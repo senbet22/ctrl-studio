@@ -1,3 +1,9 @@
+/**
+ * Renders the Support section of the application.
+ * This section provides information on how users can support the project,
+ * including a mailing list signup form via a modal and a link to the Discord server.
+ * @param {object} dict - The dictionary object containing translations for the support section.
+ */
 "use client";
 
 import { assets } from "@/assets/assets";

@@ -1,3 +1,8 @@
+/**
+ * Renders the Lore section of the application.
+ * This section features a background image and an Embla Carousel to display character lore.
+ * @param {object} dict - The dictionary object containing translations for the lore section.
+ */
 import React from "react";
 import Image from "next/image";
 import { EmblaCarousel } from "./carousel/EmblaCarousel";

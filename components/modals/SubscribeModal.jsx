@@ -1,3 +1,12 @@
+/**
+ * Renders a modal for users to subscribe to a mailing list.
+ * It handles form inputs for name and email, consent, and submission to an API endpoint.
+ * The modal displays loading, success, and error states to the user.
+ *
+ * @param {boolean} isOpen - Controls whether the modal is open or closed.
+ * @param {function} onClose - Function to call when the modal should be closed.
+ * @param {object} dict - The dictionary object containing translations for form labels and messages.
+ */
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";

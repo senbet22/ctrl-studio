@@ -1,3 +1,9 @@
+/**
+ * Renders the Privacy Policy page.
+ * This page fetches and displays the privacy policy content based on the active language.
+ *
+ * @param {object} params - The route parameters, containing the `lang`.
+ */
 import { getDictionary } from "../../dictionaries";
 
 export default async function PrivacyPolicy({ params: { lang } }) {

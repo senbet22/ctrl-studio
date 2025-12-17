@@ -1,3 +1,12 @@
+/**
+ * A reusable modal component for displaying content.
+ * It features animations for opening and closing, and it prevents body scroll when open.
+ * The modal can be closed by clicking the overlay, the close button, or pressing the Escape key.
+ * @param {boolean} isOpen - Controls whether the modal is open or closed.
+ * @param {function} onClose - Function to call when the modal should be closed.
+ * @param {string} title - The title to display in the modal header.
+ * @param {React.ReactNode} children - The content to be displayed within the modal body.
+ */
 "use client";
 import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";

@@ -1,3 +1,8 @@
+/**
+ * Renders a contact form that allows users to send messages.
+ * It handles form submission, displaying status messages (sending, success, error) to the user.
+ * @param {object} dict - The dictionary object containing translations for the contact form and messages.
+ */
 "use client";
 
 import { assets } from "@/assets/assets";

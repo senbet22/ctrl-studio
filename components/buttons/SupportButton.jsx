@@ -1,3 +1,8 @@
+/**
+ * Renders a button that, when clicked, navigates the user to the support section.
+ * This section provides information on how to support and fund Ctrl Studio.
+ * @param {object} dict - The dictionary object containing translations for the button text.
+ */
 "use client";
 
 export default function SupportButton({ dict }) {

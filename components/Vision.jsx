@@ -1,3 +1,9 @@
+/**
+ * Renders the Vision section of the application.
+ * This component displays the project's vision through a title, an illustrative image,
+ * and a series of articles or text sections.
+ * @param {object} dict - The dictionary object containing translations for the vision section's content.
+ */
 "use client";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
