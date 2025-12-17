@@ -1,3 +1,8 @@
+/**
+ * Renders the main header section of the application.
+ * This component displays a background image, the application title, and a play button that opens a modal with a game trailer.
+ * @param {object} dict - The dictionary object containing translations for the header content.
+ */
 "use client";
 
 import React, { useState } from "react";

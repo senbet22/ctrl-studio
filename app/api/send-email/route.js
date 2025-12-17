@@ -1,3 +1,16 @@
+/**
+ * API Route: POST /api/send-email
+ *
+ * This endpoint handles mailing list signups. It performs the following actions:
+ * 1.  Applies rate limiting using Upstash Redis to prevent abuse.
+ * 2.  Validates and sanitizes the incoming email and name from the request body.
+ * 3.  Sends a transactional "Welcome" email to the user via Mailtrap using a predefined template.
+ * 4.  Adds the user's email and name to a specified marketing contact list in Mailtrap.
+ * 5.  Handles cases where the user is already on the mailing list, returning a success message.
+ *
+ * It requires several environment variables to be set for Mailtrap and Upstash Redis integration.
+ * If not configured, it will log errors and return appropriate error responses.
+ */
 import { MailtrapClient } from "mailtrap";
 import { NextResponse } from "next/server";
 // import DOMPurify from "isomorphic-dompurify"; // Removed DOMPurify import

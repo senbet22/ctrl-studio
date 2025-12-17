@@ -1,3 +1,7 @@
+/**
+ * A client-side component that renders a dropdown menu for switching the application's language.
+ * It sets a locale cookie using a server action and redirects the user to the translated path.
+ */
 "use client";
 import { setLocaleAction } from "@/app/actions/locale";
 import { useState, useEffect, useRef } from "react";

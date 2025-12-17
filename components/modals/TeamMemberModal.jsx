@@ -1,3 +1,13 @@
+/**
+ * Renders a modal that displays detailed information about a team member.
+ * This includes their avatar, name, role, and a detailed biography.
+ * It also handles its own visibility and prevents body scroll when open.
+ *
+ * @param {boolean} isOpen - Controls whether the modal is open or closed.
+ * @param {function} onClose - Function to call when the modal should be closed.
+ * @param {object} member - The team member object containing details like name, avatar, role, and bio.
+ * @param {object} dict - The dictionary object for any necessary translations.
+ */
 "use client";
 import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";

@@ -1,3 +1,10 @@
+/**
+ * Renders the footer section of the application.
+ * This component includes navigation links, contact information, social media links, and legal links (privacy policy, terms and conditions).
+ * It also handles smooth scrolling to different sections of the homepage.
+ * @param {object} dict - The dictionary object containing translations for footer content.
+ * @param {string} lang - The current language ('en' or 'no').
+ */
 "use client";
 import React from "react";
 import { assets } from "@/assets/assets";

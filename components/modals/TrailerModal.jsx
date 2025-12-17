@@ -1,3 +1,13 @@
+/**
+ * A reusable modal component, typically for embedding video content like a trailer.
+ * It features animations for opening and closing, and prevents body scroll when open.
+ * The modal can be closed by clicking the overlay, the close button, or pressing the Escape key.
+ *
+ * @param {boolean} isOpen - Controls whether the modal is open or closed.
+ * @param {function} onClose - Function to call when the modal should be closed.
+ * @param {string} title - The title to display in the modal header.
+ * @param {React.ReactNode} children - The content to be displayed within the modal body (e.g., an iframe).
+ */
 import { assets } from "@/assets/assets.mjs";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";

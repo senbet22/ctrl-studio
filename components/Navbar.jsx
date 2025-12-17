@@ -1,3 +1,11 @@
+/**
+ * Renders the main navigation bar of the application.
+ * This component provides navigation links to various sections of the page,
+ * handles active link highlighting, smooth scrolling, and includes a responsive mobile menu.
+ * It also features a language dropdown and a support button.
+ *
+ * @param {object} dict - The dictionary object containing translations for navigation links.
+ */
 "use client";
 import LanguageDropdown from "./buttons/LanguageDropdown";
 import Link from "next/link";

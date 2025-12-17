@@ -1,3 +1,8 @@
+/**
+ * A client-side component that implements an Embla Carousel to display character information.
+ * It allows users to navigate through different characters, showing their avatar, name, quote, and story.
+ * @param {object} dict - The dictionary object containing translations for character details.
+ */
 "use client";
 
 import React, { useCallback } from "react";
