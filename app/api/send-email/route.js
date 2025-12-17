@@ -13,7 +13,6 @@
  */
 import { MailtrapClient } from "mailtrap";
 import { NextResponse } from "next/server";
-// import DOMPurify from "isomorphic-dompurify"; // Removed DOMPurify import
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 
@@ -85,7 +84,7 @@ export async function POST(request) {
     }
 
     // Sanitize the name if it exists, otherwise use the default
-    const sanitizedName = name ? name.replace(/<[^>]*>?/gm, '') : "Gamer";
+    const sanitizedName = name ? name.replace(/<[^>]*>?/gm, "") : "Gamer";
 
     // 1. Send the "Welcome" email using the Template
     // This handles the immediate email delivery (Transactional Stream)
