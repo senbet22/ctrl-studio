@@ -19,12 +19,12 @@ export default function LanguageDropdown() {
   const otherLang = currentLang === "en" ? "no" : "en";
   const newPath = pathname.replace(`/${currentLang}`, `/${otherLang}`);
 
-  const handleLanguageChange = async (e) => {
+  const handleLanguageChange = (e) => {
     e.preventDefault();
     setOpen(false);
 
-    // Set cookie via server action
-    await setLocaleAction(otherLang);
+    // Set cookie via server action (fire and forget)
+    setLocaleAction(otherLang);
 
     // Use client-side navigation for an instant load
     router.replace(newPath);
