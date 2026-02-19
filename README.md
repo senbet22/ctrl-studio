@@ -36,8 +36,6 @@ Embla Carousel was chosen because it's lightweight, fast, and easy to integrate.
 
 - **CMS Integration**: Future implementation of Sanity.io or similar CMS when the team needs to update content independently.
 - **Sámi Language Support**: Expand from current English and Norwegian to include Sámi as a third language option.
-- **Mailing List Integration**: Research and implement a cost-effective email service provider for newsletter subscriptions and community updates.
-- **Privacy Policy / Terms and Conditions pages**
 
 ###
 
