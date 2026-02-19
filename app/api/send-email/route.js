@@ -54,10 +54,16 @@ export async function POST(request) {
   // Rate limiting logic
   if (ratelimit) {
     const ip = request.headers.get("x-forwarded-for") ?? "127.0.0.1";
-    const { success, limit, reset, remaining } = await ratelimit.limit(ip);
+    try {
+      const { success, limit, reset, remaining } = await ratelimit.limit(ip);
 
-    if (!success) {
-      return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+      if (!success) {
+        return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+      }
+    } catch (error) {
+      console.error("Upstash Rate Limiting Error:", error);
+      // If rate limiting fails, fail open and allow the request to proceed.
+      // This prevents Upstash issues from blocking mailing list sign-ups.
     }
   }
 
