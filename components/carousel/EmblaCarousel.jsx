@@ -47,6 +47,8 @@ export const EmblaCarousel = ({ dict }) => {
                     src={avatar}
                     alt={name + " Avatar"}
                     className="max-h-full max-w-full object-contain"
+                    priority={index === 0}
+                    loading="eager"
                   />
                 </motion.div>
 

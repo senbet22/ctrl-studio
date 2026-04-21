@@ -19,6 +19,10 @@ export default function LanguageDropdown() {
   const otherLang = currentLang === "en" ? "no" : "en";
   const newPath = pathname.replace(`/${currentLang}`, `/${otherLang}`);
 
+  useEffect(() => {
+    router.prefetch(newPath);
+  }, [newPath]);
+
   const handleLanguageChange = (e) => {
     e.preventDefault();
     setOpen(false);
