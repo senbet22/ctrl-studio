@@ -6,6 +6,20 @@
  */
 import Vision from "@/components/Vision";
 import { getDictionary } from "../../dictionaries";
+import { buildMetadata } from "@/utils/seo";
+import { getSeo } from "../../dictionaries/seo";
+
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const seo = getSeo(lang);
+
+  return buildMetadata({
+    lang,
+    path: "vision",
+    title: seo.vision.title,
+    description: seo.vision.description,
+  });
+}
 
 export default async function VisionPage({ params }) {
   const { lang } = await params;

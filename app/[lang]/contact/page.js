@@ -6,6 +6,20 @@
  */
 import Contact from "@/components/Contact";
 import { getDictionary } from "../../dictionaries";
+import { buildMetadata } from "@/utils/seo";
+import { getSeo } from "../../dictionaries/seo";
+
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const seo = getSeo(lang);
+
+  return buildMetadata({
+    lang,
+    path: "contact",
+    title: seo.contact.title,
+    description: seo.contact.description,
+  });
+}
 
 export default async function ContactPage({ params }) {
   const { lang } = await params;

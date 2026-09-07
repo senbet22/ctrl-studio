@@ -5,9 +5,24 @@
  * @param {object} params - The route parameters, containing the `lang`.
  */
 import { getDictionary } from "../../dictionaries";
+import { buildMetadata } from "@/utils/seo";
+import { getSeo } from "../../dictionaries/seo";
 
-export default async function PrivacyPolicy({ params: { lang } }) {
-  const dictionary = await getDictionary(lang);
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const seo = getSeo(lang);
+
+  return buildMetadata({
+    lang,
+    path: "privacy-policy",
+    title: seo.privacyPolicy.title,
+    description: seo.privacyPolicy.description,
+  });
+}
+
+export default async function PrivacyPolicy({ params }) {
+  const { lang } = await params;
+  const dictionary = getDictionary(lang);
   const { privacyPolicy } = dictionary;
 
   return (

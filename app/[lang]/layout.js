@@ -3,6 +3,9 @@
  * It sets up the main HTML structure, applies global fonts, and wraps the content
  * with the Navbar, Footer, and other global components.
  *
+ * Page titles and descriptions are declared per route, so this layout sets no
+ * metadata of its own beyond what it inherits from the root layout.
+ *
  * @param {object} children - The page content to render.
  * @param {object} params - The route parameters, containing the `lang`.
  */
@@ -17,13 +20,8 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-export const metadata = {
-  title: "Ctrl - Studio",
-  description: "Ctrl Studio is an indie game studio from Norway",
-};
-
-export default function LangLayout({ children, params }) {
-  const { lang } = params;
+export default async function LangLayout({ children, params }) {
+  const { lang } = await params;
   const dict = getDictionary(lang);
 
   return (
