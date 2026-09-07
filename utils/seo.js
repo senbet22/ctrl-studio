@@ -27,7 +27,7 @@ const OG_IMAGE = {
   url: "/og-image.png",
   width: 1200,
   height: 630,
-  alt: "Gastahav: The Shadow from Ringholt",
+  alt: "A horned Viking longship emerging from the fog in a pine forest, from Gastahav: The Shadow from Ringholt",
 };
 
 /**
