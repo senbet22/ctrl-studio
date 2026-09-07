@@ -141,28 +141,6 @@
   "termsAndConditions": {
     "title": "Vilkår og betingelser"
   },
-  "seo": {
-    "home": {
-      "title": "Gastahav: Skyggen fra Ringholt",
-      "description": "Et historiedrevet RPG smeltet sammen av samisk og norrøn mytologi, laget av Ctrl Studio i Norge. Se traileren og følg Tyri og Draupne gjennom fjordene i Gastahav."
-    },
-    "vision": {
-      "title": "Vår Visjon",
-      "description": "Hvorfor Ctrl Studio bygger Gastahav: å gi nordisk kulturarv nye former, nye stemmer og nytt liv, i spennet mellom arv og nyskaping."
-    },
-    "contact": {
-      "title": "Ta kontakt",
-      "description": "Spørsmål om Gastahav: Skyggen fra Ringholt, eller om samarbeid med Ctrl Studio? Send oss en melding."
-    },
-    "privacyPolicy": {
-      "title": "Personvernerklæring",
-      "description": "Hvordan Ctrl Studio samler inn, bruker og sletter personopplysninger når du melder deg på nyhetsbrevet vårt."
-    },
-    "termsAndConditions": {
-      "title": "Vilkår og betingelser",
-      "description": "Vilkårene som gjelder når du bruker nettsiden til Ctrl Studio og abonnerer på oppdateringene våre."
-    }
-  },
   "footer": {
     "description": "Ctrl Studio er en vennegjeng fra Norge på oppdrag for å skape vårt drømmespill og dele det med verden.",
     "explore": "UTFORSK",

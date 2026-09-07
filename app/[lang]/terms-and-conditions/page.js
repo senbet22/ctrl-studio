@@ -6,10 +6,11 @@
  */
 import { getDictionary } from "../../dictionaries";
 import { buildMetadata } from "@/utils/seo";
+import { getSeo } from "../../dictionaries/seo";
 
 export async function generateMetadata({ params }) {
   const { lang } = await params;
-  const { seo } = getDictionary(lang);
+  const seo = getSeo(lang);
 
   return buildMetadata({
     lang,

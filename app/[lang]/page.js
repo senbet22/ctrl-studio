@@ -7,6 +7,7 @@
  */
 import { getDictionary } from "../dictionaries";
 import { buildMetadata } from "@/utils/seo";
+import { getSeo } from "../dictionaries/seo";
 
 import Header from "@/components/Header";
 import About from "@/components/About";
@@ -16,7 +17,7 @@ import Support from "@/components/Support";
 
 export async function generateMetadata({ params }) {
   const { lang } = await params;
-  const { seo } = getDictionary(lang);
+  const seo = getSeo(lang);
 
   return buildMetadata({
     lang,
