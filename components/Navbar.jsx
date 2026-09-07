@@ -206,7 +206,7 @@ const Navbar = ({ dict }) => {
             <a className="cursor-pointer">{dict.nav.lore}</a>
           </li>
           <li onClick={closeMenu}>
-            <Link href="/vision">{dict.nav.vision}</Link>
+            <Link href={`/${currentLang}/vision`}>{dict.nav.vision}</Link>
           </li>
           <li
             onClick={() => {
@@ -217,7 +217,7 @@ const Navbar = ({ dict }) => {
             <a className="cursor-pointer">{dict.nav.team}</a>
           </li>
           <li onClick={closeMenu}>
-            <Link href="/contact">{dict.nav.contact}</Link>
+            <Link href={`/${currentLang}/contact`}>{dict.nav.contact}</Link>
           </li>
           <li
             onClick={() => {

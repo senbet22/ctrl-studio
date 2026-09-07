@@ -6,12 +6,24 @@
  * @param {object} params - The route parameters, containing the `lang`.
  */
 import { getDictionary } from "../dictionaries";
+import { buildMetadata } from "@/utils/seo";
 
 import Header from "@/components/Header";
 import About from "@/components/About";
 import Lore from "@/components/Lore";
 import Team from "@/components/Team";
 import Support from "@/components/Support";
+
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const { seo } = getDictionary(lang);
+
+  return buildMetadata({
+    lang,
+    title: seo.home.title,
+    description: seo.home.description,
+  });
+}
 
 export default async function Home({ params }) {
   const { lang } = await params;

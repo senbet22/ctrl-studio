@@ -141,6 +141,28 @@
   "termsAndConditions": {
     "title": "Terms and Conditions"
   },
+  "seo": {
+    "home": {
+      "title": "Gastahav: The Shadow from Ringholt",
+      "description": "A story-driven RPG woven from Sámi and Norse mythology, made by Ctrl Studio in Norway. Watch the trailer and follow Tyri and Draupne through the fjords of Gastahav."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "Why Ctrl Studio is building Gastahav: giving Nordic cultural heritage new forms, new voices and new life, in the tension between heritage and invention."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Questions about Gastahav: The Shadow from Ringholt, or about working with Ctrl Studio? Send the team a message."
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "description": "How Ctrl Studio collects, uses and deletes personal data when you sign up for our mailing list."
+    },
+    "termsAndConditions": {
+      "title": "Terms and Conditions",
+      "description": "The terms that apply when you use the Ctrl Studio website and subscribe to our updates."
+    }
+  },
   "footer": {
     "description": "Ctrl – Studio is a group of friends from Norway on a mission to create our dream game and share it with the world.",
     "explore": "EXPLORE",
