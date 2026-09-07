@@ -47,6 +47,7 @@ export const EmblaCarousel = ({ dict }) => {
                     src={avatar}
                     alt={name + " Avatar"}
                     className="max-h-full max-w-full object-contain"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     priority={index === 0}
                     loading="eager"
                   />
@@ -55,9 +56,9 @@ export const EmblaCarousel = ({ dict }) => {
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-start max-h-full overflow-y-auto">
                   <div className="flex justify-between">
-                    <h1 className="text-2xl md:text-3xl text-primary mb-4">
+                    <h3 className="text-2xl md:text-3xl text-primary mb-4">
                       {name}
-                    </h1>
+                    </h3>
                     <div className="flex gap-x-4 md:gap-x-6 justify-end">
                       <button
                         className="embla__prev bg-[#411D1C] py-2 px-4 cursor-pointer hover:bg-secondary/5 transition-colors rounded"

@@ -32,12 +32,12 @@ const Support = ({ dict }) => {
           </motion.div>
 
           {/* Title */}
-          <h1
-            className="text-2xl md:text-3xl text-transparent bg-clip-text 
+          <h2
+            className="text-2xl md:text-3xl text-transparent bg-clip-text
             bg-gradient-to-r from-45% from-primary to-secondary to-55% text-center px-2"
           >
             {dict.support.title}
-          </h1>
+          </h2>
 
           {/* Right icon container */}
           <motion.div

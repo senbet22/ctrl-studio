@@ -35,9 +35,9 @@ const About = ({ dict }) => {
           <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl w-full px-6">
             {/* Left Side*/}
             <div className="w-full lg:w-1/2">
-              <h1 className="text-2xl md:text-3xl text-primary mb-4">
+              <h2 className="text-2xl md:text-3xl text-primary mb-4">
                 {dict.about.title}
-              </h1>
+              </h2>
               {dict.about.introSections.map((section, index) => (
                 <p
                   key={index}

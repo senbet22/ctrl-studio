@@ -13,7 +13,7 @@ const seo = {
     home: {
       title: "Gastahav: The Shadow from Ringholt",
       description:
-        "A story-driven RPG woven from Sámi and Norse mythology, made by Ctrl Studio in Norway. Watch the trailer and follow Tyri and Draupne through the fjords of Gastahav.",
+        "A story-driven RPG rooted in Sámi and Norse mythology, from Ctrl Studio in Norway. Watch the trailer and follow Tyri and Draupne through Gastahav.",
     },
     vision: {
       title: "Our Vision",
@@ -40,7 +40,7 @@ const seo = {
     home: {
       title: "Gastahav: Skyggen fra Ringholt",
       description:
-        "Et historiedrevet RPG smeltet sammen av samisk og norrøn mytologi, laget av Ctrl Studio i Norge. Se traileren og følg Tyri og Draupne gjennom fjordene i Gastahav.",
+        "Et historiedrevet RPG med røtter i samisk og norrøn mytologi, fra Ctrl Studio i Norge. Se traileren og følg Tyri og Draupne gjennom Gastahav.",
     },
     vision: {
       title: "Vår Visjon",
